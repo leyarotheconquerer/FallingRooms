@@ -1,0 +1,2681 @@
+<?xml version="1.0"?>
+<scene id="1">
+	<attribute name="Name" value="" />
+	<attribute name="Time Scale" value="1" />
+	<attribute name="Smoothing Constant" value="50" />
+	<attribute name="Snap Threshold" value="5" />
+	<attribute name="Elapsed Time" value="0" />
+	<attribute name="Next Replicated Node ID" value="108" />
+	<attribute name="Next Replicated Component ID" value="143" />
+	<attribute name="Next Local Node ID" value="16777328" />
+	<attribute name="Next Local Component ID" value="16777338" />
+	<attribute name="Variables" />
+	<attribute name="Variable Names" value="" />
+	<component type="Octree" id="1" />
+	<component type="DebugRenderer" id="2" />
+	<component type="PhysicsWorld" id="106" />
+	<node id="16777217">
+		<attribute name="Is Enabled" value="true" />
+		<attribute name="Name" value="Level" />
+		<attribute name="Tags" />
+		<attribute name="Position" value="0 0 0" />
+		<attribute name="Rotation" value="1 0 0 0" />
+		<attribute name="Scale" value="1 1 1" />
+		<attribute name="Variables" />
+		<node id="16777218">
+			<attribute name="Is Enabled" value="true" />
+			<attribute name="Name" value="Board" />
+			<attribute name="Tags" />
+			<attribute name="Position" value="0 0 0" />
+			<attribute name="Rotation" value="1 0 0 0" />
+			<attribute name="Scale" value="1 1 1" />
+			<attribute name="Variables" />
+			<node id="16777219">
+				<attribute name="Is Enabled" value="true" />
+				<attribute name="Name" value="Walls" />
+				<attribute name="Tags" />
+				<attribute name="Position" value="0 0 0" />
+				<attribute name="Rotation" value="1 0 0 0" />
+				<attribute name="Scale" value="1 1 1" />
+				<attribute name="Variables" />
+				<node id="16777220">
+					<attribute name="Is Enabled" value="true" />
+					<attribute name="Name" value="Wall" />
+					<attribute name="Tags" />
+					<attribute name="Position" value="0 0 0" />
+					<attribute name="Rotation" value="1 0 0 0" />
+					<attribute name="Scale" value="1 1 1" />
+					<attribute name="Variables" />
+					<component type="RigidBody" id="16777277">
+						<attribute name="Collision Mask" value="253" />
+						<attribute name="Use Gravity" value="false" />
+						<attribute name="Is Kinematic" value="true" />
+					</component>
+					<component type="CollisionShape" id="16777278">
+						<attribute name="Size" value="36 2.4 0.25" />
+						<attribute name="Offset Position" value="18 0 0" />
+					</component>
+					<node id="16777222">
+						<attribute name="Is Enabled" value="true" />
+						<attribute name="Name" value="Set" />
+						<attribute name="Tags" />
+						<attribute name="Position" value="0 0 0" />
+						<attribute name="Rotation" value="1 0 0 0" />
+						<attribute name="Scale" value="1 1 1" />
+						<attribute name="Variables" />
+						<node id="5">
+							<attribute name="Is Enabled" value="true" />
+							<attribute name="Name" value="Model" />
+							<attribute name="Tags" />
+							<attribute name="Position" value="3 0 0" />
+							<attribute name="Rotation" value="1 0 0 0" />
+							<attribute name="Scale" value="0.003 0.003 0.003" />
+							<attribute name="Variables" />
+							<component type="StaticModel" id="4">
+								<attribute name="Model" value="Model;Models/Wall.mdl" />
+								<attribute name="Material" value="Material;Materials/Wall.xml" />
+							</component>
+							<component type="RigidBody" id="107">
+								<attribute name="Physics Position" value="3 0 0" />
+							</component>
+							<component type="CollisionShape" id="125" />
+						</node>
+						<node id="4">
+							<attribute name="Is Enabled" value="true" />
+							<attribute name="Name" value="Model" />
+							<attribute name="Tags" />
+							<attribute name="Position" value="0 0 0" />
+							<attribute name="Rotation" value="1 0 0 0" />
+							<attribute name="Scale" value="0.003 0.003 0.003" />
+							<attribute name="Variables" />
+							<component type="StaticModel" id="3">
+								<attribute name="Model" value="Model;Models/Wall.mdl" />
+								<attribute name="Material" value="Material;Materials/Wall.xml" />
+							</component>
+							<component type="RigidBody" id="108" />
+							<component type="CollisionShape" id="126" />
+						</node>
+						<node id="7">
+							<attribute name="Is Enabled" value="true" />
+							<attribute name="Name" value="Model" />
+							<attribute name="Tags" />
+							<attribute name="Position" value="6 0 0" />
+							<attribute name="Rotation" value="1 0 0 0" />
+							<attribute name="Scale" value="0.003 0.003 0.003" />
+							<attribute name="Variables" />
+							<component type="StaticModel" id="6">
+								<attribute name="Model" value="Model;Models/Wall.mdl" />
+								<attribute name="Material" value="Material;Materials/Wall.xml" />
+							</component>
+							<component type="RigidBody" id="109">
+								<attribute name="Physics Position" value="6 0 0" />
+							</component>
+							<component type="CollisionShape" id="127" />
+						</node>
+						<node id="8">
+							<attribute name="Is Enabled" value="true" />
+							<attribute name="Name" value="Model" />
+							<attribute name="Tags" />
+							<attribute name="Position" value="9 0 0" />
+							<attribute name="Rotation" value="1 0 0 0" />
+							<attribute name="Scale" value="0.003 0.003 0.003" />
+							<attribute name="Variables" />
+							<component type="StaticModel" id="7">
+								<attribute name="Model" value="Model;Models/Wall.mdl" />
+								<attribute name="Material" value="Material;Materials/Wall.xml" />
+							</component>
+							<component type="RigidBody" id="110">
+								<attribute name="Physics Position" value="9 0 0" />
+							</component>
+							<component type="CollisionShape" id="128" />
+						</node>
+						<node id="9">
+							<attribute name="Is Enabled" value="true" />
+							<attribute name="Name" value="Model" />
+							<attribute name="Tags" />
+							<attribute name="Position" value="12 0 0" />
+							<attribute name="Rotation" value="1 0 0 0" />
+							<attribute name="Scale" value="0.003 0.003 0.003" />
+							<attribute name="Variables" />
+							<component type="StaticModel" id="8">
+								<attribute name="Model" value="Model;Models/Wall.mdl" />
+								<attribute name="Material" value="Material;Materials/Wall.xml" />
+							</component>
+							<component type="RigidBody" id="111">
+								<attribute name="Physics Position" value="12 0 0" />
+							</component>
+							<component type="CollisionShape" id="129" />
+						</node>
+						<node id="10">
+							<attribute name="Is Enabled" value="true" />
+							<attribute name="Name" value="Model" />
+							<attribute name="Tags" />
+							<attribute name="Position" value="15 0 0" />
+							<attribute name="Rotation" value="1 0 0 0" />
+							<attribute name="Scale" value="0.003 0.003 0.003" />
+							<attribute name="Variables" />
+							<component type="StaticModel" id="9">
+								<attribute name="Model" value="Model;Models/Wall.mdl" />
+								<attribute name="Material" value="Material;Materials/Wall.xml" />
+							</component>
+							<component type="RigidBody" id="112">
+								<attribute name="Physics Position" value="15 0 0" />
+							</component>
+							<component type="CollisionShape" id="130" />
+						</node>
+					</node>
+					<node id="16777223">
+						<attribute name="Is Enabled" value="true" />
+						<attribute name="Name" value="Set" />
+						<attribute name="Tags" />
+						<attribute name="Position" value="18 0 0" />
+						<attribute name="Rotation" value="1 0 0 0" />
+						<attribute name="Scale" value="1 1 1" />
+						<attribute name="Variables" />
+						<node id="11">
+							<attribute name="Is Enabled" value="true" />
+							<attribute name="Name" value="Model" />
+							<attribute name="Tags" />
+							<attribute name="Position" value="3 0 0" />
+							<attribute name="Rotation" value="1 0 0 0" />
+							<attribute name="Scale" value="0.003 0.003 0.003" />
+							<attribute name="Variables" />
+							<component type="StaticModel" id="10">
+								<attribute name="Model" value="Model;Models/Wall.mdl" />
+								<attribute name="Material" value="Material;Materials/Wall.xml" />
+							</component>
+							<component type="RigidBody" id="113">
+								<attribute name="Physics Position" value="21 0 0" />
+							</component>
+							<component type="CollisionShape" id="131" />
+						</node>
+						<node id="12">
+							<attribute name="Is Enabled" value="true" />
+							<attribute name="Name" value="Model" />
+							<attribute name="Tags" />
+							<attribute name="Position" value="0 0 0" />
+							<attribute name="Rotation" value="1 0 0 0" />
+							<attribute name="Scale" value="0.003 0.003 0.003" />
+							<attribute name="Variables" />
+							<component type="StaticModel" id="11">
+								<attribute name="Model" value="Model;Models/Wall.mdl" />
+								<attribute name="Material" value="Material;Materials/Wall.xml" />
+							</component>
+							<component type="RigidBody" id="114">
+								<attribute name="Physics Position" value="18 0 0" />
+							</component>
+							<component type="CollisionShape" id="132" />
+						</node>
+						<node id="13">
+							<attribute name="Is Enabled" value="true" />
+							<attribute name="Name" value="Model" />
+							<attribute name="Tags" />
+							<attribute name="Position" value="6 0 0" />
+							<attribute name="Rotation" value="1 0 0 0" />
+							<attribute name="Scale" value="0.003 0.003 0.003" />
+							<attribute name="Variables" />
+							<component type="StaticModel" id="12">
+								<attribute name="Model" value="Model;Models/Wall.mdl" />
+								<attribute name="Material" value="Material;Materials/Wall.xml" />
+							</component>
+							<component type="RigidBody" id="115">
+								<attribute name="Physics Position" value="24 0 0" />
+							</component>
+							<component type="CollisionShape" id="133" />
+						</node>
+						<node id="14">
+							<attribute name="Is Enabled" value="true" />
+							<attribute name="Name" value="Model" />
+							<attribute name="Tags" />
+							<attribute name="Position" value="9 0 0" />
+							<attribute name="Rotation" value="1 0 0 0" />
+							<attribute name="Scale" value="0.003 0.003 0.003" />
+							<attribute name="Variables" />
+							<component type="StaticModel" id="13">
+								<attribute name="Model" value="Model;Models/Wall.mdl" />
+								<attribute name="Material" value="Material;Materials/Wall.xml" />
+							</component>
+							<component type="RigidBody" id="116">
+								<attribute name="Physics Position" value="27 0 0" />
+							</component>
+							<component type="CollisionShape" id="134" />
+						</node>
+						<node id="15">
+							<attribute name="Is Enabled" value="true" />
+							<attribute name="Name" value="Model" />
+							<attribute name="Tags" />
+							<attribute name="Position" value="12 0 0" />
+							<attribute name="Rotation" value="1 0 0 0" />
+							<attribute name="Scale" value="0.003 0.003 0.003" />
+							<attribute name="Variables" />
+							<component type="StaticModel" id="14">
+								<attribute name="Model" value="Model;Models/Wall.mdl" />
+								<attribute name="Material" value="Material;Materials/Wall.xml" />
+							</component>
+							<component type="RigidBody" id="117">
+								<attribute name="Physics Position" value="30 0 0" />
+							</component>
+							<component type="CollisionShape" id="135" />
+						</node>
+						<node id="16">
+							<attribute name="Is Enabled" value="true" />
+							<attribute name="Name" value="Model" />
+							<attribute name="Tags" />
+							<attribute name="Position" value="15 0 0" />
+							<attribute name="Rotation" value="1 0 0 0" />
+							<attribute name="Scale" value="0.003 0.003 0.003" />
+							<attribute name="Variables" />
+							<component type="StaticModel" id="15">
+								<attribute name="Model" value="Model;Models/Wall.mdl" />
+								<attribute name="Material" value="Material;Materials/Wall.xml" />
+							</component>
+							<component type="RigidBody" id="118">
+								<attribute name="Physics Position" value="33 0 0" />
+							</component>
+							<component type="CollisionShape" id="136" />
+						</node>
+					</node>
+					<node id="16777225">
+						<attribute name="Is Enabled" value="true" />
+						<attribute name="Name" value="Set" />
+						<attribute name="Tags" />
+						<attribute name="Position" value="18 -1.2 0" />
+						<attribute name="Rotation" value="1 0 0 0" />
+						<attribute name="Scale" value="1 1 1" />
+						<attribute name="Variables" />
+						<node id="23">
+							<attribute name="Is Enabled" value="true" />
+							<attribute name="Name" value="Model" />
+							<attribute name="Tags" />
+							<attribute name="Position" value="3 0 0" />
+							<attribute name="Rotation" value="1 0 0 0" />
+							<attribute name="Scale" value="0.003 0.003 0.003" />
+							<attribute name="Variables" />
+							<component type="StaticModel" id="22">
+								<attribute name="Model" value="Model;Models/Wall.mdl" />
+								<attribute name="Material" value="Material;Materials/Wall.xml" />
+							</component>
+							<component type="RigidBody" id="119">
+								<attribute name="Physics Position" value="21 -1.2 0" />
+							</component>
+							<component type="CollisionShape" id="137" />
+						</node>
+						<node id="24">
+							<attribute name="Is Enabled" value="true" />
+							<attribute name="Name" value="Model" />
+							<attribute name="Tags" />
+							<attribute name="Position" value="0 0 0" />
+							<attribute name="Rotation" value="1 0 0 0" />
+							<attribute name="Scale" value="0.003 0.003 0.003" />
+							<attribute name="Variables" />
+							<component type="StaticModel" id="23">
+								<attribute name="Model" value="Model;Models/Wall.mdl" />
+								<attribute name="Material" value="Material;Materials/Wall.xml" />
+							</component>
+							<component type="RigidBody" id="120">
+								<attribute name="Physics Position" value="18 -1.2 0" />
+							</component>
+							<component type="CollisionShape" id="138" />
+						</node>
+						<node id="25">
+							<attribute name="Is Enabled" value="true" />
+							<attribute name="Name" value="Model" />
+							<attribute name="Tags" />
+							<attribute name="Position" value="6 0 0" />
+							<attribute name="Rotation" value="1 0 0 0" />
+							<attribute name="Scale" value="0.003 0.003 0.003" />
+							<attribute name="Variables" />
+							<component type="StaticModel" id="24">
+								<attribute name="Model" value="Model;Models/Wall.mdl" />
+								<attribute name="Material" value="Material;Materials/Wall.xml" />
+							</component>
+							<component type="RigidBody" id="121">
+								<attribute name="Physics Position" value="24 -1.2 0" />
+							</component>
+							<component type="CollisionShape" id="139" />
+						</node>
+						<node id="26">
+							<attribute name="Is Enabled" value="true" />
+							<attribute name="Name" value="Model" />
+							<attribute name="Tags" />
+							<attribute name="Position" value="9 0 0" />
+							<attribute name="Rotation" value="1 0 0 0" />
+							<attribute name="Scale" value="0.003 0.003 0.003" />
+							<attribute name="Variables" />
+							<component type="StaticModel" id="25">
+								<attribute name="Model" value="Model;Models/Wall.mdl" />
+								<attribute name="Material" value="Material;Materials/Wall.xml" />
+							</component>
+							<component type="RigidBody" id="122">
+								<attribute name="Physics Position" value="27 -1.2 0" />
+							</component>
+							<component type="CollisionShape" id="140" />
+						</node>
+						<node id="27">
+							<attribute name="Is Enabled" value="true" />
+							<attribute name="Name" value="Model" />
+							<attribute name="Tags" />
+							<attribute name="Position" value="12 0 0" />
+							<attribute name="Rotation" value="1 0 0 0" />
+							<attribute name="Scale" value="0.003 0.003 0.003" />
+							<attribute name="Variables" />
+							<component type="StaticModel" id="26">
+								<attribute name="Model" value="Model;Models/Wall.mdl" />
+								<attribute name="Material" value="Material;Materials/Wall.xml" />
+							</component>
+							<component type="RigidBody" id="123">
+								<attribute name="Physics Position" value="30 -1.2 0" />
+							</component>
+							<component type="CollisionShape" id="141" />
+						</node>
+						<node id="28">
+							<attribute name="Is Enabled" value="true" />
+							<attribute name="Name" value="Model" />
+							<attribute name="Tags" />
+							<attribute name="Position" value="15 0 0" />
+							<attribute name="Rotation" value="1 0 0 0" />
+							<attribute name="Scale" value="0.003 0.003 0.003" />
+							<attribute name="Variables" />
+							<component type="StaticModel" id="27">
+								<attribute name="Model" value="Model;Models/Wall.mdl" />
+								<attribute name="Material" value="Material;Materials/Wall.xml" />
+							</component>
+							<component type="RigidBody" id="124">
+								<attribute name="Physics Position" value="33 -1.2 0" />
+							</component>
+							<component type="CollisionShape" id="142" />
+						</node>
+					</node>
+					<node id="16777226">
+						<attribute name="Is Enabled" value="true" />
+						<attribute name="Name" value="Set" />
+						<attribute name="Tags" />
+						<attribute name="Position" value="0 -1.2 0" />
+						<attribute name="Rotation" value="1 0 0 0" />
+						<attribute name="Scale" value="1 1 1" />
+						<attribute name="Variables" />
+						<node id="29">
+							<attribute name="Is Enabled" value="true" />
+							<attribute name="Name" value="Model" />
+							<attribute name="Tags" />
+							<attribute name="Position" value="3 0 0" />
+							<attribute name="Rotation" value="1 0 0 0" />
+							<attribute name="Scale" value="0.003 0.003 0.003" />
+							<attribute name="Variables" />
+							<component type="StaticModel" id="28">
+								<attribute name="Model" value="Model;Models/Wall.mdl" />
+								<attribute name="Material" value="Material;Materials/Wall.xml" />
+							</component>
+						</node>
+						<node id="30">
+							<attribute name="Is Enabled" value="true" />
+							<attribute name="Name" value="Model" />
+							<attribute name="Tags" />
+							<attribute name="Position" value="0 0 0" />
+							<attribute name="Rotation" value="1 0 0 0" />
+							<attribute name="Scale" value="0.003 0.003 0.003" />
+							<attribute name="Variables" />
+							<component type="StaticModel" id="29">
+								<attribute name="Model" value="Model;Models/Wall.mdl" />
+								<attribute name="Material" value="Material;Materials/Wall.xml" />
+							</component>
+						</node>
+						<node id="31">
+							<attribute name="Is Enabled" value="true" />
+							<attribute name="Name" value="Model" />
+							<attribute name="Tags" />
+							<attribute name="Position" value="6 0 0" />
+							<attribute name="Rotation" value="1 0 0 0" />
+							<attribute name="Scale" value="0.003 0.003 0.003" />
+							<attribute name="Variables" />
+							<component type="StaticModel" id="30">
+								<attribute name="Model" value="Model;Models/Wall.mdl" />
+								<attribute name="Material" value="Material;Materials/Wall.xml" />
+							</component>
+						</node>
+						<node id="32">
+							<attribute name="Is Enabled" value="true" />
+							<attribute name="Name" value="Model" />
+							<attribute name="Tags" />
+							<attribute name="Position" value="9 0 0" />
+							<attribute name="Rotation" value="1 0 0 0" />
+							<attribute name="Scale" value="0.003 0.003 0.003" />
+							<attribute name="Variables" />
+							<component type="StaticModel" id="31">
+								<attribute name="Model" value="Model;Models/Wall.mdl" />
+								<attribute name="Material" value="Material;Materials/Wall.xml" />
+							</component>
+						</node>
+						<node id="33">
+							<attribute name="Is Enabled" value="true" />
+							<attribute name="Name" value="Model" />
+							<attribute name="Tags" />
+							<attribute name="Position" value="12 0 0" />
+							<attribute name="Rotation" value="1 0 0 0" />
+							<attribute name="Scale" value="0.003 0.003 0.003" />
+							<attribute name="Variables" />
+							<component type="StaticModel" id="32">
+								<attribute name="Model" value="Model;Models/Wall.mdl" />
+								<attribute name="Material" value="Material;Materials/Wall.xml" />
+							</component>
+						</node>
+						<node id="34">
+							<attribute name="Is Enabled" value="true" />
+							<attribute name="Name" value="Model" />
+							<attribute name="Tags" />
+							<attribute name="Position" value="15 0 0" />
+							<attribute name="Rotation" value="1 0 0 0" />
+							<attribute name="Scale" value="0.003 0.003 0.003" />
+							<attribute name="Variables" />
+							<component type="StaticModel" id="33">
+								<attribute name="Model" value="Model;Models/Wall.mdl" />
+								<attribute name="Material" value="Material;Materials/Wall.xml" />
+							</component>
+						</node>
+					</node>
+				</node>
+				<node id="16777227">
+					<attribute name="Is Enabled" value="true" />
+					<attribute name="Name" value="Wall" />
+					<attribute name="Tags" />
+					<attribute name="Position" value="0 0 0" />
+					<attribute name="Rotation" value="0.707107 0 -0.707107 0" />
+					<attribute name="Scale" value="1 1 1" />
+					<attribute name="Variables" />
+					<component type="RigidBody" id="16777279">
+						<attribute name="Physics Rotation" value="0.707107 0 -0.707107 0" />
+						<attribute name="Collision Mask" value="253" />
+						<attribute name="Use Gravity" value="false" />
+						<attribute name="Is Kinematic" value="true" />
+					</component>
+					<component type="CollisionShape" id="16777282">
+						<attribute name="Size" value="36 2.4 0.25" />
+						<attribute name="Offset Position" value="18 0 0" />
+					</component>
+					<node id="16777228">
+						<attribute name="Is Enabled" value="true" />
+						<attribute name="Name" value="Set" />
+						<attribute name="Tags" />
+						<attribute name="Position" value="0 0 0" />
+						<attribute name="Rotation" value="1 0 0 0" />
+						<attribute name="Scale" value="1 1 1" />
+						<attribute name="Variables" />
+						<node id="35">
+							<attribute name="Is Enabled" value="true" />
+							<attribute name="Name" value="Model" />
+							<attribute name="Tags" />
+							<attribute name="Position" value="3 0 0" />
+							<attribute name="Rotation" value="1 0 0 0" />
+							<attribute name="Scale" value="0.003 0.003 0.003" />
+							<attribute name="Variables" />
+							<component type="StaticModel" id="34">
+								<attribute name="Model" value="Model;Models/Wall.mdl" />
+								<attribute name="Material" value="Material;Materials/Wall.xml" />
+							</component>
+						</node>
+						<node id="37">
+							<attribute name="Is Enabled" value="true" />
+							<attribute name="Name" value="Model" />
+							<attribute name="Tags" />
+							<attribute name="Position" value="6 0 0" />
+							<attribute name="Rotation" value="1 0 0 0" />
+							<attribute name="Scale" value="0.003 0.003 0.003" />
+							<attribute name="Variables" />
+							<component type="StaticModel" id="36">
+								<attribute name="Model" value="Model;Models/Wall.mdl" />
+								<attribute name="Material" value="Material;Materials/Wall.xml" />
+							</component>
+						</node>
+						<node id="38">
+							<attribute name="Is Enabled" value="true" />
+							<attribute name="Name" value="Model" />
+							<attribute name="Tags" />
+							<attribute name="Position" value="9 0 0" />
+							<attribute name="Rotation" value="1 0 0 0" />
+							<attribute name="Scale" value="0.003 0.003 0.003" />
+							<attribute name="Variables" />
+							<component type="StaticModel" id="37">
+								<attribute name="Model" value="Model;Models/Wall.mdl" />
+								<attribute name="Material" value="Material;Materials/Wall.xml" />
+							</component>
+						</node>
+						<node id="39">
+							<attribute name="Is Enabled" value="true" />
+							<attribute name="Name" value="Model" />
+							<attribute name="Tags" />
+							<attribute name="Position" value="12 0 0" />
+							<attribute name="Rotation" value="1 0 0 0" />
+							<attribute name="Scale" value="0.003 0.003 0.003" />
+							<attribute name="Variables" />
+							<component type="StaticModel" id="38">
+								<attribute name="Model" value="Model;Models/Wall.mdl" />
+								<attribute name="Material" value="Material;Materials/Wall.xml" />
+							</component>
+						</node>
+						<node id="40">
+							<attribute name="Is Enabled" value="true" />
+							<attribute name="Name" value="Model" />
+							<attribute name="Tags" />
+							<attribute name="Position" value="15 0 0" />
+							<attribute name="Rotation" value="1 0 0 0" />
+							<attribute name="Scale" value="0.003 0.003 0.003" />
+							<attribute name="Variables" />
+							<component type="StaticModel" id="39">
+								<attribute name="Model" value="Model;Models/Wall.mdl" />
+								<attribute name="Material" value="Material;Materials/Wall.xml" />
+							</component>
+						</node>
+					</node>
+					<node id="16777229">
+						<attribute name="Is Enabled" value="true" />
+						<attribute name="Name" value="Set" />
+						<attribute name="Tags" />
+						<attribute name="Position" value="18 0 0" />
+						<attribute name="Rotation" value="1 0 0 0" />
+						<attribute name="Scale" value="1 1 1" />
+						<attribute name="Variables" />
+						<node id="41">
+							<attribute name="Is Enabled" value="true" />
+							<attribute name="Name" value="Model" />
+							<attribute name="Tags" />
+							<attribute name="Position" value="3 0 0" />
+							<attribute name="Rotation" value="1 0 0 0" />
+							<attribute name="Scale" value="0.003 0.003 0.003" />
+							<attribute name="Variables" />
+							<component type="StaticModel" id="40">
+								<attribute name="Model" value="Model;Models/Wall.mdl" />
+								<attribute name="Material" value="Material;Materials/Wall.xml" />
+							</component>
+						</node>
+						<node id="42">
+							<attribute name="Is Enabled" value="true" />
+							<attribute name="Name" value="Model" />
+							<attribute name="Tags" />
+							<attribute name="Position" value="0 0 0" />
+							<attribute name="Rotation" value="1 0 0 0" />
+							<attribute name="Scale" value="0.003 0.003 0.003" />
+							<attribute name="Variables" />
+							<component type="StaticModel" id="41">
+								<attribute name="Model" value="Model;Models/Wall.mdl" />
+								<attribute name="Material" value="Material;Materials/Wall.xml" />
+							</component>
+						</node>
+						<node id="43">
+							<attribute name="Is Enabled" value="true" />
+							<attribute name="Name" value="Model" />
+							<attribute name="Tags" />
+							<attribute name="Position" value="6 0 0" />
+							<attribute name="Rotation" value="1 0 0 0" />
+							<attribute name="Scale" value="0.003 0.003 0.003" />
+							<attribute name="Variables" />
+							<component type="StaticModel" id="42">
+								<attribute name="Model" value="Model;Models/Wall.mdl" />
+								<attribute name="Material" value="Material;Materials/Wall.xml" />
+							</component>
+						</node>
+						<node id="44">
+							<attribute name="Is Enabled" value="true" />
+							<attribute name="Name" value="Model" />
+							<attribute name="Tags" />
+							<attribute name="Position" value="9 0 0" />
+							<attribute name="Rotation" value="1 0 0 0" />
+							<attribute name="Scale" value="0.003 0.003 0.003" />
+							<attribute name="Variables" />
+							<component type="StaticModel" id="43">
+								<attribute name="Model" value="Model;Models/Wall.mdl" />
+								<attribute name="Material" value="Material;Materials/Wall.xml" />
+							</component>
+						</node>
+						<node id="45">
+							<attribute name="Is Enabled" value="true" />
+							<attribute name="Name" value="Model" />
+							<attribute name="Tags" />
+							<attribute name="Position" value="12 0 0" />
+							<attribute name="Rotation" value="1 0 0 0" />
+							<attribute name="Scale" value="0.003 0.003 0.003" />
+							<attribute name="Variables" />
+							<component type="StaticModel" id="44">
+								<attribute name="Model" value="Model;Models/Wall.mdl" />
+								<attribute name="Material" value="Material;Materials/Wall.xml" />
+							</component>
+						</node>
+						<node id="46">
+							<attribute name="Is Enabled" value="true" />
+							<attribute name="Name" value="Model" />
+							<attribute name="Tags" />
+							<attribute name="Position" value="15 0 0" />
+							<attribute name="Rotation" value="1 0 0 0" />
+							<attribute name="Scale" value="0.003 0.003 0.003" />
+							<attribute name="Variables" />
+							<component type="StaticModel" id="45">
+								<attribute name="Model" value="Model;Models/Wall.mdl" />
+								<attribute name="Material" value="Material;Materials/Wall.xml" />
+							</component>
+						</node>
+					</node>
+					<node id="16777230">
+						<attribute name="Is Enabled" value="true" />
+						<attribute name="Name" value="Set" />
+						<attribute name="Tags" />
+						<attribute name="Position" value="18 -1.2 0" />
+						<attribute name="Rotation" value="1 0 0 0" />
+						<attribute name="Scale" value="1 1 1" />
+						<attribute name="Variables" />
+						<node id="47">
+							<attribute name="Is Enabled" value="true" />
+							<attribute name="Name" value="Model" />
+							<attribute name="Tags" />
+							<attribute name="Position" value="3 0 0" />
+							<attribute name="Rotation" value="1 0 0 0" />
+							<attribute name="Scale" value="0.003 0.003 0.003" />
+							<attribute name="Variables" />
+							<component type="StaticModel" id="46">
+								<attribute name="Model" value="Model;Models/Wall.mdl" />
+								<attribute name="Material" value="Material;Materials/Wall.xml" />
+							</component>
+						</node>
+						<node id="48">
+							<attribute name="Is Enabled" value="true" />
+							<attribute name="Name" value="Model" />
+							<attribute name="Tags" />
+							<attribute name="Position" value="0 0 0" />
+							<attribute name="Rotation" value="1 0 0 0" />
+							<attribute name="Scale" value="0.003 0.003 0.003" />
+							<attribute name="Variables" />
+							<component type="StaticModel" id="47">
+								<attribute name="Model" value="Model;Models/Wall.mdl" />
+								<attribute name="Material" value="Material;Materials/Wall.xml" />
+							</component>
+						</node>
+						<node id="49">
+							<attribute name="Is Enabled" value="true" />
+							<attribute name="Name" value="Model" />
+							<attribute name="Tags" />
+							<attribute name="Position" value="6 0 0" />
+							<attribute name="Rotation" value="1 0 0 0" />
+							<attribute name="Scale" value="0.003 0.003 0.003" />
+							<attribute name="Variables" />
+							<component type="StaticModel" id="48">
+								<attribute name="Model" value="Model;Models/Wall.mdl" />
+								<attribute name="Material" value="Material;Materials/Wall.xml" />
+							</component>
+						</node>
+						<node id="50">
+							<attribute name="Is Enabled" value="true" />
+							<attribute name="Name" value="Model" />
+							<attribute name="Tags" />
+							<attribute name="Position" value="9 0 0" />
+							<attribute name="Rotation" value="1 0 0 0" />
+							<attribute name="Scale" value="0.003 0.003 0.003" />
+							<attribute name="Variables" />
+							<component type="StaticModel" id="49">
+								<attribute name="Model" value="Model;Models/Wall.mdl" />
+								<attribute name="Material" value="Material;Materials/Wall.xml" />
+							</component>
+						</node>
+						<node id="51">
+							<attribute name="Is Enabled" value="true" />
+							<attribute name="Name" value="Model" />
+							<attribute name="Tags" />
+							<attribute name="Position" value="12 0 0" />
+							<attribute name="Rotation" value="1 0 0 0" />
+							<attribute name="Scale" value="0.003 0.003 0.003" />
+							<attribute name="Variables" />
+							<component type="StaticModel" id="50">
+								<attribute name="Model" value="Model;Models/Wall.mdl" />
+								<attribute name="Material" value="Material;Materials/Wall.xml" />
+							</component>
+						</node>
+						<node id="52">
+							<attribute name="Is Enabled" value="true" />
+							<attribute name="Name" value="Model" />
+							<attribute name="Tags" />
+							<attribute name="Position" value="15 0 0" />
+							<attribute name="Rotation" value="1 0 0 0" />
+							<attribute name="Scale" value="0.003 0.003 0.003" />
+							<attribute name="Variables" />
+							<component type="StaticModel" id="51">
+								<attribute name="Model" value="Model;Models/Wall.mdl" />
+								<attribute name="Material" value="Material;Materials/Wall.xml" />
+							</component>
+						</node>
+					</node>
+					<node id="16777231">
+						<attribute name="Is Enabled" value="true" />
+						<attribute name="Name" value="Set" />
+						<attribute name="Tags" />
+						<attribute name="Position" value="0 -1.2 0" />
+						<attribute name="Rotation" value="1 0 0 0" />
+						<attribute name="Scale" value="1 1 1" />
+						<attribute name="Variables" />
+						<node id="53">
+							<attribute name="Is Enabled" value="true" />
+							<attribute name="Name" value="Model" />
+							<attribute name="Tags" />
+							<attribute name="Position" value="3 0 0" />
+							<attribute name="Rotation" value="1 0 0 0" />
+							<attribute name="Scale" value="0.003 0.003 0.003" />
+							<attribute name="Variables" />
+							<component type="StaticModel" id="52">
+								<attribute name="Model" value="Model;Models/Wall.mdl" />
+								<attribute name="Material" value="Material;Materials/Wall.xml" />
+							</component>
+						</node>
+						<node id="54">
+							<attribute name="Is Enabled" value="true" />
+							<attribute name="Name" value="Model" />
+							<attribute name="Tags" />
+							<attribute name="Position" value="0 0 0" />
+							<attribute name="Rotation" value="1 0 0 0" />
+							<attribute name="Scale" value="0.003 0.003 0.003" />
+							<attribute name="Variables" />
+							<component type="StaticModel" id="53">
+								<attribute name="Model" value="Model;Models/Wall.mdl" />
+								<attribute name="Material" value="Material;Materials/Wall.xml" />
+							</component>
+						</node>
+						<node id="55">
+							<attribute name="Is Enabled" value="true" />
+							<attribute name="Name" value="Model" />
+							<attribute name="Tags" />
+							<attribute name="Position" value="6 0 0" />
+							<attribute name="Rotation" value="1 0 0 0" />
+							<attribute name="Scale" value="0.003 0.003 0.003" />
+							<attribute name="Variables" />
+							<component type="StaticModel" id="54">
+								<attribute name="Model" value="Model;Models/Wall.mdl" />
+								<attribute name="Material" value="Material;Materials/Wall.xml" />
+							</component>
+						</node>
+						<node id="56">
+							<attribute name="Is Enabled" value="true" />
+							<attribute name="Name" value="Model" />
+							<attribute name="Tags" />
+							<attribute name="Position" value="9 0 0" />
+							<attribute name="Rotation" value="1 0 0 0" />
+							<attribute name="Scale" value="0.003 0.003 0.003" />
+							<attribute name="Variables" />
+							<component type="StaticModel" id="55">
+								<attribute name="Model" value="Model;Models/Wall.mdl" />
+								<attribute name="Material" value="Material;Materials/Wall.xml" />
+							</component>
+						</node>
+						<node id="57">
+							<attribute name="Is Enabled" value="true" />
+							<attribute name="Name" value="Model" />
+							<attribute name="Tags" />
+							<attribute name="Position" value="12 0 0" />
+							<attribute name="Rotation" value="1 0 0 0" />
+							<attribute name="Scale" value="0.003 0.003 0.003" />
+							<attribute name="Variables" />
+							<component type="StaticModel" id="56">
+								<attribute name="Model" value="Model;Models/Wall.mdl" />
+								<attribute name="Material" value="Material;Materials/Wall.xml" />
+							</component>
+						</node>
+						<node id="58">
+							<attribute name="Is Enabled" value="true" />
+							<attribute name="Name" value="Model" />
+							<attribute name="Tags" />
+							<attribute name="Position" value="15 0 0" />
+							<attribute name="Rotation" value="1 0 0 0" />
+							<attribute name="Scale" value="0.003 0.003 0.003" />
+							<attribute name="Variables" />
+							<component type="StaticModel" id="57">
+								<attribute name="Model" value="Model;Models/Wall.mdl" />
+								<attribute name="Material" value="Material;Materials/Wall.xml" />
+							</component>
+						</node>
+					</node>
+				</node>
+				<node id="16777232">
+					<attribute name="Is Enabled" value="true" />
+					<attribute name="Name" value="Wall" />
+					<attribute name="Tags" />
+					<attribute name="Position" value="36 0 0" />
+					<attribute name="Rotation" value="0.707107 0 -0.707107 0" />
+					<attribute name="Scale" value="1 1 1" />
+					<attribute name="Variables" />
+					<component type="RigidBody" id="16777280">
+						<attribute name="Physics Rotation" value="0.707107 0 -0.707107 0" />
+						<attribute name="Physics Position" value="36 0 0" />
+						<attribute name="Collision Mask" value="253" />
+						<attribute name="Use Gravity" value="false" />
+						<attribute name="Is Kinematic" value="true" />
+					</component>
+					<component type="CollisionShape" id="16777283">
+						<attribute name="Size" value="36 2.4 0.25" />
+						<attribute name="Offset Position" value="18 0 0" />
+					</component>
+					<node id="16777233">
+						<attribute name="Is Enabled" value="true" />
+						<attribute name="Name" value="Set" />
+						<attribute name="Tags" />
+						<attribute name="Position" value="0 0 0" />
+						<attribute name="Rotation" value="1 0 0 0" />
+						<attribute name="Scale" value="1 1 1" />
+						<attribute name="Variables" />
+						<node id="59">
+							<attribute name="Is Enabled" value="true" />
+							<attribute name="Name" value="Model" />
+							<attribute name="Tags" />
+							<attribute name="Position" value="3 0 0" />
+							<attribute name="Rotation" value="1 0 0 0" />
+							<attribute name="Scale" value="0.003 0.003 0.003" />
+							<attribute name="Variables" />
+							<component type="StaticModel" id="58">
+								<attribute name="Model" value="Model;Models/Wall.mdl" />
+								<attribute name="Material" value="Material;Materials/Wall.xml" />
+							</component>
+						</node>
+						<node id="61">
+							<attribute name="Is Enabled" value="true" />
+							<attribute name="Name" value="Model" />
+							<attribute name="Tags" />
+							<attribute name="Position" value="6 0 0" />
+							<attribute name="Rotation" value="1 0 0 0" />
+							<attribute name="Scale" value="0.003 0.003 0.003" />
+							<attribute name="Variables" />
+							<component type="StaticModel" id="60">
+								<attribute name="Model" value="Model;Models/Wall.mdl" />
+								<attribute name="Material" value="Material;Materials/Wall.xml" />
+							</component>
+						</node>
+						<node id="62">
+							<attribute name="Is Enabled" value="true" />
+							<attribute name="Name" value="Model" />
+							<attribute name="Tags" />
+							<attribute name="Position" value="9 0 0" />
+							<attribute name="Rotation" value="1 0 0 0" />
+							<attribute name="Scale" value="0.003 0.003 0.003" />
+							<attribute name="Variables" />
+							<component type="StaticModel" id="61">
+								<attribute name="Model" value="Model;Models/Wall.mdl" />
+								<attribute name="Material" value="Material;Materials/Wall.xml" />
+							</component>
+						</node>
+						<node id="63">
+							<attribute name="Is Enabled" value="true" />
+							<attribute name="Name" value="Model" />
+							<attribute name="Tags" />
+							<attribute name="Position" value="12 0 0" />
+							<attribute name="Rotation" value="1 0 0 0" />
+							<attribute name="Scale" value="0.003 0.003 0.003" />
+							<attribute name="Variables" />
+							<component type="StaticModel" id="62">
+								<attribute name="Model" value="Model;Models/Wall.mdl" />
+								<attribute name="Material" value="Material;Materials/Wall.xml" />
+							</component>
+						</node>
+						<node id="64">
+							<attribute name="Is Enabled" value="true" />
+							<attribute name="Name" value="Model" />
+							<attribute name="Tags" />
+							<attribute name="Position" value="15 0 0" />
+							<attribute name="Rotation" value="1 0 0 0" />
+							<attribute name="Scale" value="0.003 0.003 0.003" />
+							<attribute name="Variables" />
+							<component type="StaticModel" id="63">
+								<attribute name="Model" value="Model;Models/Wall.mdl" />
+								<attribute name="Material" value="Material;Materials/Wall.xml" />
+							</component>
+						</node>
+					</node>
+					<node id="16777234">
+						<attribute name="Is Enabled" value="true" />
+						<attribute name="Name" value="Set" />
+						<attribute name="Tags" />
+						<attribute name="Position" value="18 0 0" />
+						<attribute name="Rotation" value="1 0 0 0" />
+						<attribute name="Scale" value="1 1 1" />
+						<attribute name="Variables" />
+						<node id="65">
+							<attribute name="Is Enabled" value="true" />
+							<attribute name="Name" value="Model" />
+							<attribute name="Tags" />
+							<attribute name="Position" value="3 0 0" />
+							<attribute name="Rotation" value="1 0 0 0" />
+							<attribute name="Scale" value="0.003 0.003 0.003" />
+							<attribute name="Variables" />
+							<component type="StaticModel" id="64">
+								<attribute name="Model" value="Model;Models/Wall.mdl" />
+								<attribute name="Material" value="Material;Materials/Wall.xml" />
+							</component>
+						</node>
+						<node id="66">
+							<attribute name="Is Enabled" value="true" />
+							<attribute name="Name" value="Model" />
+							<attribute name="Tags" />
+							<attribute name="Position" value="0 0 0" />
+							<attribute name="Rotation" value="1 0 0 0" />
+							<attribute name="Scale" value="0.003 0.003 0.003" />
+							<attribute name="Variables" />
+							<component type="StaticModel" id="65">
+								<attribute name="Model" value="Model;Models/Wall.mdl" />
+								<attribute name="Material" value="Material;Materials/Wall.xml" />
+							</component>
+						</node>
+						<node id="67">
+							<attribute name="Is Enabled" value="true" />
+							<attribute name="Name" value="Model" />
+							<attribute name="Tags" />
+							<attribute name="Position" value="6 0 0" />
+							<attribute name="Rotation" value="1 0 0 0" />
+							<attribute name="Scale" value="0.003 0.003 0.003" />
+							<attribute name="Variables" />
+							<component type="StaticModel" id="66">
+								<attribute name="Model" value="Model;Models/Wall.mdl" />
+								<attribute name="Material" value="Material;Materials/Wall.xml" />
+							</component>
+						</node>
+						<node id="68">
+							<attribute name="Is Enabled" value="true" />
+							<attribute name="Name" value="Model" />
+							<attribute name="Tags" />
+							<attribute name="Position" value="9 0 0" />
+							<attribute name="Rotation" value="1 0 0 0" />
+							<attribute name="Scale" value="0.003 0.003 0.003" />
+							<attribute name="Variables" />
+							<component type="StaticModel" id="67">
+								<attribute name="Model" value="Model;Models/Wall.mdl" />
+								<attribute name="Material" value="Material;Materials/Wall.xml" />
+							</component>
+						</node>
+						<node id="69">
+							<attribute name="Is Enabled" value="true" />
+							<attribute name="Name" value="Model" />
+							<attribute name="Tags" />
+							<attribute name="Position" value="12 0 0" />
+							<attribute name="Rotation" value="1 0 0 0" />
+							<attribute name="Scale" value="0.003 0.003 0.003" />
+							<attribute name="Variables" />
+							<component type="StaticModel" id="68">
+								<attribute name="Model" value="Model;Models/Wall.mdl" />
+								<attribute name="Material" value="Material;Materials/Wall.xml" />
+							</component>
+						</node>
+						<node id="70">
+							<attribute name="Is Enabled" value="true" />
+							<attribute name="Name" value="Model" />
+							<attribute name="Tags" />
+							<attribute name="Position" value="15 0 0" />
+							<attribute name="Rotation" value="1 0 0 0" />
+							<attribute name="Scale" value="0.003 0.003 0.003" />
+							<attribute name="Variables" />
+							<component type="StaticModel" id="69">
+								<attribute name="Model" value="Model;Models/Wall.mdl" />
+								<attribute name="Material" value="Material;Materials/Wall.xml" />
+							</component>
+						</node>
+					</node>
+					<node id="16777235">
+						<attribute name="Is Enabled" value="true" />
+						<attribute name="Name" value="Set" />
+						<attribute name="Tags" />
+						<attribute name="Position" value="18 -1.2 0" />
+						<attribute name="Rotation" value="1 0 0 0" />
+						<attribute name="Scale" value="1 1 1" />
+						<attribute name="Variables" />
+						<node id="71">
+							<attribute name="Is Enabled" value="true" />
+							<attribute name="Name" value="Model" />
+							<attribute name="Tags" />
+							<attribute name="Position" value="3 0 0" />
+							<attribute name="Rotation" value="1 0 0 0" />
+							<attribute name="Scale" value="0.003 0.003 0.003" />
+							<attribute name="Variables" />
+							<component type="StaticModel" id="70">
+								<attribute name="Model" value="Model;Models/Wall.mdl" />
+								<attribute name="Material" value="Material;Materials/Wall.xml" />
+							</component>
+						</node>
+						<node id="72">
+							<attribute name="Is Enabled" value="true" />
+							<attribute name="Name" value="Model" />
+							<attribute name="Tags" />
+							<attribute name="Position" value="0 0 0" />
+							<attribute name="Rotation" value="1 0 0 0" />
+							<attribute name="Scale" value="0.003 0.003 0.003" />
+							<attribute name="Variables" />
+							<component type="StaticModel" id="71">
+								<attribute name="Model" value="Model;Models/Wall.mdl" />
+								<attribute name="Material" value="Material;Materials/Wall.xml" />
+							</component>
+						</node>
+						<node id="73">
+							<attribute name="Is Enabled" value="true" />
+							<attribute name="Name" value="Model" />
+							<attribute name="Tags" />
+							<attribute name="Position" value="6 0 0" />
+							<attribute name="Rotation" value="1 0 0 0" />
+							<attribute name="Scale" value="0.003 0.003 0.003" />
+							<attribute name="Variables" />
+							<component type="StaticModel" id="72">
+								<attribute name="Model" value="Model;Models/Wall.mdl" />
+								<attribute name="Material" value="Material;Materials/Wall.xml" />
+							</component>
+						</node>
+						<node id="74">
+							<attribute name="Is Enabled" value="true" />
+							<attribute name="Name" value="Model" />
+							<attribute name="Tags" />
+							<attribute name="Position" value="9 0 0" />
+							<attribute name="Rotation" value="1 0 0 0" />
+							<attribute name="Scale" value="0.003 0.003 0.003" />
+							<attribute name="Variables" />
+							<component type="StaticModel" id="73">
+								<attribute name="Model" value="Model;Models/Wall.mdl" />
+								<attribute name="Material" value="Material;Materials/Wall.xml" />
+							</component>
+						</node>
+						<node id="75">
+							<attribute name="Is Enabled" value="true" />
+							<attribute name="Name" value="Model" />
+							<attribute name="Tags" />
+							<attribute name="Position" value="12 0 0" />
+							<attribute name="Rotation" value="1 0 0 0" />
+							<attribute name="Scale" value="0.003 0.003 0.003" />
+							<attribute name="Variables" />
+							<component type="StaticModel" id="74">
+								<attribute name="Model" value="Model;Models/Wall.mdl" />
+								<attribute name="Material" value="Material;Materials/Wall.xml" />
+							</component>
+						</node>
+						<node id="76">
+							<attribute name="Is Enabled" value="true" />
+							<attribute name="Name" value="Model" />
+							<attribute name="Tags" />
+							<attribute name="Position" value="15 0 0" />
+							<attribute name="Rotation" value="1 0 0 0" />
+							<attribute name="Scale" value="0.003 0.003 0.003" />
+							<attribute name="Variables" />
+							<component type="StaticModel" id="75">
+								<attribute name="Model" value="Model;Models/Wall.mdl" />
+								<attribute name="Material" value="Material;Materials/Wall.xml" />
+							</component>
+						</node>
+					</node>
+					<node id="16777236">
+						<attribute name="Is Enabled" value="true" />
+						<attribute name="Name" value="Set" />
+						<attribute name="Tags" />
+						<attribute name="Position" value="0 -1.2 0" />
+						<attribute name="Rotation" value="1 0 0 0" />
+						<attribute name="Scale" value="1 1 1" />
+						<attribute name="Variables" />
+						<node id="77">
+							<attribute name="Is Enabled" value="true" />
+							<attribute name="Name" value="Model" />
+							<attribute name="Tags" />
+							<attribute name="Position" value="3 0 0" />
+							<attribute name="Rotation" value="1 0 0 0" />
+							<attribute name="Scale" value="0.003 0.003 0.003" />
+							<attribute name="Variables" />
+							<component type="StaticModel" id="76">
+								<attribute name="Model" value="Model;Models/Wall.mdl" />
+								<attribute name="Material" value="Material;Materials/Wall.xml" />
+							</component>
+						</node>
+						<node id="78">
+							<attribute name="Is Enabled" value="true" />
+							<attribute name="Name" value="Model" />
+							<attribute name="Tags" />
+							<attribute name="Position" value="0 0 0" />
+							<attribute name="Rotation" value="1 0 0 0" />
+							<attribute name="Scale" value="0.003 0.003 0.003" />
+							<attribute name="Variables" />
+							<component type="StaticModel" id="77">
+								<attribute name="Model" value="Model;Models/Wall.mdl" />
+								<attribute name="Material" value="Material;Materials/Wall.xml" />
+							</component>
+						</node>
+						<node id="79">
+							<attribute name="Is Enabled" value="true" />
+							<attribute name="Name" value="Model" />
+							<attribute name="Tags" />
+							<attribute name="Position" value="6 0 0" />
+							<attribute name="Rotation" value="1 0 0 0" />
+							<attribute name="Scale" value="0.003 0.003 0.003" />
+							<attribute name="Variables" />
+							<component type="StaticModel" id="78">
+								<attribute name="Model" value="Model;Models/Wall.mdl" />
+								<attribute name="Material" value="Material;Materials/Wall.xml" />
+							</component>
+						</node>
+						<node id="80">
+							<attribute name="Is Enabled" value="true" />
+							<attribute name="Name" value="Model" />
+							<attribute name="Tags" />
+							<attribute name="Position" value="9 0 0" />
+							<attribute name="Rotation" value="1 0 0 0" />
+							<attribute name="Scale" value="0.003 0.003 0.003" />
+							<attribute name="Variables" />
+							<component type="StaticModel" id="79">
+								<attribute name="Model" value="Model;Models/Wall.mdl" />
+								<attribute name="Material" value="Material;Materials/Wall.xml" />
+							</component>
+						</node>
+						<node id="81">
+							<attribute name="Is Enabled" value="true" />
+							<attribute name="Name" value="Model" />
+							<attribute name="Tags" />
+							<attribute name="Position" value="12 0 0" />
+							<attribute name="Rotation" value="1 0 0 0" />
+							<attribute name="Scale" value="0.003 0.003 0.003" />
+							<attribute name="Variables" />
+							<component type="StaticModel" id="80">
+								<attribute name="Model" value="Model;Models/Wall.mdl" />
+								<attribute name="Material" value="Material;Materials/Wall.xml" />
+							</component>
+						</node>
+						<node id="82">
+							<attribute name="Is Enabled" value="true" />
+							<attribute name="Name" value="Model" />
+							<attribute name="Tags" />
+							<attribute name="Position" value="15 0 0" />
+							<attribute name="Rotation" value="1 0 0 0" />
+							<attribute name="Scale" value="0.003 0.003 0.003" />
+							<attribute name="Variables" />
+							<component type="StaticModel" id="81">
+								<attribute name="Model" value="Model;Models/Wall.mdl" />
+								<attribute name="Material" value="Material;Materials/Wall.xml" />
+							</component>
+						</node>
+					</node>
+				</node>
+				<node id="16777237">
+					<attribute name="Is Enabled" value="true" />
+					<attribute name="Name" value="Wall" />
+					<attribute name="Tags" />
+					<attribute name="Position" value="0 0 36" />
+					<attribute name="Rotation" value="1 0 0 0" />
+					<attribute name="Scale" value="1 1 1" />
+					<attribute name="Variables" />
+					<component type="RigidBody" id="16777281">
+						<attribute name="Physics Position" value="0 0 36" />
+						<attribute name="Collision Mask" value="253" />
+						<attribute name="Use Gravity" value="false" />
+						<attribute name="Is Kinematic" value="true" />
+					</component>
+					<component type="CollisionShape" id="16777284">
+						<attribute name="Size" value="36 2.4 0.25" />
+						<attribute name="Offset Position" value="18 0 0" />
+					</component>
+					<node id="16777238">
+						<attribute name="Is Enabled" value="true" />
+						<attribute name="Name" value="Set" />
+						<attribute name="Tags" />
+						<attribute name="Position" value="0 0 0" />
+						<attribute name="Rotation" value="1 0 0 0" />
+						<attribute name="Scale" value="1 1 1" />
+						<attribute name="Variables" />
+						<node id="83">
+							<attribute name="Is Enabled" value="true" />
+							<attribute name="Name" value="Model" />
+							<attribute name="Tags" />
+							<attribute name="Position" value="3 0 0" />
+							<attribute name="Rotation" value="1 0 0 0" />
+							<attribute name="Scale" value="0.003 0.003 0.003" />
+							<attribute name="Variables" />
+							<component type="StaticModel" id="82">
+								<attribute name="Model" value="Model;Models/Wall.mdl" />
+								<attribute name="Material" value="Material;Materials/Wall.xml" />
+							</component>
+						</node>
+						<node id="84">
+							<attribute name="Is Enabled" value="true" />
+							<attribute name="Name" value="Model" />
+							<attribute name="Tags" />
+							<attribute name="Position" value="0 0 0" />
+							<attribute name="Rotation" value="1 0 0 0" />
+							<attribute name="Scale" value="0.003 0.003 0.003" />
+							<attribute name="Variables" />
+							<component type="StaticModel" id="83">
+								<attribute name="Model" value="Model;Models/Wall.mdl" />
+								<attribute name="Material" value="Material;Materials/Wall.xml" />
+							</component>
+						</node>
+						<node id="85">
+							<attribute name="Is Enabled" value="true" />
+							<attribute name="Name" value="Model" />
+							<attribute name="Tags" />
+							<attribute name="Position" value="6 0 0" />
+							<attribute name="Rotation" value="1 0 0 0" />
+							<attribute name="Scale" value="0.003 0.003 0.003" />
+							<attribute name="Variables" />
+							<component type="StaticModel" id="84">
+								<attribute name="Model" value="Model;Models/Wall.mdl" />
+								<attribute name="Material" value="Material;Materials/Wall.xml" />
+							</component>
+						</node>
+						<node id="86">
+							<attribute name="Is Enabled" value="true" />
+							<attribute name="Name" value="Model" />
+							<attribute name="Tags" />
+							<attribute name="Position" value="9 0 0" />
+							<attribute name="Rotation" value="1 0 0 0" />
+							<attribute name="Scale" value="0.003 0.003 0.003" />
+							<attribute name="Variables" />
+							<component type="StaticModel" id="85">
+								<attribute name="Model" value="Model;Models/Wall.mdl" />
+								<attribute name="Material" value="Material;Materials/Wall.xml" />
+							</component>
+						</node>
+						<node id="87">
+							<attribute name="Is Enabled" value="true" />
+							<attribute name="Name" value="Model" />
+							<attribute name="Tags" />
+							<attribute name="Position" value="12 0 0" />
+							<attribute name="Rotation" value="1 0 0 0" />
+							<attribute name="Scale" value="0.003 0.003 0.003" />
+							<attribute name="Variables" />
+							<component type="StaticModel" id="86">
+								<attribute name="Model" value="Model;Models/Wall.mdl" />
+								<attribute name="Material" value="Material;Materials/Wall.xml" />
+							</component>
+						</node>
+						<node id="88">
+							<attribute name="Is Enabled" value="true" />
+							<attribute name="Name" value="Model" />
+							<attribute name="Tags" />
+							<attribute name="Position" value="15 0 0" />
+							<attribute name="Rotation" value="1 0 0 0" />
+							<attribute name="Scale" value="0.003 0.003 0.003" />
+							<attribute name="Variables" />
+							<component type="StaticModel" id="87">
+								<attribute name="Model" value="Model;Models/Wall.mdl" />
+								<attribute name="Material" value="Material;Materials/Wall.xml" />
+							</component>
+						</node>
+					</node>
+					<node id="16777239">
+						<attribute name="Is Enabled" value="true" />
+						<attribute name="Name" value="Set" />
+						<attribute name="Tags" />
+						<attribute name="Position" value="18 0 0" />
+						<attribute name="Rotation" value="1 0 0 0" />
+						<attribute name="Scale" value="1 1 1" />
+						<attribute name="Variables" />
+						<node id="89">
+							<attribute name="Is Enabled" value="true" />
+							<attribute name="Name" value="Model" />
+							<attribute name="Tags" />
+							<attribute name="Position" value="3 0 0" />
+							<attribute name="Rotation" value="1 0 0 0" />
+							<attribute name="Scale" value="0.003 0.003 0.003" />
+							<attribute name="Variables" />
+							<component type="StaticModel" id="88">
+								<attribute name="Model" value="Model;Models/Wall.mdl" />
+								<attribute name="Material" value="Material;Materials/Wall.xml" />
+							</component>
+						</node>
+						<node id="90">
+							<attribute name="Is Enabled" value="true" />
+							<attribute name="Name" value="Model" />
+							<attribute name="Tags" />
+							<attribute name="Position" value="0 0 0" />
+							<attribute name="Rotation" value="1 0 0 0" />
+							<attribute name="Scale" value="0.003 0.003 0.003" />
+							<attribute name="Variables" />
+							<component type="StaticModel" id="89">
+								<attribute name="Model" value="Model;Models/Wall.mdl" />
+								<attribute name="Material" value="Material;Materials/Wall.xml" />
+							</component>
+						</node>
+						<node id="91">
+							<attribute name="Is Enabled" value="true" />
+							<attribute name="Name" value="Model" />
+							<attribute name="Tags" />
+							<attribute name="Position" value="6 0 0" />
+							<attribute name="Rotation" value="1 0 0 0" />
+							<attribute name="Scale" value="0.003 0.003 0.003" />
+							<attribute name="Variables" />
+							<component type="StaticModel" id="90">
+								<attribute name="Model" value="Model;Models/Wall.mdl" />
+								<attribute name="Material" value="Material;Materials/Wall.xml" />
+							</component>
+						</node>
+						<node id="92">
+							<attribute name="Is Enabled" value="true" />
+							<attribute name="Name" value="Model" />
+							<attribute name="Tags" />
+							<attribute name="Position" value="9 0 0" />
+							<attribute name="Rotation" value="1 0 0 0" />
+							<attribute name="Scale" value="0.003 0.003 0.003" />
+							<attribute name="Variables" />
+							<component type="StaticModel" id="91">
+								<attribute name="Model" value="Model;Models/Wall.mdl" />
+								<attribute name="Material" value="Material;Materials/Wall.xml" />
+							</component>
+						</node>
+						<node id="93">
+							<attribute name="Is Enabled" value="true" />
+							<attribute name="Name" value="Model" />
+							<attribute name="Tags" />
+							<attribute name="Position" value="12 0 0" />
+							<attribute name="Rotation" value="1 0 0 0" />
+							<attribute name="Scale" value="0.003 0.003 0.003" />
+							<attribute name="Variables" />
+							<component type="StaticModel" id="92">
+								<attribute name="Model" value="Model;Models/Wall.mdl" />
+								<attribute name="Material" value="Material;Materials/Wall.xml" />
+							</component>
+						</node>
+						<node id="94">
+							<attribute name="Is Enabled" value="true" />
+							<attribute name="Name" value="Model" />
+							<attribute name="Tags" />
+							<attribute name="Position" value="15 0 0" />
+							<attribute name="Rotation" value="1 0 0 0" />
+							<attribute name="Scale" value="0.003 0.003 0.003" />
+							<attribute name="Variables" />
+							<component type="StaticModel" id="93">
+								<attribute name="Model" value="Model;Models/Wall.mdl" />
+								<attribute name="Material" value="Material;Materials/Wall.xml" />
+							</component>
+						</node>
+					</node>
+					<node id="16777240">
+						<attribute name="Is Enabled" value="true" />
+						<attribute name="Name" value="Set" />
+						<attribute name="Tags" />
+						<attribute name="Position" value="18 -1.2 0" />
+						<attribute name="Rotation" value="1 0 0 0" />
+						<attribute name="Scale" value="1 1 1" />
+						<attribute name="Variables" />
+						<node id="95">
+							<attribute name="Is Enabled" value="true" />
+							<attribute name="Name" value="Model" />
+							<attribute name="Tags" />
+							<attribute name="Position" value="3 0 0" />
+							<attribute name="Rotation" value="1 0 0 0" />
+							<attribute name="Scale" value="0.003 0.003 0.003" />
+							<attribute name="Variables" />
+							<component type="StaticModel" id="94">
+								<attribute name="Model" value="Model;Models/Wall.mdl" />
+								<attribute name="Material" value="Material;Materials/Wall.xml" />
+							</component>
+						</node>
+						<node id="96">
+							<attribute name="Is Enabled" value="true" />
+							<attribute name="Name" value="Model" />
+							<attribute name="Tags" />
+							<attribute name="Position" value="0 0 0" />
+							<attribute name="Rotation" value="1 0 0 0" />
+							<attribute name="Scale" value="0.003 0.003 0.003" />
+							<attribute name="Variables" />
+							<component type="StaticModel" id="95">
+								<attribute name="Model" value="Model;Models/Wall.mdl" />
+								<attribute name="Material" value="Material;Materials/Wall.xml" />
+							</component>
+						</node>
+						<node id="97">
+							<attribute name="Is Enabled" value="true" />
+							<attribute name="Name" value="Model" />
+							<attribute name="Tags" />
+							<attribute name="Position" value="6 0 0" />
+							<attribute name="Rotation" value="1 0 0 0" />
+							<attribute name="Scale" value="0.003 0.003 0.003" />
+							<attribute name="Variables" />
+							<component type="StaticModel" id="96">
+								<attribute name="Model" value="Model;Models/Wall.mdl" />
+								<attribute name="Material" value="Material;Materials/Wall.xml" />
+							</component>
+						</node>
+						<node id="98">
+							<attribute name="Is Enabled" value="true" />
+							<attribute name="Name" value="Model" />
+							<attribute name="Tags" />
+							<attribute name="Position" value="9 0 0" />
+							<attribute name="Rotation" value="1 0 0 0" />
+							<attribute name="Scale" value="0.003 0.003 0.003" />
+							<attribute name="Variables" />
+							<component type="StaticModel" id="97">
+								<attribute name="Model" value="Model;Models/Wall.mdl" />
+								<attribute name="Material" value="Material;Materials/Wall.xml" />
+							</component>
+						</node>
+						<node id="99">
+							<attribute name="Is Enabled" value="true" />
+							<attribute name="Name" value="Model" />
+							<attribute name="Tags" />
+							<attribute name="Position" value="12 0 0" />
+							<attribute name="Rotation" value="1 0 0 0" />
+							<attribute name="Scale" value="0.003 0.003 0.003" />
+							<attribute name="Variables" />
+							<component type="StaticModel" id="98">
+								<attribute name="Model" value="Model;Models/Wall.mdl" />
+								<attribute name="Material" value="Material;Materials/Wall.xml" />
+							</component>
+						</node>
+						<node id="100">
+							<attribute name="Is Enabled" value="true" />
+							<attribute name="Name" value="Model" />
+							<attribute name="Tags" />
+							<attribute name="Position" value="15 0 0" />
+							<attribute name="Rotation" value="1 0 0 0" />
+							<attribute name="Scale" value="0.003 0.003 0.003" />
+							<attribute name="Variables" />
+							<component type="StaticModel" id="99">
+								<attribute name="Model" value="Model;Models/Wall.mdl" />
+								<attribute name="Material" value="Material;Materials/Wall.xml" />
+							</component>
+						</node>
+					</node>
+					<node id="16777241">
+						<attribute name="Is Enabled" value="true" />
+						<attribute name="Name" value="Set" />
+						<attribute name="Tags" />
+						<attribute name="Position" value="0 -1.2 0" />
+						<attribute name="Rotation" value="1 0 0 0" />
+						<attribute name="Scale" value="1 1 1" />
+						<attribute name="Variables" />
+						<node id="101">
+							<attribute name="Is Enabled" value="true" />
+							<attribute name="Name" value="Model" />
+							<attribute name="Tags" />
+							<attribute name="Position" value="3 0 0" />
+							<attribute name="Rotation" value="1 0 0 0" />
+							<attribute name="Scale" value="0.003 0.003 0.003" />
+							<attribute name="Variables" />
+							<component type="StaticModel" id="100">
+								<attribute name="Model" value="Model;Models/Wall.mdl" />
+								<attribute name="Material" value="Material;Materials/Wall.xml" />
+							</component>
+						</node>
+						<node id="102">
+							<attribute name="Is Enabled" value="true" />
+							<attribute name="Name" value="Model" />
+							<attribute name="Tags" />
+							<attribute name="Position" value="0 0 0" />
+							<attribute name="Rotation" value="1 0 0 0" />
+							<attribute name="Scale" value="0.003 0.003 0.003" />
+							<attribute name="Variables" />
+							<component type="StaticModel" id="101">
+								<attribute name="Model" value="Model;Models/Wall.mdl" />
+								<attribute name="Material" value="Material;Materials/Wall.xml" />
+							</component>
+						</node>
+						<node id="103">
+							<attribute name="Is Enabled" value="true" />
+							<attribute name="Name" value="Model" />
+							<attribute name="Tags" />
+							<attribute name="Position" value="6 0 0" />
+							<attribute name="Rotation" value="1 0 0 0" />
+							<attribute name="Scale" value="0.003 0.003 0.003" />
+							<attribute name="Variables" />
+							<component type="StaticModel" id="102">
+								<attribute name="Model" value="Model;Models/Wall.mdl" />
+								<attribute name="Material" value="Material;Materials/Wall.xml" />
+							</component>
+						</node>
+						<node id="104">
+							<attribute name="Is Enabled" value="true" />
+							<attribute name="Name" value="Model" />
+							<attribute name="Tags" />
+							<attribute name="Position" value="9 0 0" />
+							<attribute name="Rotation" value="1 0 0 0" />
+							<attribute name="Scale" value="0.003 0.003 0.003" />
+							<attribute name="Variables" />
+							<component type="StaticModel" id="103">
+								<attribute name="Model" value="Model;Models/Wall.mdl" />
+								<attribute name="Material" value="Material;Materials/Wall.xml" />
+							</component>
+						</node>
+						<node id="105">
+							<attribute name="Is Enabled" value="true" />
+							<attribute name="Name" value="Model" />
+							<attribute name="Tags" />
+							<attribute name="Position" value="12 0 0" />
+							<attribute name="Rotation" value="1 0 0 0" />
+							<attribute name="Scale" value="0.003 0.003 0.003" />
+							<attribute name="Variables" />
+							<component type="StaticModel" id="104">
+								<attribute name="Model" value="Model;Models/Wall.mdl" />
+								<attribute name="Material" value="Material;Materials/Wall.xml" />
+							</component>
+						</node>
+						<node id="106">
+							<attribute name="Is Enabled" value="true" />
+							<attribute name="Name" value="Model" />
+							<attribute name="Tags" />
+							<attribute name="Position" value="15 0 0" />
+							<attribute name="Rotation" value="1 0 0 0" />
+							<attribute name="Scale" value="0.003 0.003 0.003" />
+							<attribute name="Variables" />
+							<component type="StaticModel" id="105">
+								<attribute name="Model" value="Model;Models/Wall.mdl" />
+								<attribute name="Material" value="Material;Materials/Wall.xml" />
+							</component>
+						</node>
+					</node>
+				</node>
+			</node>
+			<node id="16777242">
+				<attribute name="Is Enabled" value="true" />
+				<attribute name="Name" value="Rooms" />
+				<attribute name="Tags" />
+				<attribute name="Position" value="0 0 0" />
+				<attribute name="Rotation" value="1 0 0 0" />
+				<attribute name="Scale" value="1 1 1" />
+				<attribute name="Variables" />
+				<node id="16777243">
+					<attribute name="Is Enabled" value="true" />
+					<attribute name="Name" value="SpawnRoom" />
+					<attribute name="Tags" />
+					<attribute name="Position" value="36 0.01 0" />
+					<attribute name="Rotation" value="1 0 0 0" />
+					<attribute name="Scale" value="1 1 1" />
+					<attribute name="Variables" />
+					<component type="RigidBody" id="16777241">
+						<attribute name="Physics Position" value="36 0.00999999 0" />
+						<attribute name="Collision Layer" value="4" />
+						<attribute name="Collision Mask" value="4" />
+						<attribute name="Is Kinematic" value="true" />
+					</component>
+					<component type="CollisionShape" id="16777242">
+						<attribute name="Size" value="3 1.2 3" />
+						<attribute name="Offset Position" value="1.5 0.6 1.5" />
+					</component>
+					<node id="16777244">
+						<attribute name="Is Enabled" value="true" />
+						<attribute name="Name" value="Walls" />
+						<attribute name="Tags" />
+						<attribute name="Position" value="0 0 0" />
+						<attribute name="Rotation" value="1 0 0 0" />
+						<attribute name="Scale" value="1 1 1" />
+						<attribute name="Variables" />
+						<node id="16777245">
+							<attribute name="Is Enabled" value="true" />
+							<attribute name="Name" value="Wall" />
+							<attribute name="Tags" />
+							<attribute name="Position" value="0 0 0" />
+							<attribute name="Rotation" value="1 0 0 0" />
+							<attribute name="Scale" value="1 1 1" />
+							<attribute name="Variables" />
+							<component type="RigidBody" id="16777233">
+								<attribute name="Physics Position" value="36 0.00999999 0" />
+								<attribute name="Collision Mask" value="249" />
+								<attribute name="Use Gravity" value="false" />
+								<attribute name="Is Kinematic" value="true" />
+							</component>
+							<component type="CollisionShape" id="16777234">
+								<attribute name="Size" value="3 1.2 0.25" />
+								<attribute name="Offset Position" value="1.5 0.6 0" />
+							</component>
+							<node id="16777246">
+								<attribute name="Is Enabled" value="true" />
+								<attribute name="Name" value="Model" />
+								<attribute name="Tags" />
+								<attribute name="Position" value="0 0 0" />
+								<attribute name="Rotation" value="1 0 0 0" />
+								<attribute name="Scale" value="0.003 0.003 0.003" />
+								<attribute name="Variables" />
+								<component type="StaticModel" id="16777228">
+									<attribute name="Model" value="Model;Models/Wall.mdl" />
+									<attribute name="Material" value="Material;Materials/Wall.xml" />
+								</component>
+							</node>
+						</node>
+						<node id="16777247">
+							<attribute name="Is Enabled" value="true" />
+							<attribute name="Name" value="Wall" />
+							<attribute name="Tags" />
+							<attribute name="Position" value="3 0 0" />
+							<attribute name="Rotation" value="0.707107 0 -0.707107 0" />
+							<attribute name="Scale" value="1 1 1" />
+							<attribute name="Variables" />
+							<component type="RigidBody" id="16777235">
+								<attribute name="Physics Rotation" value="0.707107 0 -0.707107 0" />
+								<attribute name="Physics Position" value="39 0.00999999 0" />
+								<attribute name="Collision Mask" value="249" />
+								<attribute name="Use Gravity" value="false" />
+								<attribute name="Is Kinematic" value="true" />
+							</component>
+							<component type="CollisionShape" id="16777237">
+								<attribute name="Size" value="3 1.2 0.25" />
+								<attribute name="Offset Position" value="1.5 0.6 0" />
+							</component>
+							<node id="16777248">
+								<attribute name="Is Enabled" value="true" />
+								<attribute name="Name" value="Model" />
+								<attribute name="Tags" />
+								<attribute name="Position" value="0 0 0" />
+								<attribute name="Rotation" value="1 0 0 0" />
+								<attribute name="Scale" value="0.003 0.003 0.003" />
+								<attribute name="Variables" />
+								<component type="StaticModel" id="16777229">
+									<attribute name="Model" value="Model;Models/Wall.mdl" />
+									<attribute name="Material" value="Material;Materials/Wall.xml" />
+								</component>
+							</node>
+						</node>
+						<node id="16777249">
+							<attribute name="Is Enabled" value="true" />
+							<attribute name="Name" value="Wall" />
+							<attribute name="Tags" />
+							<attribute name="Position" value="0 0 3" />
+							<attribute name="Rotation" value="1 0 0 0" />
+							<attribute name="Scale" value="1 1 1" />
+							<attribute name="Variables" />
+							<component type="RigidBody" id="16777236">
+								<attribute name="Physics Position" value="36 0.00999999 3" />
+								<attribute name="Collision Mask" value="249" />
+								<attribute name="Use Gravity" value="false" />
+								<attribute name="Is Kinematic" value="true" />
+							</component>
+							<component type="CollisionShape" id="16777238">
+								<attribute name="Size" value="3 1.2 0.25" />
+								<attribute name="Offset Position" value="1.5 0.6 0" />
+							</component>
+							<node id="16777250">
+								<attribute name="Is Enabled" value="true" />
+								<attribute name="Name" value="Model" />
+								<attribute name="Tags" />
+								<attribute name="Position" value="0 0 0" />
+								<attribute name="Rotation" value="1 0 0 0" />
+								<attribute name="Scale" value="0.003 0.003 0.003" />
+								<attribute name="Variables" />
+								<component type="StaticModel" id="16777230">
+									<attribute name="Model" value="Model;Models/Wall.mdl" />
+									<attribute name="Material" value="Material;Materials/Wall.xml" />
+								</component>
+							</node>
+						</node>
+						<node id="16777251">
+							<attribute name="Is Enabled" value="true" />
+							<attribute name="Name" value="WallPosts" />
+							<attribute name="Tags" />
+							<attribute name="Position" value="0 0 0" />
+							<attribute name="Rotation" value="0.707107 0 -0.707107 0" />
+							<attribute name="Scale" value="1 1 1" />
+							<attribute name="Variables" />
+							<component type="RigidBody" id="16777245">
+								<attribute name="Physics Rotation" value="0.707107 0 -0.707107 0" />
+								<attribute name="Physics Position" value="36 0.01 0" />
+								<attribute name="Collision Mask" value="249" />
+							</component>
+							<node id="16777252">
+								<attribute name="Is Enabled" value="true" />
+								<attribute name="Name" value="Model" />
+								<attribute name="Tags" />
+								<attribute name="Position" value="0 0 0" />
+								<attribute name="Rotation" value="1 0 0 0" />
+								<attribute name="Scale" value="0.003 0.003 0.003" />
+								<attribute name="Variables" />
+								<component type="StaticModel" id="16777231">
+									<attribute name="Model" value="Model;Models/WallPost.mdl" />
+									<attribute name="Material" value="Material;Materials/WallPost.xml" />
+								</component>
+							</node>
+							<node id="16777255">
+								<attribute name="Is Enabled" value="true" />
+								<attribute name="Name" value="LeftCollision" />
+								<attribute name="Tags" />
+								<attribute name="Position" value="0 0 0" />
+								<attribute name="Rotation" value="1 0 0 0" />
+								<attribute name="Scale" value="1 1 1" />
+								<attribute name="Variables" />
+								<component type="CollisionShape" id="16777243">
+									<attribute name="Size" value="1 1.2 0.25" />
+									<attribute name="Offset Position" value="0.5 0.6 0" />
+								</component>
+							</node>
+							<node id="16777256">
+								<attribute name="Is Enabled" value="true" />
+								<attribute name="Name" value="RightCollision" />
+								<attribute name="Tags" />
+								<attribute name="Position" value="2 0 0" />
+								<attribute name="Rotation" value="1 0 0 0" />
+								<attribute name="Scale" value="1 1 1" />
+								<attribute name="Variables" />
+								<component type="CollisionShape" id="16777244">
+									<attribute name="Size" value="1 1.2 0.25" />
+									<attribute name="Offset Position" value="0.5 0.6 0" />
+								</component>
+							</node>
+						</node>
+					</node>
+					<node id="16777253">
+						<attribute name="Is Enabled" value="true" />
+						<attribute name="Name" value="Floor" />
+						<attribute name="Tags" />
+						<attribute name="Position" value="0 0 0" />
+						<attribute name="Rotation" value="1 0 0 0" />
+						<attribute name="Scale" value="1 1 1" />
+						<attribute name="Variables" />
+						<component type="RigidBody" id="16777239">
+							<attribute name="Physics Position" value="36 0.00999999 0" />
+							<attribute name="Collision Mask" value="249" />
+							<attribute name="Use Gravity" value="false" />
+							<attribute name="Is Kinematic" value="true" />
+						</component>
+						<component type="CollisionShape" id="16777240">
+							<attribute name="Size" value="3 0.3 3" />
+							<attribute name="Offset Position" value="1.5 -0.15 1.5" />
+						</component>
+						<node id="16777254">
+							<attribute name="Is Enabled" value="true" />
+							<attribute name="Name" value="Model" />
+							<attribute name="Tags" />
+							<attribute name="Position" value="0 -0.3 0" />
+							<attribute name="Rotation" value="1 0 0 0" />
+							<attribute name="Scale" value="0.003 0.003 0.003" />
+							<attribute name="Variables" />
+							<component type="StaticModel" id="16777232">
+								<attribute name="Model" value="Model;Models/Floor.mdl" />
+								<attribute name="Material" value="Material;Materials/Floor.xml" />
+							</component>
+						</node>
+					</node>
+					<node id="16777257">
+						<attribute name="Is Enabled" value="true" />
+						<attribute name="Name" value="Detector" />
+						<attribute name="Tags" />
+						<attribute name="Position" value="0 0 0" />
+						<attribute name="Rotation" value="1 0 0 0" />
+						<attribute name="Scale" value="1 1 1" />
+						<attribute name="Variables" />
+						<component type="RigidBody" id="16777246">
+							<attribute name="Physics Position" value="36 0.00999999 0" />
+							<attribute name="Collision Layer" value="2" />
+							<attribute name="Collision Mask" value="2" />
+							<attribute name="Use Gravity" value="false" />
+							<attribute name="Is Kinematic" value="true" />
+						</component>
+						<component type="CollisionShape" id="16777247">
+							<attribute name="Size" value="3.1 1.2 3.1" />
+							<attribute name="Offset Position" value="1.55 0.6 1.55" />
+						</component>
+					</node>
+				</node>
+				<node id="16777258">
+					<attribute name="Is Enabled" value="true" />
+					<attribute name="Name" value="ExitRoom" />
+					<attribute name="Tags" />
+					<attribute name="Position" value="0 0.01 0" />
+					<attribute name="Rotation" value="1 0 0 0" />
+					<attribute name="Scale" value="1 1 1" />
+					<attribute name="Variables" />
+					<component type="RigidBody" id="16777248">
+						<attribute name="Physics Position" value="0 0.00999999 0" />
+						<attribute name="Collision Layer" value="4" />
+						<attribute name="Collision Mask" value="4" />
+						<attribute name="Is Kinematic" value="true" />
+					</component>
+					<component type="CollisionShape" id="16777249">
+						<attribute name="Size" value="3 1.2 3" />
+						<attribute name="Offset Position" value="-1.5 0.6 1.5" />
+					</component>
+					<node id="16777259">
+						<attribute name="Is Enabled" value="true" />
+						<attribute name="Name" value="Walls" />
+						<attribute name="Tags" />
+						<attribute name="Position" value="0 0 0" />
+						<attribute name="Rotation" value="1 0 0 0" />
+						<attribute name="Scale" value="1 1 1" />
+						<attribute name="Variables" />
+						<node id="16777260">
+							<attribute name="Is Enabled" value="true" />
+							<attribute name="Name" value="Wall" />
+							<attribute name="Tags" />
+							<attribute name="Position" value="-3 0 0" />
+							<attribute name="Rotation" value="1 0 0 0" />
+							<attribute name="Scale" value="1 1 1" />
+							<attribute name="Variables" />
+							<component type="RigidBody" id="16777250">
+								<attribute name="Physics Position" value="-3 0.00999999 0" />
+								<attribute name="Collision Mask" value="249" />
+								<attribute name="Use Gravity" value="false" />
+								<attribute name="Is Kinematic" value="true" />
+							</component>
+							<component type="CollisionShape" id="16777251">
+								<attribute name="Size" value="3 1.2 0.25" />
+								<attribute name="Offset Position" value="1.5 0.6 0" />
+							</component>
+							<node id="16777261">
+								<attribute name="Is Enabled" value="true" />
+								<attribute name="Name" value="Model" />
+								<attribute name="Tags" />
+								<attribute name="Position" value="0 0 0" />
+								<attribute name="Rotation" value="1 0 0 0" />
+								<attribute name="Scale" value="0.003 0.003 0.003" />
+								<attribute name="Variables" />
+								<component type="StaticModel" id="16777252">
+									<attribute name="Model" value="Model;Models/Wall.mdl" />
+									<attribute name="Material" value="Material;Materials/Wall.xml" />
+								</component>
+							</node>
+						</node>
+						<node id="16777262">
+							<attribute name="Is Enabled" value="true" />
+							<attribute name="Name" value="Wall" />
+							<attribute name="Tags" />
+							<attribute name="Position" value="-3 0 0" />
+							<attribute name="Rotation" value="0.707107 0 -0.707107 0" />
+							<attribute name="Scale" value="1 1 1" />
+							<attribute name="Variables" />
+							<component type="RigidBody" id="16777253">
+								<attribute name="Physics Rotation" value="0.707107 0 -0.707107 0" />
+								<attribute name="Physics Position" value="-3 0.00999999 0" />
+								<attribute name="Collision Mask" value="249" />
+								<attribute name="Use Gravity" value="false" />
+								<attribute name="Is Kinematic" value="true" />
+							</component>
+							<component type="CollisionShape" id="16777254">
+								<attribute name="Size" value="3 1.2 0.25" />
+								<attribute name="Offset Position" value="1.5 0.6 0" />
+							</component>
+							<node id="16777263">
+								<attribute name="Is Enabled" value="true" />
+								<attribute name="Name" value="Model" />
+								<attribute name="Tags" />
+								<attribute name="Position" value="0 0 0" />
+								<attribute name="Rotation" value="1 0 0 0" />
+								<attribute name="Scale" value="0.003 0.003 0.003" />
+								<attribute name="Variables" />
+								<component type="StaticModel" id="16777255">
+									<attribute name="Model" value="Model;Models/Wall.mdl" />
+									<attribute name="Material" value="Material;Materials/Wall.xml" />
+								</component>
+							</node>
+						</node>
+						<node id="16777264">
+							<attribute name="Is Enabled" value="true" />
+							<attribute name="Name" value="Wall" />
+							<attribute name="Tags" />
+							<attribute name="Position" value="-3 0 3" />
+							<attribute name="Rotation" value="1 0 0 0" />
+							<attribute name="Scale" value="1 1 1" />
+							<attribute name="Variables" />
+							<component type="RigidBody" id="16777256">
+								<attribute name="Physics Position" value="-3 0.00999999 3" />
+								<attribute name="Collision Mask" value="249" />
+								<attribute name="Use Gravity" value="false" />
+								<attribute name="Is Kinematic" value="true" />
+							</component>
+							<component type="CollisionShape" id="16777257">
+								<attribute name="Size" value="3 1.2 0.25" />
+								<attribute name="Offset Position" value="1.5 0.6 0" />
+							</component>
+							<node id="16777265">
+								<attribute name="Is Enabled" value="true" />
+								<attribute name="Name" value="Model" />
+								<attribute name="Tags" />
+								<attribute name="Position" value="0 0 0" />
+								<attribute name="Rotation" value="1 0 0 0" />
+								<attribute name="Scale" value="0.003 0.003 0.003" />
+								<attribute name="Variables" />
+								<component type="StaticModel" id="16777258">
+									<attribute name="Model" value="Model;Models/Wall.mdl" />
+									<attribute name="Material" value="Material;Materials/Wall.xml" />
+								</component>
+							</node>
+						</node>
+						<node id="16777266">
+							<attribute name="Is Enabled" value="true" />
+							<attribute name="Name" value="WallPosts" />
+							<attribute name="Tags" />
+							<attribute name="Position" value="0 0 0" />
+							<attribute name="Rotation" value="0.707107 0 -0.707107 0" />
+							<attribute name="Scale" value="1 1 1" />
+							<attribute name="Variables" />
+							<component type="RigidBody" id="16777259">
+								<attribute name="Physics Rotation" value="0.707107 0 -0.707107 0" />
+								<attribute name="Physics Position" value="0 0.01 0" />
+								<attribute name="Collision Mask" value="249" />
+							</component>
+							<node id="16777267">
+								<attribute name="Is Enabled" value="true" />
+								<attribute name="Name" value="Model" />
+								<attribute name="Tags" />
+								<attribute name="Position" value="0 0 0" />
+								<attribute name="Rotation" value="1 0 0 0" />
+								<attribute name="Scale" value="0.003 0.003 0.003" />
+								<attribute name="Variables" />
+								<component type="StaticModel" id="16777260">
+									<attribute name="Model" value="Model;Models/WallPost.mdl" />
+									<attribute name="Material" value="Material;Materials/WallPost.xml" />
+								</component>
+							</node>
+							<node id="16777268">
+								<attribute name="Is Enabled" value="true" />
+								<attribute name="Name" value="LeftCollision" />
+								<attribute name="Tags" />
+								<attribute name="Position" value="0 0 0" />
+								<attribute name="Rotation" value="1 0 0 0" />
+								<attribute name="Scale" value="1 1 1" />
+								<attribute name="Variables" />
+								<component type="CollisionShape" id="16777261">
+									<attribute name="Size" value="1 1.2 0.25" />
+									<attribute name="Offset Position" value="0.5 0.6 0" />
+								</component>
+							</node>
+							<node id="16777269">
+								<attribute name="Is Enabled" value="true" />
+								<attribute name="Name" value="RightCollision" />
+								<attribute name="Tags" />
+								<attribute name="Position" value="2 0 0" />
+								<attribute name="Rotation" value="1 0 0 0" />
+								<attribute name="Scale" value="1 1 1" />
+								<attribute name="Variables" />
+								<component type="CollisionShape" id="16777262">
+									<attribute name="Size" value="1 1.2 0.25" />
+									<attribute name="Offset Position" value="0.5 0.6 0" />
+								</component>
+							</node>
+						</node>
+					</node>
+					<node id="16777270">
+						<attribute name="Is Enabled" value="true" />
+						<attribute name="Name" value="Floor" />
+						<attribute name="Tags" />
+						<attribute name="Position" value="-3 0 0" />
+						<attribute name="Rotation" value="1 0 0 0" />
+						<attribute name="Scale" value="1 1 1" />
+						<attribute name="Variables" />
+						<component type="RigidBody" id="16777263">
+							<attribute name="Physics Position" value="-3 0.01 0" />
+							<attribute name="Collision Mask" value="249" />
+							<attribute name="Use Gravity" value="false" />
+							<attribute name="Is Kinematic" value="true" />
+						</component>
+						<component type="CollisionShape" id="16777264">
+							<attribute name="Size" value="3 0.3 3" />
+							<attribute name="Offset Position" value="1.5 -0.15 1.5" />
+						</component>
+						<node id="16777271">
+							<attribute name="Is Enabled" value="true" />
+							<attribute name="Name" value="Model" />
+							<attribute name="Tags" />
+							<attribute name="Position" value="0 -0.3 0" />
+							<attribute name="Rotation" value="1 0 0 0" />
+							<attribute name="Scale" value="0.003 0.003 0.003" />
+							<attribute name="Variables" />
+							<component type="StaticModel" id="16777265">
+								<attribute name="Model" value="Model;Models/Floor.mdl" />
+								<attribute name="Material" value="Material;Materials/Floor.xml" />
+							</component>
+						</node>
+					</node>
+					<node id="16777272">
+						<attribute name="Is Enabled" value="true" />
+						<attribute name="Name" value="Detector" />
+						<attribute name="Tags" />
+						<attribute name="Position" value="0 0 0" />
+						<attribute name="Rotation" value="1 0 0 0" />
+						<attribute name="Scale" value="1 1 1" />
+						<attribute name="Variables" />
+						<component type="RigidBody" id="16777266">
+							<attribute name="Physics Position" value="0 0.00999999 0" />
+							<attribute name="Collision Layer" value="2" />
+							<attribute name="Collision Mask" value="2" />
+							<attribute name="Use Gravity" value="false" />
+							<attribute name="Is Kinematic" value="true" />
+						</component>
+						<component type="CollisionShape" id="16777267">
+							<attribute name="Size" value="3.1 1.2 3.1" />
+							<attribute name="Offset Position" value="-1.55 0.6 1.55" />
+						</component>
+					</node>
+				</node>
+			</node>
+			<node id="16777275">
+				<attribute name="Is Enabled" value="true" />
+				<attribute name="Name" value="Board" />
+				<attribute name="Tags" />
+				<attribute name="Position" value="0 0 0" />
+				<attribute name="Rotation" value="1 0 0 0" />
+				<attribute name="Scale" value="1 1 1" />
+				<attribute name="Variables" />
+				<component type="RigidBody" id="16777285">
+					<attribute name="Friction" value="0" />
+					<attribute name="Collision Layer" value="4" />
+					<attribute name="Collision Mask" value="252" />
+					<attribute name="Use Gravity" value="false" />
+					<attribute name="Is Kinematic" value="true" />
+				</component>
+				<component type="CollisionShape" id="16777286">
+					<attribute name="Size" value="36 0.3 36" />
+					<attribute name="Offset Position" value="18 -0.45 18" />
+				</component>
+				<node id="16777278">
+					<attribute name="Is Enabled" value="true" />
+					<attribute name="Name" value="Lava" />
+					<attribute name="Tags" />
+					<attribute name="Position" value="0 -0.45 0" />
+					<attribute name="Rotation" value="1 0 0 0" />
+					<attribute name="Scale" value="1 1 1" />
+					<attribute name="Variables" />
+					<node id="16777282">
+						<attribute name="Is Enabled" value="true" />
+						<attribute name="Name" value="Set" />
+						<attribute name="Tags" />
+						<attribute name="Position" value="0 0 0" />
+						<attribute name="Rotation" value="1 0 0 0" />
+						<attribute name="Scale" value="1 1 1" />
+						<attribute name="Variables" />
+						<node id="16777280">
+							<attribute name="Is Enabled" value="true" />
+							<attribute name="Name" value="Model" />
+							<attribute name="Tags" />
+							<attribute name="Position" value="9 0 3" />
+							<attribute name="Rotation" value="1 0 0 0" />
+							<attribute name="Scale" value="0.03 0.03 0.03" />
+							<attribute name="Variables" />
+							<component type="StaticModel" id="16777290">
+								<attribute name="Model" value="Model;Models/Plane.mdl" />
+								<attribute name="Material" value="Material;Materials/Lava.xml" />
+							</component>
+						</node>
+						<node id="16777279">
+							<attribute name="Is Enabled" value="true" />
+							<attribute name="Name" value="Model" />
+							<attribute name="Tags" />
+							<attribute name="Position" value="3 0 3" />
+							<attribute name="Rotation" value="1 0 0 0" />
+							<attribute name="Scale" value="0.03 0.03 0.03" />
+							<attribute name="Variables" />
+							<component type="StaticModel" id="16777289">
+								<attribute name="Model" value="Model;Models/Plane.mdl" />
+								<attribute name="Material" value="Material;Materials/Lava.xml" />
+							</component>
+						</node>
+						<node id="16777281">
+							<attribute name="Is Enabled" value="true" />
+							<attribute name="Name" value="Model" />
+							<attribute name="Tags" />
+							<attribute name="Position" value="15 0 3" />
+							<attribute name="Rotation" value="1 0 0 0" />
+							<attribute name="Scale" value="0.03 0.03 0.03" />
+							<attribute name="Variables" />
+							<component type="StaticModel" id="16777291">
+								<attribute name="Model" value="Model;Models/Plane.mdl" />
+								<attribute name="Material" value="Material;Materials/Lava.xml" />
+							</component>
+						</node>
+					</node>
+					<node id="16777283">
+						<attribute name="Is Enabled" value="true" />
+						<attribute name="Name" value="Set" />
+						<attribute name="Tags" />
+						<attribute name="Position" value="18 0 0" />
+						<attribute name="Rotation" value="1 0 0 0" />
+						<attribute name="Scale" value="1 1 1" />
+						<attribute name="Variables" />
+						<node id="16777284">
+							<attribute name="Is Enabled" value="true" />
+							<attribute name="Name" value="Model" />
+							<attribute name="Tags" />
+							<attribute name="Position" value="9 0 3" />
+							<attribute name="Rotation" value="1 0 0 0" />
+							<attribute name="Scale" value="0.03 0.03 0.03" />
+							<attribute name="Variables" />
+							<component type="StaticModel" id="16777292">
+								<attribute name="Model" value="Model;Models/Plane.mdl" />
+								<attribute name="Material" value="Material;Materials/Lava.xml" />
+							</component>
+						</node>
+						<node id="16777285">
+							<attribute name="Is Enabled" value="true" />
+							<attribute name="Name" value="Model" />
+							<attribute name="Tags" />
+							<attribute name="Position" value="3 0 3" />
+							<attribute name="Rotation" value="1 0 0 0" />
+							<attribute name="Scale" value="0.03 0.03 0.03" />
+							<attribute name="Variables" />
+							<component type="StaticModel" id="16777293">
+								<attribute name="Model" value="Model;Models/Plane.mdl" />
+								<attribute name="Material" value="Material;Materials/Lava.xml" />
+							</component>
+						</node>
+						<node id="16777286">
+							<attribute name="Is Enabled" value="true" />
+							<attribute name="Name" value="Model" />
+							<attribute name="Tags" />
+							<attribute name="Position" value="15 0 3" />
+							<attribute name="Rotation" value="1 0 0 0" />
+							<attribute name="Scale" value="0.03 0.03 0.03" />
+							<attribute name="Variables" />
+							<component type="StaticModel" id="16777294">
+								<attribute name="Model" value="Model;Models/Plane.mdl" />
+								<attribute name="Material" value="Material;Materials/Lava.xml" />
+							</component>
+						</node>
+					</node>
+					<node id="16777287">
+						<attribute name="Is Enabled" value="true" />
+						<attribute name="Name" value="Set" />
+						<attribute name="Tags" />
+						<attribute name="Position" value="18 0 6" />
+						<attribute name="Rotation" value="1 0 0 0" />
+						<attribute name="Scale" value="1 1 1" />
+						<attribute name="Variables" />
+						<node id="16777288">
+							<attribute name="Is Enabled" value="true" />
+							<attribute name="Name" value="Model" />
+							<attribute name="Tags" />
+							<attribute name="Position" value="9 0 3" />
+							<attribute name="Rotation" value="1 0 0 0" />
+							<attribute name="Scale" value="0.03 0.03 0.03" />
+							<attribute name="Variables" />
+							<component type="StaticModel" id="16777295">
+								<attribute name="Model" value="Model;Models/Plane.mdl" />
+								<attribute name="Material" value="Material;Materials/Lava.xml" />
+							</component>
+						</node>
+						<node id="16777289">
+							<attribute name="Is Enabled" value="true" />
+							<attribute name="Name" value="Model" />
+							<attribute name="Tags" />
+							<attribute name="Position" value="3 0 3" />
+							<attribute name="Rotation" value="1 0 0 0" />
+							<attribute name="Scale" value="0.03 0.03 0.03" />
+							<attribute name="Variables" />
+							<component type="StaticModel" id="16777296">
+								<attribute name="Model" value="Model;Models/Plane.mdl" />
+								<attribute name="Material" value="Material;Materials/Lava.xml" />
+							</component>
+						</node>
+						<node id="16777290">
+							<attribute name="Is Enabled" value="true" />
+							<attribute name="Name" value="Model" />
+							<attribute name="Tags" />
+							<attribute name="Position" value="15 0 3" />
+							<attribute name="Rotation" value="1 0 0 0" />
+							<attribute name="Scale" value="0.03 0.03 0.03" />
+							<attribute name="Variables" />
+							<component type="StaticModel" id="16777297">
+								<attribute name="Model" value="Model;Models/Plane.mdl" />
+								<attribute name="Material" value="Material;Materials/Lava.xml" />
+							</component>
+						</node>
+					</node>
+					<node id="16777291">
+						<attribute name="Is Enabled" value="true" />
+						<attribute name="Name" value="Set" />
+						<attribute name="Tags" />
+						<attribute name="Position" value="0 0 6" />
+						<attribute name="Rotation" value="1 0 0 0" />
+						<attribute name="Scale" value="1 1 1" />
+						<attribute name="Variables" />
+						<node id="16777292">
+							<attribute name="Is Enabled" value="true" />
+							<attribute name="Name" value="Model" />
+							<attribute name="Tags" />
+							<attribute name="Position" value="9 0 3" />
+							<attribute name="Rotation" value="1 0 0 0" />
+							<attribute name="Scale" value="0.03 0.03 0.03" />
+							<attribute name="Variables" />
+							<component type="StaticModel" id="16777298">
+								<attribute name="Model" value="Model;Models/Plane.mdl" />
+								<attribute name="Material" value="Material;Materials/Lava.xml" />
+							</component>
+						</node>
+						<node id="16777293">
+							<attribute name="Is Enabled" value="true" />
+							<attribute name="Name" value="Model" />
+							<attribute name="Tags" />
+							<attribute name="Position" value="3 0 3" />
+							<attribute name="Rotation" value="1 0 0 0" />
+							<attribute name="Scale" value="0.03 0.03 0.03" />
+							<attribute name="Variables" />
+							<component type="StaticModel" id="16777299">
+								<attribute name="Model" value="Model;Models/Plane.mdl" />
+								<attribute name="Material" value="Material;Materials/Lava.xml" />
+							</component>
+						</node>
+						<node id="16777294">
+							<attribute name="Is Enabled" value="true" />
+							<attribute name="Name" value="Model" />
+							<attribute name="Tags" />
+							<attribute name="Position" value="15 0 3" />
+							<attribute name="Rotation" value="1 0 0 0" />
+							<attribute name="Scale" value="0.03 0.03 0.03" />
+							<attribute name="Variables" />
+							<component type="StaticModel" id="16777300">
+								<attribute name="Model" value="Model;Models/Plane.mdl" />
+								<attribute name="Material" value="Material;Materials/Lava.xml" />
+							</component>
+						</node>
+					</node>
+					<node id="16777295">
+						<attribute name="Is Enabled" value="true" />
+						<attribute name="Name" value="Set" />
+						<attribute name="Tags" />
+						<attribute name="Position" value="18 0 12" />
+						<attribute name="Rotation" value="1 0 0 0" />
+						<attribute name="Scale" value="1 1 1" />
+						<attribute name="Variables" />
+						<node id="16777296">
+							<attribute name="Is Enabled" value="true" />
+							<attribute name="Name" value="Model" />
+							<attribute name="Tags" />
+							<attribute name="Position" value="9 0 3" />
+							<attribute name="Rotation" value="1 0 0 0" />
+							<attribute name="Scale" value="0.03 0.03 0.03" />
+							<attribute name="Variables" />
+							<component type="StaticModel" id="16777301">
+								<attribute name="Model" value="Model;Models/Plane.mdl" />
+								<attribute name="Material" value="Material;Materials/Lava.xml" />
+							</component>
+						</node>
+						<node id="16777297">
+							<attribute name="Is Enabled" value="true" />
+							<attribute name="Name" value="Model" />
+							<attribute name="Tags" />
+							<attribute name="Position" value="3 0 3" />
+							<attribute name="Rotation" value="1 0 0 0" />
+							<attribute name="Scale" value="0.03 0.03 0.03" />
+							<attribute name="Variables" />
+							<component type="StaticModel" id="16777302">
+								<attribute name="Model" value="Model;Models/Plane.mdl" />
+								<attribute name="Material" value="Material;Materials/Lava.xml" />
+							</component>
+						</node>
+						<node id="16777298">
+							<attribute name="Is Enabled" value="true" />
+							<attribute name="Name" value="Model" />
+							<attribute name="Tags" />
+							<attribute name="Position" value="15 0 3" />
+							<attribute name="Rotation" value="1 0 0 0" />
+							<attribute name="Scale" value="0.03 0.03 0.03" />
+							<attribute name="Variables" />
+							<component type="StaticModel" id="16777303">
+								<attribute name="Model" value="Model;Models/Plane.mdl" />
+								<attribute name="Material" value="Material;Materials/Lava.xml" />
+							</component>
+						</node>
+					</node>
+					<node id="16777299">
+						<attribute name="Is Enabled" value="true" />
+						<attribute name="Name" value="Set" />
+						<attribute name="Tags" />
+						<attribute name="Position" value="0 0 12" />
+						<attribute name="Rotation" value="1 0 0 0" />
+						<attribute name="Scale" value="1 1 1" />
+						<attribute name="Variables" />
+						<node id="16777300">
+							<attribute name="Is Enabled" value="true" />
+							<attribute name="Name" value="Model" />
+							<attribute name="Tags" />
+							<attribute name="Position" value="9 0 3" />
+							<attribute name="Rotation" value="1 0 0 0" />
+							<attribute name="Scale" value="0.03 0.03 0.03" />
+							<attribute name="Variables" />
+							<component type="StaticModel" id="16777304">
+								<attribute name="Model" value="Model;Models/Plane.mdl" />
+								<attribute name="Material" value="Material;Materials/Lava.xml" />
+							</component>
+						</node>
+						<node id="16777301">
+							<attribute name="Is Enabled" value="true" />
+							<attribute name="Name" value="Model" />
+							<attribute name="Tags" />
+							<attribute name="Position" value="3 0 3" />
+							<attribute name="Rotation" value="1 0 0 0" />
+							<attribute name="Scale" value="0.03 0.03 0.03" />
+							<attribute name="Variables" />
+							<component type="StaticModel" id="16777305">
+								<attribute name="Model" value="Model;Models/Plane.mdl" />
+								<attribute name="Material" value="Material;Materials/Lava.xml" />
+							</component>
+						</node>
+						<node id="16777302">
+							<attribute name="Is Enabled" value="true" />
+							<attribute name="Name" value="Model" />
+							<attribute name="Tags" />
+							<attribute name="Position" value="15 0 3" />
+							<attribute name="Rotation" value="1 0 0 0" />
+							<attribute name="Scale" value="0.03 0.03 0.03" />
+							<attribute name="Variables" />
+							<component type="StaticModel" id="16777306">
+								<attribute name="Model" value="Model;Models/Plane.mdl" />
+								<attribute name="Material" value="Material;Materials/Lava.xml" />
+							</component>
+						</node>
+					</node>
+					<node id="16777303">
+						<attribute name="Is Enabled" value="true" />
+						<attribute name="Name" value="Set" />
+						<attribute name="Tags" />
+						<attribute name="Position" value="18 0 18" />
+						<attribute name="Rotation" value="1 0 0 0" />
+						<attribute name="Scale" value="1 1 1" />
+						<attribute name="Variables" />
+						<node id="16777304">
+							<attribute name="Is Enabled" value="true" />
+							<attribute name="Name" value="Model" />
+							<attribute name="Tags" />
+							<attribute name="Position" value="9 0 3" />
+							<attribute name="Rotation" value="1 0 0 0" />
+							<attribute name="Scale" value="0.03 0.03 0.03" />
+							<attribute name="Variables" />
+							<component type="StaticModel" id="16777307">
+								<attribute name="Model" value="Model;Models/Plane.mdl" />
+								<attribute name="Material" value="Material;Materials/Lava.xml" />
+							</component>
+						</node>
+						<node id="16777305">
+							<attribute name="Is Enabled" value="true" />
+							<attribute name="Name" value="Model" />
+							<attribute name="Tags" />
+							<attribute name="Position" value="3 0 3" />
+							<attribute name="Rotation" value="1 0 0 0" />
+							<attribute name="Scale" value="0.03 0.03 0.03" />
+							<attribute name="Variables" />
+							<component type="StaticModel" id="16777308">
+								<attribute name="Model" value="Model;Models/Plane.mdl" />
+								<attribute name="Material" value="Material;Materials/Lava.xml" />
+							</component>
+						</node>
+						<node id="16777306">
+							<attribute name="Is Enabled" value="true" />
+							<attribute name="Name" value="Model" />
+							<attribute name="Tags" />
+							<attribute name="Position" value="15 0 3" />
+							<attribute name="Rotation" value="1 0 0 0" />
+							<attribute name="Scale" value="0.03 0.03 0.03" />
+							<attribute name="Variables" />
+							<component type="StaticModel" id="16777309">
+								<attribute name="Model" value="Model;Models/Plane.mdl" />
+								<attribute name="Material" value="Material;Materials/Lava.xml" />
+							</component>
+						</node>
+					</node>
+					<node id="16777307">
+						<attribute name="Is Enabled" value="true" />
+						<attribute name="Name" value="Set" />
+						<attribute name="Tags" />
+						<attribute name="Position" value="0 0 18" />
+						<attribute name="Rotation" value="1 0 0 0" />
+						<attribute name="Scale" value="1 1 1" />
+						<attribute name="Variables" />
+						<node id="16777308">
+							<attribute name="Is Enabled" value="true" />
+							<attribute name="Name" value="Model" />
+							<attribute name="Tags" />
+							<attribute name="Position" value="9 0 3" />
+							<attribute name="Rotation" value="1 0 0 0" />
+							<attribute name="Scale" value="0.03 0.03 0.03" />
+							<attribute name="Variables" />
+							<component type="StaticModel" id="16777310">
+								<attribute name="Model" value="Model;Models/Plane.mdl" />
+								<attribute name="Material" value="Material;Materials/Lava.xml" />
+							</component>
+						</node>
+						<node id="16777309">
+							<attribute name="Is Enabled" value="true" />
+							<attribute name="Name" value="Model" />
+							<attribute name="Tags" />
+							<attribute name="Position" value="3 0 3" />
+							<attribute name="Rotation" value="1 0 0 0" />
+							<attribute name="Scale" value="0.03 0.03 0.03" />
+							<attribute name="Variables" />
+							<component type="StaticModel" id="16777311">
+								<attribute name="Model" value="Model;Models/Plane.mdl" />
+								<attribute name="Material" value="Material;Materials/Lava.xml" />
+							</component>
+						</node>
+						<node id="16777310">
+							<attribute name="Is Enabled" value="true" />
+							<attribute name="Name" value="Model" />
+							<attribute name="Tags" />
+							<attribute name="Position" value="15 0 3" />
+							<attribute name="Rotation" value="1 0 0 0" />
+							<attribute name="Scale" value="0.03 0.03 0.03" />
+							<attribute name="Variables" />
+							<component type="StaticModel" id="16777312">
+								<attribute name="Model" value="Model;Models/Plane.mdl" />
+								<attribute name="Material" value="Material;Materials/Lava.xml" />
+							</component>
+						</node>
+					</node>
+					<node id="16777311">
+						<attribute name="Is Enabled" value="true" />
+						<attribute name="Name" value="Set" />
+						<attribute name="Tags" />
+						<attribute name="Position" value="18 0 24" />
+						<attribute name="Rotation" value="1 0 0 0" />
+						<attribute name="Scale" value="1 1 1" />
+						<attribute name="Variables" />
+						<node id="16777312">
+							<attribute name="Is Enabled" value="true" />
+							<attribute name="Name" value="Model" />
+							<attribute name="Tags" />
+							<attribute name="Position" value="9 0 3" />
+							<attribute name="Rotation" value="1 0 0 0" />
+							<attribute name="Scale" value="0.03 0.03 0.03" />
+							<attribute name="Variables" />
+							<component type="StaticModel" id="16777313">
+								<attribute name="Model" value="Model;Models/Plane.mdl" />
+								<attribute name="Material" value="Material;Materials/Lava.xml" />
+							</component>
+						</node>
+						<node id="16777313">
+							<attribute name="Is Enabled" value="true" />
+							<attribute name="Name" value="Model" />
+							<attribute name="Tags" />
+							<attribute name="Position" value="3 0 3" />
+							<attribute name="Rotation" value="1 0 0 0" />
+							<attribute name="Scale" value="0.03 0.03 0.03" />
+							<attribute name="Variables" />
+							<component type="StaticModel" id="16777314">
+								<attribute name="Model" value="Model;Models/Plane.mdl" />
+								<attribute name="Material" value="Material;Materials/Lava.xml" />
+							</component>
+						</node>
+						<node id="16777314">
+							<attribute name="Is Enabled" value="true" />
+							<attribute name="Name" value="Model" />
+							<attribute name="Tags" />
+							<attribute name="Position" value="15 0 3" />
+							<attribute name="Rotation" value="1 0 0 0" />
+							<attribute name="Scale" value="0.03 0.03 0.03" />
+							<attribute name="Variables" />
+							<component type="StaticModel" id="16777315">
+								<attribute name="Model" value="Model;Models/Plane.mdl" />
+								<attribute name="Material" value="Material;Materials/Lava.xml" />
+							</component>
+						</node>
+					</node>
+					<node id="16777315">
+						<attribute name="Is Enabled" value="true" />
+						<attribute name="Name" value="Set" />
+						<attribute name="Tags" />
+						<attribute name="Position" value="0 0 24" />
+						<attribute name="Rotation" value="1 0 0 0" />
+						<attribute name="Scale" value="1 1 1" />
+						<attribute name="Variables" />
+						<node id="16777316">
+							<attribute name="Is Enabled" value="true" />
+							<attribute name="Name" value="Model" />
+							<attribute name="Tags" />
+							<attribute name="Position" value="9 0 3" />
+							<attribute name="Rotation" value="1 0 0 0" />
+							<attribute name="Scale" value="0.03 0.03 0.03" />
+							<attribute name="Variables" />
+							<component type="StaticModel" id="16777316">
+								<attribute name="Model" value="Model;Models/Plane.mdl" />
+								<attribute name="Material" value="Material;Materials/Lava.xml" />
+							</component>
+						</node>
+						<node id="16777317">
+							<attribute name="Is Enabled" value="true" />
+							<attribute name="Name" value="Model" />
+							<attribute name="Tags" />
+							<attribute name="Position" value="3 0 3" />
+							<attribute name="Rotation" value="1 0 0 0" />
+							<attribute name="Scale" value="0.03 0.03 0.03" />
+							<attribute name="Variables" />
+							<component type="StaticModel" id="16777317">
+								<attribute name="Model" value="Model;Models/Plane.mdl" />
+								<attribute name="Material" value="Material;Materials/Lava.xml" />
+							</component>
+						</node>
+						<node id="16777318">
+							<attribute name="Is Enabled" value="true" />
+							<attribute name="Name" value="Model" />
+							<attribute name="Tags" />
+							<attribute name="Position" value="15 0 3" />
+							<attribute name="Rotation" value="1 0 0 0" />
+							<attribute name="Scale" value="0.03 0.03 0.03" />
+							<attribute name="Variables" />
+							<component type="StaticModel" id="16777318">
+								<attribute name="Model" value="Model;Models/Plane.mdl" />
+								<attribute name="Material" value="Material;Materials/Lava.xml" />
+							</component>
+						</node>
+					</node>
+					<node id="16777319">
+						<attribute name="Is Enabled" value="true" />
+						<attribute name="Name" value="Set" />
+						<attribute name="Tags" />
+						<attribute name="Position" value="18 0 30" />
+						<attribute name="Rotation" value="1 0 0 0" />
+						<attribute name="Scale" value="1 1 1" />
+						<attribute name="Variables" />
+						<node id="16777320">
+							<attribute name="Is Enabled" value="true" />
+							<attribute name="Name" value="Model" />
+							<attribute name="Tags" />
+							<attribute name="Position" value="9 0 3" />
+							<attribute name="Rotation" value="1 0 0 0" />
+							<attribute name="Scale" value="0.03 0.03 0.03" />
+							<attribute name="Variables" />
+							<component type="StaticModel" id="16777319">
+								<attribute name="Model" value="Model;Models/Plane.mdl" />
+								<attribute name="Material" value="Material;Materials/Lava.xml" />
+							</component>
+						</node>
+						<node id="16777321">
+							<attribute name="Is Enabled" value="true" />
+							<attribute name="Name" value="Model" />
+							<attribute name="Tags" />
+							<attribute name="Position" value="3 0 3" />
+							<attribute name="Rotation" value="1 0 0 0" />
+							<attribute name="Scale" value="0.03 0.03 0.03" />
+							<attribute name="Variables" />
+							<component type="StaticModel" id="16777320">
+								<attribute name="Model" value="Model;Models/Plane.mdl" />
+								<attribute name="Material" value="Material;Materials/Lava.xml" />
+							</component>
+						</node>
+						<node id="16777322">
+							<attribute name="Is Enabled" value="true" />
+							<attribute name="Name" value="Model" />
+							<attribute name="Tags" />
+							<attribute name="Position" value="15 0 3" />
+							<attribute name="Rotation" value="1 0 0 0" />
+							<attribute name="Scale" value="0.03 0.03 0.03" />
+							<attribute name="Variables" />
+							<component type="StaticModel" id="16777321">
+								<attribute name="Model" value="Model;Models/Plane.mdl" />
+								<attribute name="Material" value="Material;Materials/Lava.xml" />
+							</component>
+						</node>
+					</node>
+					<node id="16777323">
+						<attribute name="Is Enabled" value="true" />
+						<attribute name="Name" value="Set" />
+						<attribute name="Tags" />
+						<attribute name="Position" value="0 0 30" />
+						<attribute name="Rotation" value="1 0 0 0" />
+						<attribute name="Scale" value="1 1 1" />
+						<attribute name="Variables" />
+						<node id="16777324">
+							<attribute name="Is Enabled" value="true" />
+							<attribute name="Name" value="Model" />
+							<attribute name="Tags" />
+							<attribute name="Position" value="9 0 3" />
+							<attribute name="Rotation" value="1 0 0 0" />
+							<attribute name="Scale" value="0.03 0.03 0.03" />
+							<attribute name="Variables" />
+							<component type="StaticModel" id="16777322">
+								<attribute name="Model" value="Model;Models/Plane.mdl" />
+								<attribute name="Material" value="Material;Materials/Lava.xml" />
+							</component>
+						</node>
+						<node id="16777325">
+							<attribute name="Is Enabled" value="true" />
+							<attribute name="Name" value="Model" />
+							<attribute name="Tags" />
+							<attribute name="Position" value="3 0 3" />
+							<attribute name="Rotation" value="1 0 0 0" />
+							<attribute name="Scale" value="0.03 0.03 0.03" />
+							<attribute name="Variables" />
+							<component type="StaticModel" id="16777323">
+								<attribute name="Model" value="Model;Models/Plane.mdl" />
+								<attribute name="Material" value="Material;Materials/Lava.xml" />
+							</component>
+						</node>
+						<node id="16777326">
+							<attribute name="Is Enabled" value="true" />
+							<attribute name="Name" value="Model" />
+							<attribute name="Tags" />
+							<attribute name="Position" value="15 0 3" />
+							<attribute name="Rotation" value="1 0 0 0" />
+							<attribute name="Scale" value="0.03 0.03 0.03" />
+							<attribute name="Variables" />
+							<component type="StaticModel" id="16777324">
+								<attribute name="Model" value="Model;Models/Plane.mdl" />
+								<attribute name="Material" value="Material;Materials/Lava.xml" />
+							</component>
+						</node>
+					</node>
+				</node>
+			</node>
+		</node>
+		<node id="16777276">
+			<attribute name="Is Enabled" value="true" />
+			<attribute name="Name" value="Lights" />
+			<attribute name="Tags" />
+			<attribute name="Position" value="0 0 0" />
+			<attribute name="Rotation" value="1 0 0 0" />
+			<attribute name="Scale" value="1 1 1" />
+			<attribute name="Variables" />
+			<node id="16777277">
+				<attribute name="Is Enabled" value="true" />
+				<attribute name="Name" value="Sun" />
+				<attribute name="Tags" />
+				<attribute name="Position" value="0 0 0" />
+				<attribute name="Rotation" value="0.882036 0.383579 -0.273191 -0.0157807" />
+				<attribute name="Scale" value="1 1 1" />
+				<attribute name="Variables" />
+				<component type="Light" id="16777288">
+					<attribute name="Light Type" value="Directional" />
+				</component>
+			</node>
+		</node>
+	</node>
+	<node id="16777273">
+		<attribute name="Is Enabled" value="true" />
+		<attribute name="Name" value="Camera" />
+		<attribute name="Tags" />
+		<attribute name="Position" value="18 40 -7" />
+		<attribute name="Rotation" value="0.866025 0.5 0 0" />
+		<attribute name="Scale" value="1 1 1" />
+		<attribute name="Variables" />
+		<component type="Camera" id="16777325">
+			<attribute name="Aspect Ratio" value="1.77778" />
+		</component>
+	</node>
+	<node id="107">
+		<attribute name="Is Enabled" value="true" />
+		<attribute name="Name" value="SpawnPoints" />
+		<attribute name="Tags" />
+		<attribute name="Position" value="0 0 0" />
+		<attribute name="Rotation" value="1 0 0 0" />
+		<attribute name="Scale" value="1 1 1" />
+		<attribute name="Variables" />
+		<node id="16777274">
+			<attribute name="Is Enabled" value="true" />
+			<attribute name="Name" value="PlayerSpawn" />
+			<attribute name="Tags" />
+			<attribute name="Position" value="37.5 0.5 1.5" />
+			<attribute name="Rotation" value="1 0 0 0" />
+			<attribute name="Scale" value="1 1 1" />
+			<attribute name="Variables" />
+		</node>
+	</node>
+</scene>

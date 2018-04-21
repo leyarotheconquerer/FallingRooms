@@ -9,7 +9,7 @@ function Start()
 	log:Write(LOG_DEBUG, "Create initial scene")
 
 	log:Write(LOG_DEBUG, "Begin loading the first level")
-	LoadLevel("Levels/TestLevel.xml")
+	LoadLevel("Levels/BoardLevel.xml")
 end
 
 function DelayedStart()

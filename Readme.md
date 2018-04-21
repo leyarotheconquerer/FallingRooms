@@ -96,6 +96,10 @@ Details
 			- Player starts in this room
 		- Exit room
 			- Upon exiting, the player is spawned in a new level to continue
+* Collision types
+	- Character -> Room (physical) = layer 1
+	- Room -> Room (non physical) = layer 2
+	- Room -> Board (physical) = layer 3
 
 Assets
 ------
