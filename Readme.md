@@ -8,92 +8,150 @@ Theme
 
 Combine Two Incompatible Genres
 
-Brainstorming
--------------
+Concept
+-------
 
-Combine incompatible game types with literary or setting genres
+Rogue-like tetris
 
-Combine two literary genres that don't match at all
+In essense, the dungeon is a tetris board.
+Rooms fall from above and must be oriented to fall appropriately.
+Navigate through the dungeon and defeat foes found within.
+Try to find the exit, gathering wealth along the way.
+Wealth is the measure of your success.
+Rooms have entrances and exits that must be lined up.
+Rooms with easy monsters yield less wealth?
+Rooms provide option to bypass or take on challenge?
+Each piece has two rooms, one of each type?
 
-We have different types of genres
+* Setting
+	- Low fantasy
+* Weapons
+	- Sword
+	- Bow
+* Enemies
+	- Spider
+	- Bow Dude
+	- Troll?
+* Rooms
+	- Treasure room
+	- Hallway
+	- Hall
+	- Bedroom
+	- Well
+	- Prison
+	- Exit
+* Rewards
+	- Gold
+	- Health potion
+	- Weapons?
 
-- Setting genres
-	* sci-fi
-	* fantasy
-	* cyberpunk
-	* steampunk
-	* post-apocalyptic
-	* modern day
-	* city scape
-	* western
-- Story genres
-	* Opera
-	* Epic
-	* Short story
-	* Comedy
-		- Satire
-		- Slapstick
-		- Mockumentary
-	* Horror
-	* Slice-of-life
-	* Absurdist
-	* Action
-	* Drama
-- Game genres
-	* FPS
-	* RTS
-	* Strategy
-	* Racing
-	* Musical
-	* Arcade
-	* RPG
-	* Side-scroller
-	* Rogue-like
-	* Fighting
-	* Puzzle
-	* Bullet hell
-	* Cookie clicker
-	* Stealth
-	* Escape room
-- Musical genres
-	* Medieval
-	* Renaissance
-	* Baroque
-	* Classical
-	* Opera
-	* Folk
-	* Country
-	* Rock
-	* Metal
-	* Pop
-	* Jazz
-	* Hip hop
-	* Dance
-	* Techno
-	* Dubstep
 
-village ugly fabric prototype robot lake
+* Real time movement and combat
+	- Tetris tiles fall in real time, slowly
+	- _Or tiles fall when item is obtained in room_
+* Free-roaming 3D map
+	- Like a table-top
+	- Delete rooms that are exited? when row is complete.... detecting that could be fun
+* Camera top down (follows player?)
+	- Start camera at exit
+	- Pan to player
+* Menu to restart
+	- Score at end of each try
 
-ambassador foam reform prosecute lunch
+Details
+-------
 
-exhausted reporter parade about energy and unsafe voting around a debatable cake (magic) what a paradox
+* Board
+	- Board shall be at least 11 blocks to a side (meaning at least 4 blocks to complete game)
+* Pieces/rooms
+	- Pieces shall be no longer than 3 blocks to a side
+	- Pieces shall each have at least 3 entrances (promotes choice of which shall lead to the next)
+	- Pieces shall each be predominated by one challenge
+* Player characteristics
+	- Player shall have health points
+	- Player shall start with a sword
+	- Player has a wallet for storing gold
+	- Player is reset on death
+* Melee weapons
+	- Weapons sweep to deal damage
+	- Sweeps happen at a rate determined by the monster
+* Ranged weapons
+	- Ranged weapons fire at a rate towards the opponent
+	- Ranged weapons may be dodged
+* Room types
+	- There are two divisions of rooms
+	- Combat rooms
+		- Spiders (more numerous, but melee)
+		- Ogre (less numerous, but melee)
+		- Bowmen (less numerous, ranged)
+	- Non-combat rooms
+		- Chest rooms (free treasure)
+		- Skill (don't fall off?)
+		- Insignificant rooms?
+		- Block puzzles?
+	- In addition there are special rooms
+		- Spawning room
+			- Player starts in this room
+		- Exit room
+			- Upon exiting, the player is spawned in a new level to continue
 
-* Strategy cookie clicker
-* RTS Slice-of-Life
-* 
-
-### RTS Racer
-- Control a band of racers as they race through a violent competetive race
-- Try to survive to the finish line to claim the prize
-- Each unit has a unique ability (some support - healing, boosting - others attack - AOE slow, sniping attack - all can damage)
-
-- Post-apocalyptic - bunch of four wheelers and jeeps with bulldozers and spikes
-- Tribal - band of warriors (Aztec?)
-- Medieval - bunch of knights in a crusade?, vikings to a new land?
-- Age of exploration - sailing, sailing, right by the pirates
-- Be the pirates?
-
-### Turn-based/RTS? bullet hell
-- Each turn pick your move to avoid all the bullets
-- See the last turn and the next
-- Sounds an aweful lot like that mech game
+Assets
+------
+* Player
+	+ Player Model
+		- Model
+		- Walk Animation
+		- Die Animation
+	+ Sword Model
+		- Model
+		- Attack Animation
+		- Sweep collision
+	+ Player Animations
+* Enemies
+	+ Spider Model
+		- Model
+		- Sweep collision
+		- Walk Animation
+		- Attack Animation
+		- Die Animation
+	+ Ogre Model
+		- Model
+		- Sweep collision
+		- Walk Animation
+		- Attack Animation
+		- Die Animation
+	+ Bowman model
+		- Model
+		- Arrow Model
+		- Walk Animation
+		- Attack Animation
+		- Die animation
+* Rooms
+	+ Empty room
+		- Walls
+		- Doors
+	+ Prison room
+		- Bars
+		- Bench
+		- Bucket
+	+ Bedroom
+		- Bed
+		- Desk
+		- Drawers
+	+ Halls
+		- Column
+		- Banner
+	+ Treasure room
+		- Chest
+		- Pile of dirt
+	+ Well room
+		- Well
+		- Pond/fountain
+	+ Exit
+		- Stairs
+* Board
+	+ Model
+* UI
+	+ Player Health
+	+ Player Gold
+	+ Enemy Health
