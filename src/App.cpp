@@ -1,5 +1,8 @@
 #include "App.h"
 #include <Urho3D/Engine/EngineDefs.h>
+#include <Urho3D/LuaScript/LuaScript.h>
+#include <Urho3D/Input/InputEvents.h>
+#include <Urho3D/IO/Log.h>
 
 using namespace FallingRooms;
 using namespace Urho3D;
@@ -20,24 +23,23 @@ void App::Setup()
 
 void App::Start()
 {
+	SharedPtr<LuaScript> luaScript (new LuaScript(context_));
+	context_->RegisterSubsystem(luaScript);
+	if (luaScript->ExecuteFile("LuaScripts/Main.lua"))
+	{
+		luaScript->ExecuteFunction("Start");
+	}
+	else
+	{
+		ErrorExit("Unable to start Main.lua");
+	}
 }
 
 void App::Stop()
 {
-}
-
-void App::HandleScriptReloadStarted(Urho3D::StringHash eventType, Urho3D::VariantMap& eventData)
-{
-}
-
-void App::HandleScriptReloadFinished(Urho3D::StringHash eventType, Urho3D::VariantMap& eventData)
-{
-}
-
-void App::HandleScriptReloadFailed(Urho3D::StringHash eventType, Urho3D::VariantMap& eventData)
-{
-}
-
-void App::HandleUpdate(Urho3D::StringHash type, Urho3D::VariantMap& data)
-{
+	LuaScript* luaScript = context_->GetSubsystem<LuaScript>();
+	if (luaScript && luaScript->GetFunction("Stop", true))
+	{
+		luaScript->ExecuteFunction("Stop");
+	}
 }

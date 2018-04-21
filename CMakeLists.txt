@@ -19,7 +19,7 @@ set (CMAKE_MODULE_PATH ${CMAKE_SOURCE_DIR}/CMake/Modules)
 # Include UrhoCommon.cmake module after setting project name
 include (UrhoCommon)
 # Define target name
-set (TARGET_NAME MyExecutableName)
+set (TARGET_NAME FallingRooms)
 # Set include directories
 include_directories(include)
 # Define source files

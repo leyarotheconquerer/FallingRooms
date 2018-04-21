@@ -1,6 +1,7 @@
 #ifndef FallingRooms_App_H
 #define FallingRooms_App_H
 
+#include "Events.h"
 #include <Urho3D/Engine/Application.h>
 
 namespace Urho3D
@@ -25,8 +26,7 @@ namespace FallingRooms
 	private:
 		void HandleScriptReloadStarted(Urho3D::StringHash eventType, Urho3D::VariantMap& eventData);
 		void HandleScriptReloadFinished(Urho3D::StringHash eventType, Urho3D::VariantMap& eventData);
-		void HandleScriptReloadFailed(Urho3D::StringHash eventType, Urho3D::VariantMap& eventData);
-		void HandleUpdate(Urho3D::StringHash type, Urho3D::VariantMap& data);
+		void HandleKeyDown(Urho3D::StringHash type, Urho3D::VariantMap& data);
 
 		Urho3D::Context* context_;
 	};
