@@ -66,7 +66,12 @@ function TetrisRoom:HandleKeyDown(type, data)
 	end
 	local physicalNode = self.node:GetChild("Physical")
 	local rigidBody = self:GetRigidBody()
+	local soundSource = self.node:GetComponent("SoundSource")
+	if (soundSource == nil) then
+		soundSource = self.node:CreateComponent("SoundSource")
+	end
 	if (keyCode == KEY_W and rigidBody ~= nil) then
+		soundSource:Play(cache:GetResource("Sound", "Sounds/Noise.wav"), 44100, .5)
 		self:Rotate((self.direction + 1) % 4)
 	elseif (keyCode == KEY_A and rigidBody ~= nil) then
 		if (
@@ -90,11 +95,12 @@ function TetrisRoom:HandleKeyDown(type, data)
 				rigidBody.position.z
 			))
 		end
-	elseif (keyCode == KEY_S) then
+	elseif (keyCode == KEY_S and rigidBody ~= nil) then
 		if (
 			rigidBody.position.z >= TetrisConf.Interval
 			and bound.z >= TetrisConf.Interval
 		) then
+			soundSource:Play(cache:GetResource("Sound", "Sounds/Falling.wav"))
 			rigidBody:SetPosition(Vector3(
 				rigidBody.position.x,
 				rigidBody.position.y,
@@ -105,12 +111,11 @@ function TetrisRoom:HandleKeyDown(type, data)
 end
 
 function TetrisRoom:HandlePostRenderUpdate(type, data)
-	log.Write(LOG_DEBUG, "Head")
-	local physicsWorld = self.node.scene:GetComponent("PhysicsWorld")
-	if (physicsWorld ~= nil) then
-		log.Write(LOG_DEBUG, "Noggin")
-		physicsWorld:DrawDebugGeometry(true)
-		log.Write(LOG_DEBUG, "Dudez...")
+	if (input:GetKeyDown(KEY_P)) then
+		local physicsWorld = self.node.scene:GetComponent("PhysicsWorld")
+		if (physicsWorld ~= nil) then
+			physicsWorld:DrawDebugGeometry(true)
+		end
 	end
 end
 
@@ -153,6 +158,8 @@ function TetrisRoom:HandleNodeCollisionStart(type, data)
 					log:Write(LOG_DEBUG, string.format("Setting position to %d", TetrisConf.Top))
 					terminatorBody:SetPosition(Vector3(TetrisConf.Left, 0.0, TetrisConf.Top))
 					terminatorBody:SetMass(1)
+					local soundSource = self.node:CreateComponent("SoundSource")
+					soundSource:Play(cache:GetResource("Sound", "Sounds/Bloop.wav"))
 					self:SubscribeToEvent(terminator, "NodeCollision", "TetrisRoom:HandleTerminatorCollision")
 					self.spawnCount = TetrisConf.SpawnDelay
 				end

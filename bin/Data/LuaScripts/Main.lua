@@ -2,6 +2,7 @@ require("LuaScripts/Input")
 
 scene_ = nil
 camera_ = nil
+music_ = nil
 local newScene_ = nil
 
 function Start()
@@ -28,6 +29,10 @@ function DelayedStart()
 	end
 	camera_:CreateComponent("Camera")
 	local viewport = Viewport:new(scene_, camera_:GetComponent("Camera"))
+	local listener = camera_:CreateComponent("SoundListener")
+	audio:SetListener(listener)
+	music_ = camera_:CreateComponent("SoundSource")
+	music_:Play(cache:GetResource("Sound", "Music/Background2.wav"))
 	renderer:SetViewport(0, viewport)
 
 	log:Write(LOG_DEBUG, "Subscribe to events")
@@ -42,6 +47,9 @@ function LoadLevel(level)
 	log:Write(LOG_DEBUG, string.format("Loading level %s", level))
 	newScene_ = Scene(context_)
 	newScene_:LoadAsyncXML(cache:GetResourceFileName(level))
+	if (music_ ~= nil) then
+		music_:Stop()
+	end
 	SubscribeToEvent(newScene_, "AsyncLoadFinished", "HandleLoadedLevel")
 end
 

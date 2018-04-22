@@ -10,7 +10,6 @@ end
 
 function Player:Start()
 	self:SubscribeToEvent("KeyDown", "Player:HandleKeyDown")
-	self:SubscribeToEvent("PostRenderUpdate", "Player:HandlePostRenderUpdate")
 end
 
 function Player:FixedUpdate()
@@ -48,9 +47,3 @@ end
 function Player:Stop()
 end
 
-function Player:HandlePostRenderUpdate(type, data)
-	physicsWorld = self.node.scene:GetComponent("PhysicsWorld")
-	if (physicsWorld ~= nil) then
-		physicsWorld:DrawDebugGeometry(true)
-	end
-end
