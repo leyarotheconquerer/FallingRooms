@@ -9,7 +9,21 @@ TetrisConf = {
 	SpawnDelay = 20,
 	Blocks = {
 		"Objects/CornerRoomBlock.xml",
-		"Objects/LineRoomBlock.xml"
+		"Objects/CornerRoomBlock2.xml",
+		"Objects/CornerRoomBlock3.xml",
+		"Objects/CornerRoomBlock4.xml",
+		"Objects/CornerRoomBlock5.xml",
+		"Objects/CornerRoomBlock6.xml",
+		"Objects/CornerRoomBlock7.xml",
+		"Objects/CornerRoomBlock8.xml",
+		"Objects/CornerRoomBlock9.xml",
+		"Objects/CornerRoomBlock10.xml",
+		"Objects/LineRoomBlock.xml",
+		"Objects/LineRoomBlock2.xml",
+		"Objects/LineRoomBlock3.xml",
+		"Objects/LineRoomBlock4.xml",
+		"Objects/SquareRoomBlock.xml",
+		"Objects/SquareRoomBlock2.xml"
 	},
 	SpawnNewRoom = function (scene)
 		log:Write("Spawning new room")

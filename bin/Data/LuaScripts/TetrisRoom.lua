@@ -160,7 +160,7 @@ function TetrisRoom:HandleNodeCollisionStart(type, data)
 					terminatorBody:SetMass(1)
 					local soundSource = self.node:CreateComponent("SoundSource")
 					soundSource:Play(cache:GetResource("Sound", "Sounds/Bloop.wav"))
-					self:SubscribeToEvent(terminator, "NodeCollision", "TetrisRoom:HandleTerminatorCollision")
+					self:SubscribeToEvent(terminator, "NodeCollisionStart", "TetrisRoom:HandleTerminatorCollision")
 					self.spawnCount = TetrisConf.SpawnDelay
 				end
 			end
@@ -170,14 +170,18 @@ end
 
 function TetrisRoom:HandleTerminatorCollision(type, data)
 	log:Write(LOG_DEBUG, "Loss condition met")
-	local window = ui.root:CreateChild("Window")
-	local style = cache:GetResource("XMLFile", "UI/UIStyle.xml")
-	if (window ~= nil) then
-		window:SetDefaultStyle(style)
-		window:LoadXML(cache:GetResourceFileName("UI/LossWindow.xml"))
-		self:Disable()
-		self:SubscribeToEvent("LoadLevel", "TetrisRoom:HandleLoadLevel")
-		self.spawnCount = -1
+	local otherNode = data.OtherNode:Get("Node")
+	if (otherNode ~= nil) then
+		log:Write(LOG_DEBUG, "Collided with " .. otherNode:GetName())
+		local window = ui.root:CreateChild("Window")
+		local style = cache:GetResource("XMLFile", "UI/UIStyle.xml")
+		if (window ~= nil and style ~= nil) then
+			window:SetDefaultStyle(style)
+			window:LoadXML(cache:GetResourceFileName("UI/LossWindow.xml"))
+			self:Disable()
+			self:SubscribeToEvent("LoadLevel", "TetrisRoom:HandleLoadLevel")
+			self.spawnCount = -1
+		end
 	end
 end
 

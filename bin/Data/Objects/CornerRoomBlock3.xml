@@ -302,12 +302,13 @@
 					<attribute name="Is Enabled" value="true" />
 					<attribute name="Name" value="Wall" />
 					<attribute name="Tags" />
-					<attribute name="Position" value="0 0 3" />
-					<attribute name="Rotation" value="1 0 0 0" />
+					<attribute name="Position" value="3 0 0" />
+					<attribute name="Rotation" value="0.707107 0 -0.707107 0" />
 					<attribute name="Scale" value="1 1 1" />
 					<attribute name="Variables" />
 					<component type="RigidBody" id="16777256">
-						<attribute name="Physics Position" value="1.5 -3.64427 9.38854" />
+						<attribute name="Physics Rotation" value="0.707107 0 -0.707107 0" />
+						<attribute name="Physics Position" value="4.5 -3.64427 6.38854" />
 						<attribute name="Collision Mask" value="249" />
 						<attribute name="Use Gravity" value="false" />
 						<attribute name="Is Kinematic" value="true" />
@@ -334,8 +335,8 @@
 					<attribute name="Is Enabled" value="true" />
 					<attribute name="Name" value="WallPost" />
 					<attribute name="Tags" />
-					<attribute name="Position" value="3 0 0" />
-					<attribute name="Rotation" value="0.707107 0 -0.707107 0" />
+					<attribute name="Position" value="0 0 3" />
+					<attribute name="Rotation" value="1 0 0 0" />
 					<attribute name="Scale" value="1 1 1" />
 					<attribute name="Variables" />
 					<node id="16777256">
@@ -364,8 +365,7 @@
 							<attribute name="Offset Position" value="0.5 0.6 0" />
 						</component>
 						<component type="RigidBody" id="16777276">
-							<attribute name="Physics Rotation" value="0.707107 0 -0.707107 0" />
-							<attribute name="Physics Position" value="4.5 -3.64427 6.38854" />
+							<attribute name="Physics Position" value="1.5 -3.64427 9.38854" />
 							<attribute name="Collision Mask" value="249" />
 							<attribute name="Use Gravity" value="false" />
 							<attribute name="Is Kinematic" value="true" />
@@ -384,8 +384,7 @@
 							<attribute name="Offset Position" value="2.5 0.6 0" />
 						</component>
 						<component type="RigidBody" id="16777278">
-							<attribute name="Physics Rotation" value="0.707107 0 -0.707107 0" />
-							<attribute name="Physics Position" value="4.5 -3.64427 6.38854" />
+							<attribute name="Physics Position" value="1.5 -3.64427 9.38854" />
 							<attribute name="Collision Mask" value="249" />
 							<attribute name="Use Gravity" value="false" />
 							<attribute name="Is Kinematic" value="true" />
@@ -479,13 +478,12 @@
 					<attribute name="Is Enabled" value="true" />
 					<attribute name="Name" value="Wall" />
 					<attribute name="Tags" />
-					<attribute name="Position" value="3 0 0" />
-					<attribute name="Rotation" value="0.707107 0 -0.707107 0" />
+					<attribute name="Position" value="0 0 0" />
+					<attribute name="Rotation" value="1 0 0 0" />
 					<attribute name="Scale" value="1 1 1" />
 					<attribute name="Variables" />
 					<component type="RigidBody" id="16777269">
-						<attribute name="Physics Rotation" value="0.707107 0 -0.707107 0" />
-						<attribute name="Physics Position" value="4.5 -3.64427 3.38854" />
+						<attribute name="Physics Position" value="1.5 -3.64427 3.38854" />
 						<attribute name="Collision Mask" value="249" />
 						<attribute name="Use Gravity" value="false" />
 						<attribute name="Is Kinematic" value="true" />
@@ -512,8 +510,8 @@
 					<attribute name="Is Enabled" value="true" />
 					<attribute name="Name" value="WallPost" />
 					<attribute name="Tags" />
-					<attribute name="Position" value="0 0 0" />
-					<attribute name="Rotation" value="1 0 0 0" />
+					<attribute name="Position" value="3 0 0" />
+					<attribute name="Rotation" value="0.707107 0 -0.707107 0" />
 					<attribute name="Scale" value="1 1 1" />
 					<attribute name="Variables" />
 					<node id="16777260">
@@ -542,7 +540,8 @@
 							<attribute name="Offset Position" value="0.5 0.6 0" />
 						</component>
 						<component type="RigidBody" id="16777281">
-							<attribute name="Physics Position" value="1.5 -3.64427 3.38854" />
+							<attribute name="Physics Rotation" value="0.707107 0 -0.707107 0" />
+							<attribute name="Physics Position" value="4.5 -3.64427 3.38854" />
 							<attribute name="Collision Mask" value="249" />
 							<attribute name="Use Gravity" value="false" />
 							<attribute name="Is Kinematic" value="true" />
@@ -561,7 +560,8 @@
 							<attribute name="Offset Position" value="2.5 0.6 0" />
 						</component>
 						<component type="RigidBody" id="16777283">
-							<attribute name="Physics Position" value="1.5 -3.64427 3.38854" />
+							<attribute name="Physics Rotation" value="0.707107 0 -0.707107 0" />
+							<attribute name="Physics Position" value="4.5 -3.64427 3.38854" />
 							<attribute name="Collision Mask" value="249" />
 							<attribute name="Use Gravity" value="false" />
 							<attribute name="Is Kinematic" value="true" />

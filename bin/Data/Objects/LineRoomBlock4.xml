@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<node id="16777263">
+<node id="16777358">
 	<attribute name="Is Enabled" value="true" />
 	<attribute name="Name" value="LineRoomBlock" />
 	<attribute name="Tags" />
@@ -7,13 +7,13 @@
 	<attribute name="Rotation" value="1 0 0 0" />
 	<attribute name="Scale" value="1 1 1" />
 	<attribute name="Variables" />
-	<component type="LuaScriptInstance" id="16777284">
+	<component type="LuaScriptInstance" id="16777398">
 		<attribute name="Script File" value="LuaFile;LuaScripts/TetrisRoom.lua" />
 		<attribute name="Script Object Type" value="TetrisRoom" />
 		<attribute name="direction" value="0" />
 		<attribute name="spawnCount" value="-1" />
 	</component>
-	<component type="RigidBody" id="16777285">
+	<component type="RigidBody" id="16777399">
 		<attribute name="Physics Position" value="1.77603 -11.1229 10.2385" />
 		<attribute name="Mass" value="1" />
 		<attribute name="Friction" value="0" />
@@ -21,11 +21,11 @@
 		<attribute name="Collision Mask" value="4" />
 		<attribute name="Use Gravity" value="false" />
 	</component>
-	<component type="CollisionShape" id="16777286">
+	<component type="CollisionShape" id="16777400">
 		<attribute name="Size" value="9 1.2 3" />
 		<attribute name="Offset Position" value="4.5 0.6 1.5" />
 	</component>
-	<node id="16777264">
+	<node id="16777359">
 		<attribute name="Is Enabled" value="true" />
 		<attribute name="Name" value="Set" />
 		<attribute name="Tags" />
@@ -33,7 +33,7 @@
 		<attribute name="Rotation" value="1 0 0 0" />
 		<attribute name="Scale" value="1 1 1" />
 		<attribute name="Variables" />
-		<node id="16777265">
+		<node id="16777360">
 			<attribute name="Is Enabled" value="true" />
 			<attribute name="Name" value="Floor" />
 			<attribute name="Tags" />
@@ -41,17 +41,17 @@
 			<attribute name="Rotation" value="1 0 0 0" />
 			<attribute name="Scale" value="1 1 1" />
 			<attribute name="Variables" />
-			<component type="RigidBody" id="16777287">
+			<component type="RigidBody" id="16777401">
 				<attribute name="Physics Position" value="1.77603 -11.1229 10.2385" />
 				<attribute name="Collision Mask" value="249" />
 				<attribute name="Use Gravity" value="false" />
 				<attribute name="Is Kinematic" value="true" />
 			</component>
-			<component type="CollisionShape" id="16777288">
+			<component type="CollisionShape" id="16777402">
 				<attribute name="Size" value="3 0.3 3" />
 				<attribute name="Offset Position" value="1.5 -0.15 1.5" />
 			</component>
-			<node id="16777266">
+			<node id="16777361">
 				<attribute name="Is Enabled" value="true" />
 				<attribute name="Name" value="Model" />
 				<attribute name="Tags" />
@@ -59,13 +59,13 @@
 				<attribute name="Rotation" value="1 0 0 0" />
 				<attribute name="Scale" value="0.003 0.003 0.003" />
 				<attribute name="Variables" />
-				<component type="StaticModel" id="16777289">
+				<component type="StaticModel" id="16777403">
 					<attribute name="Model" value="Model;Models/Floor.mdl" />
 					<attribute name="Material" value="Material;Materials/Floor.xml" />
 				</component>
 			</node>
 		</node>
-		<node id="16777267">
+		<node id="16777362">
 			<attribute name="Is Enabled" value="true" />
 			<attribute name="Name" value="Walls" />
 			<attribute name="Tags" />
@@ -73,100 +73,7 @@
 			<attribute name="Rotation" value="1 0 0 0" />
 			<attribute name="Scale" value="1 1 1" />
 			<attribute name="Variables" />
-			<node id="16777268">
-				<attribute name="Is Enabled" value="true" />
-				<attribute name="Name" value="Wall" />
-				<attribute name="Tags" />
-				<attribute name="Position" value="0 0 0" />
-				<attribute name="Rotation" value="0.707107 0 -0.707107 0" />
-				<attribute name="Scale" value="1 1 1" />
-				<attribute name="Variables" />
-				<component type="RigidBody" id="16777290">
-					<attribute name="Physics Rotation" value="0.707107 0 -0.707107 0" />
-					<attribute name="Physics Position" value="1.77603 -11.1229 10.2385" />
-					<attribute name="Collision Mask" value="249" />
-					<attribute name="Use Gravity" value="false" />
-					<attribute name="Is Kinematic" value="true" />
-				</component>
-				<component type="CollisionShape" id="16777291">
-					<attribute name="Size" value="3 1.2 0.25" />
-					<attribute name="Offset Position" value="1.5 0.6 0" />
-				</component>
-				<node id="16777269">
-					<attribute name="Is Enabled" value="true" />
-					<attribute name="Name" value="Model" />
-					<attribute name="Tags" />
-					<attribute name="Position" value="0 0 0" />
-					<attribute name="Rotation" value="1 0 0 0" />
-					<attribute name="Scale" value="0.003 0.003 0.003" />
-					<attribute name="Variables" />
-					<component type="StaticModel" id="16777292">
-						<attribute name="Model" value="Model;Models/Wall.mdl" />
-						<attribute name="Material" value="Material;Materials/Wall.xml" />
-					</component>
-				</node>
-			</node>
-			<node id="16777270">
-				<attribute name="Is Enabled" value="true" />
-				<attribute name="Name" value="WallPost" />
-				<attribute name="Tags" />
-				<attribute name="Position" value="0 0 0" />
-				<attribute name="Rotation" value="1 0 0 0" />
-				<attribute name="Scale" value="1 1 1" />
-				<attribute name="Variables" />
-				<node id="16777271">
-					<attribute name="Is Enabled" value="true" />
-					<attribute name="Name" value="Model" />
-					<attribute name="Tags" />
-					<attribute name="Position" value="0 0 0" />
-					<attribute name="Rotation" value="1 0 0 0" />
-					<attribute name="Scale" value="0.003 0.003 0.003" />
-					<attribute name="Variables" />
-					<component type="StaticModel" id="16777294">
-						<attribute name="Model" value="Model;Models/WallPost.mdl" />
-						<attribute name="Material" value="Material;Materials/WallPost.xml" />
-					</component>
-				</node>
-				<node id="16777272">
-					<attribute name="Is Enabled" value="true" />
-					<attribute name="Name" value="Left" />
-					<attribute name="Tags" />
-					<attribute name="Position" value="0 0 0" />
-					<attribute name="Rotation" value="1 0 0 0" />
-					<attribute name="Scale" value="1 1 1" />
-					<attribute name="Variables" />
-					<component type="CollisionShape" id="16777295">
-						<attribute name="Size" value="1 1.2 0.25" />
-						<attribute name="Offset Position" value="0.5 0.6 0" />
-					</component>
-					<component type="RigidBody" id="16777325">
-						<attribute name="Physics Position" value="1.77603 -11.1229 10.2385" />
-						<attribute name="Collision Mask" value="249" />
-						<attribute name="Use Gravity" value="false" />
-						<attribute name="Is Kinematic" value="true" />
-					</component>
-				</node>
-				<node id="16777273">
-					<attribute name="Is Enabled" value="true" />
-					<attribute name="Name" value="Right" />
-					<attribute name="Tags" />
-					<attribute name="Position" value="0 0 0" />
-					<attribute name="Rotation" value="1 0 0 0" />
-					<attribute name="Scale" value="1 1 1" />
-					<attribute name="Variables" />
-					<component type="CollisionShape" id="16777296">
-						<attribute name="Size" value="1 1.2 0.25" />
-						<attribute name="Offset Position" value="2.5 0.6 0" />
-					</component>
-					<component type="RigidBody" id="16777326">
-						<attribute name="Physics Position" value="1.77603 -11.1229 10.2385" />
-						<attribute name="Collision Mask" value="249" />
-						<attribute name="Use Gravity" value="false" />
-						<attribute name="Is Kinematic" value="true" />
-					</component>
-				</node>
-			</node>
-			<node id="16777274">
+			<node id="16777363">
 				<attribute name="Is Enabled" value="true" />
 				<attribute name="Name" value="Wall" />
 				<attribute name="Tags" />
@@ -174,17 +81,17 @@
 				<attribute name="Rotation" value="1 0 0 0" />
 				<attribute name="Scale" value="1 1 1" />
 				<attribute name="Variables" />
-				<component type="RigidBody" id="16777297">
+				<component type="RigidBody" id="16777404">
 					<attribute name="Physics Position" value="1.77603 -11.1229 13.2385" />
 					<attribute name="Collision Mask" value="249" />
 					<attribute name="Use Gravity" value="false" />
 					<attribute name="Is Kinematic" value="true" />
 				</component>
-				<component type="CollisionShape" id="16777298">
+				<component type="CollisionShape" id="16777405">
 					<attribute name="Size" value="3 1.2 0.25" />
 					<attribute name="Offset Position" value="1.5 0.6 0" />
 				</component>
-				<node id="16777275">
+				<node id="16777364">
 					<attribute name="Is Enabled" value="true" />
 					<attribute name="Name" value="Model" />
 					<attribute name="Tags" />
@@ -192,7 +99,101 @@
 					<attribute name="Rotation" value="1 0 0 0" />
 					<attribute name="Scale" value="0.003 0.003 0.003" />
 					<attribute name="Variables" />
-					<component type="StaticModel" id="16777299">
+					<component type="StaticModel" id="16777406">
+						<attribute name="Model" value="Model;Models/Wall.mdl" />
+						<attribute name="Material" value="Material;Materials/Wall.xml" />
+					</component>
+				</node>
+			</node>
+			<node id="16777365">
+				<attribute name="Is Enabled" value="true" />
+				<attribute name="Name" value="WallPost" />
+				<attribute name="Tags" />
+				<attribute name="Position" value="0 0 0" />
+				<attribute name="Rotation" value="0.707107 0 -0.707107 0" />
+				<attribute name="Scale" value="1 1 1" />
+				<attribute name="Variables" />
+				<node id="16777366">
+					<attribute name="Is Enabled" value="true" />
+					<attribute name="Name" value="Model" />
+					<attribute name="Tags" />
+					<attribute name="Position" value="0 0 0" />
+					<attribute name="Rotation" value="1 0 0 0" />
+					<attribute name="Scale" value="0.003 0.003 0.003" />
+					<attribute name="Variables" />
+					<component type="StaticModel" id="16777407">
+						<attribute name="Model" value="Model;Models/WallPost.mdl" />
+						<attribute name="Material" value="Material;Materials/WallPost.xml" />
+					</component>
+				</node>
+				<node id="16777367">
+					<attribute name="Is Enabled" value="true" />
+					<attribute name="Name" value="Left" />
+					<attribute name="Tags" />
+					<attribute name="Position" value="0 0 0" />
+					<attribute name="Rotation" value="1 0 0 0" />
+					<attribute name="Scale" value="1 1 1" />
+					<attribute name="Variables" />
+					<component type="CollisionShape" id="16777408">
+						<attribute name="Size" value="1 1.2 0.25" />
+						<attribute name="Offset Position" value="0.5 0.6 0" />
+					</component>
+					<component type="RigidBody" id="16777409">
+						<attribute name="Physics Rotation" value="0.707107 0 -0.707107 0" />
+						<attribute name="Physics Position" value="1.77603 -11.1229 10.2385" />
+						<attribute name="Collision Mask" value="249" />
+						<attribute name="Use Gravity" value="false" />
+						<attribute name="Is Kinematic" value="true" />
+					</component>
+				</node>
+				<node id="16777368">
+					<attribute name="Is Enabled" value="true" />
+					<attribute name="Name" value="Right" />
+					<attribute name="Tags" />
+					<attribute name="Position" value="0 0 0" />
+					<attribute name="Rotation" value="1 0 0 0" />
+					<attribute name="Scale" value="1 1 1" />
+					<attribute name="Variables" />
+					<component type="CollisionShape" id="16777410">
+						<attribute name="Size" value="1 1.2 0.25" />
+						<attribute name="Offset Position" value="2.5 0.6 0" />
+					</component>
+					<component type="RigidBody" id="16777411">
+						<attribute name="Physics Rotation" value="0.707107 0 -0.707107 0" />
+						<attribute name="Physics Position" value="1.77603 -11.1229 10.2385" />
+						<attribute name="Collision Mask" value="249" />
+						<attribute name="Use Gravity" value="false" />
+						<attribute name="Is Kinematic" value="true" />
+					</component>
+				</node>
+			</node>
+			<node id="16777369">
+				<attribute name="Is Enabled" value="true" />
+				<attribute name="Name" value="Wall" />
+				<attribute name="Tags" />
+				<attribute name="Position" value="0 0 0" />
+				<attribute name="Rotation" value="1 0 0 0" />
+				<attribute name="Scale" value="1 1 1" />
+				<attribute name="Variables" />
+				<component type="RigidBody" id="16777412">
+					<attribute name="Physics Position" value="1.77603 -11.1229 10.2385" />
+					<attribute name="Collision Mask" value="249" />
+					<attribute name="Use Gravity" value="false" />
+					<attribute name="Is Kinematic" value="true" />
+				</component>
+				<component type="CollisionShape" id="16777413">
+					<attribute name="Size" value="3 1.2 0.25" />
+					<attribute name="Offset Position" value="1.5 0.6 0" />
+				</component>
+				<node id="16777370">
+					<attribute name="Is Enabled" value="true" />
+					<attribute name="Name" value="Model" />
+					<attribute name="Tags" />
+					<attribute name="Position" value="0 0 0" />
+					<attribute name="Rotation" value="1 0 0 0" />
+					<attribute name="Scale" value="0.003 0.003 0.003" />
+					<attribute name="Variables" />
+					<component type="StaticModel" id="16777414">
 						<attribute name="Model" value="Model;Models/Wall.mdl" />
 						<attribute name="Material" value="Material;Materials/Wall.xml" />
 					</component>
@@ -200,7 +201,7 @@
 			</node>
 		</node>
 	</node>
-	<node id="16777276">
+	<node id="16777371">
 		<attribute name="Is Enabled" value="true" />
 		<attribute name="Name" value="Set" />
 		<attribute name="Tags" />
@@ -208,7 +209,7 @@
 		<attribute name="Rotation" value="1 0 0 0" />
 		<attribute name="Scale" value="1 1 1" />
 		<attribute name="Variables" />
-		<node id="16777277">
+		<node id="16777372">
 			<attribute name="Is Enabled" value="true" />
 			<attribute name="Name" value="Floor" />
 			<attribute name="Tags" />
@@ -216,17 +217,17 @@
 			<attribute name="Rotation" value="1 0 0 0" />
 			<attribute name="Scale" value="1 1 1" />
 			<attribute name="Variables" />
-			<component type="RigidBody" id="16777300">
+			<component type="RigidBody" id="16777415">
 				<attribute name="Physics Position" value="4.77603 -11.1229 10.2385" />
 				<attribute name="Collision Mask" value="249" />
 				<attribute name="Use Gravity" value="false" />
 				<attribute name="Is Kinematic" value="true" />
 			</component>
-			<component type="CollisionShape" id="16777301">
+			<component type="CollisionShape" id="16777416">
 				<attribute name="Size" value="3 0.3 3" />
 				<attribute name="Offset Position" value="1.5 -0.15 1.5" />
 			</component>
-			<node id="16777278">
+			<node id="16777373">
 				<attribute name="Is Enabled" value="true" />
 				<attribute name="Name" value="Model" />
 				<attribute name="Tags" />
@@ -234,13 +235,13 @@
 				<attribute name="Rotation" value="1 0 0 0" />
 				<attribute name="Scale" value="0.003 0.003 0.003" />
 				<attribute name="Variables" />
-				<component type="StaticModel" id="16777302">
+				<component type="StaticModel" id="16777417">
 					<attribute name="Model" value="Model;Models/Floor.mdl" />
 					<attribute name="Material" value="Material;Materials/Floor.xml" />
 				</component>
 			</node>
 		</node>
-		<node id="16777279">
+		<node id="16777374">
 			<attribute name="Is Enabled" value="true" />
 			<attribute name="Name" value="Walls" />
 			<attribute name="Tags" />
@@ -248,47 +249,25 @@
 			<attribute name="Rotation" value="1 0 0 0" />
 			<attribute name="Scale" value="1 1 1" />
 			<attribute name="Variables" />
-			<node id="16777284">
+			<node id="16777375">
 				<attribute name="Is Enabled" value="true" />
 				<attribute name="Name" value="Wall" />
-				<attribute name="Tags" />
-				<attribute name="Position" value="0 0 0" />
-				<attribute name="Rotation" value="1 0 0 0" />
-				<attribute name="Scale" value="1 1 1" />
-				<attribute name="Variables" />
-				<component type="RigidBody" id="16777307">
-					<attribute name="Physics Position" value="4.77603 -11.1229 10.2385" />
-					<attribute name="Collision Mask" value="249" />
-					<attribute name="Use Gravity" value="false" />
-					<attribute name="Is Kinematic" value="true" />
-				</component>
-				<component type="CollisionShape" id="16777308">
-					<attribute name="Size" value="3 1.2 0.25" />
-					<attribute name="Offset Position" value="1.5 0.6 0" />
-				</component>
-				<node id="16777285">
-					<attribute name="Is Enabled" value="true" />
-					<attribute name="Name" value="Model" />
-					<attribute name="Tags" />
-					<attribute name="Position" value="0 0 0" />
-					<attribute name="Rotation" value="1 0 0 0" />
-					<attribute name="Scale" value="0.003 0.003 0.003" />
-					<attribute name="Variables" />
-					<component type="StaticModel" id="16777309">
-						<attribute name="Model" value="Model;Models/Wall.mdl" />
-						<attribute name="Material" value="Material;Materials/Wall.xml" />
-					</component>
-				</node>
-			</node>
-			<node id="16777300">
-				<attribute name="Is Enabled" value="true" />
-				<attribute name="Name" value="WallPost" />
 				<attribute name="Tags" />
 				<attribute name="Position" value="0 0 3" />
 				<attribute name="Rotation" value="1 0 0 0" />
 				<attribute name="Scale" value="1 1 1" />
 				<attribute name="Variables" />
-				<node id="16777301">
+				<component type="RigidBody" id="16777418">
+					<attribute name="Physics Position" value="4.77603 -11.1229 13.2385" />
+					<attribute name="Collision Mask" value="249" />
+					<attribute name="Use Gravity" value="false" />
+					<attribute name="Is Kinematic" value="true" />
+				</component>
+				<component type="CollisionShape" id="16777419">
+					<attribute name="Size" value="3 1.2 0.25" />
+					<attribute name="Offset Position" value="1.5 0.6 0" />
+				</component>
+				<node id="16777376">
 					<attribute name="Is Enabled" value="true" />
 					<attribute name="Name" value="Model" />
 					<attribute name="Tags" />
@@ -296,12 +275,34 @@
 					<attribute name="Rotation" value="1 0 0 0" />
 					<attribute name="Scale" value="0.003 0.003 0.003" />
 					<attribute name="Variables" />
-					<component type="StaticModel" id="16777327">
+					<component type="StaticModel" id="16777420">
+						<attribute name="Model" value="Model;Models/Wall.mdl" />
+						<attribute name="Material" value="Material;Materials/Wall.xml" />
+					</component>
+				</node>
+			</node>
+			<node id="16777377">
+				<attribute name="Is Enabled" value="true" />
+				<attribute name="Name" value="WallPost" />
+				<attribute name="Tags" />
+				<attribute name="Position" value="0 0 0" />
+				<attribute name="Rotation" value="1 0 0 0" />
+				<attribute name="Scale" value="1 1 1" />
+				<attribute name="Variables" />
+				<node id="16777378">
+					<attribute name="Is Enabled" value="true" />
+					<attribute name="Name" value="Model" />
+					<attribute name="Tags" />
+					<attribute name="Position" value="0 0 0" />
+					<attribute name="Rotation" value="1 0 0 0" />
+					<attribute name="Scale" value="0.003 0.003 0.003" />
+					<attribute name="Variables" />
+					<component type="StaticModel" id="16777421">
 						<attribute name="Model" value="Model;Models/WallPost.mdl" />
 						<attribute name="Material" value="Material;Materials/WallPost.xml" />
 					</component>
 				</node>
-				<node id="16777302">
+				<node id="16777379">
 					<attribute name="Is Enabled" value="true" />
 					<attribute name="Name" value="Left" />
 					<attribute name="Tags" />
@@ -309,18 +310,18 @@
 					<attribute name="Rotation" value="1 0 0 0" />
 					<attribute name="Scale" value="1 1 1" />
 					<attribute name="Variables" />
-					<component type="CollisionShape" id="16777328">
+					<component type="CollisionShape" id="16777422">
 						<attribute name="Size" value="1 1.2 0.25" />
 						<attribute name="Offset Position" value="0.5 0.6 0" />
 					</component>
-					<component type="RigidBody" id="16777329">
-						<attribute name="Physics Position" value="4.77603 -11.1229 13.2385" />
+					<component type="RigidBody" id="16777423">
+						<attribute name="Physics Position" value="4.77603 -11.1229 10.2385" />
 						<attribute name="Collision Mask" value="249" />
 						<attribute name="Use Gravity" value="false" />
 						<attribute name="Is Kinematic" value="true" />
 					</component>
 				</node>
-				<node id="16777303">
+				<node id="16777380">
 					<attribute name="Is Enabled" value="true" />
 					<attribute name="Name" value="Right" />
 					<attribute name="Tags" />
@@ -328,12 +329,12 @@
 					<attribute name="Rotation" value="1 0 0 0" />
 					<attribute name="Scale" value="1 1 1" />
 					<attribute name="Variables" />
-					<component type="CollisionShape" id="16777330">
+					<component type="CollisionShape" id="16777424">
 						<attribute name="Size" value="1 1.2 0.25" />
 						<attribute name="Offset Position" value="2.5 0.6 0" />
 					</component>
-					<component type="RigidBody" id="16777331">
-						<attribute name="Physics Position" value="4.77603 -11.1229 13.2385" />
+					<component type="RigidBody" id="16777425">
+						<attribute name="Physics Position" value="4.77603 -11.1229 10.2385" />
 						<attribute name="Collision Mask" value="249" />
 						<attribute name="Use Gravity" value="false" />
 						<attribute name="Is Kinematic" value="true" />
@@ -342,7 +343,7 @@
 			</node>
 		</node>
 	</node>
-	<node id="16777286">
+	<node id="16777381">
 		<attribute name="Is Enabled" value="true" />
 		<attribute name="Name" value="Set" />
 		<attribute name="Tags" />
@@ -350,7 +351,7 @@
 		<attribute name="Rotation" value="1 0 0 0" />
 		<attribute name="Scale" value="1 1 1" />
 		<attribute name="Variables" />
-		<node id="16777287">
+		<node id="16777382">
 			<attribute name="Is Enabled" value="true" />
 			<attribute name="Name" value="Floor" />
 			<attribute name="Tags" />
@@ -358,17 +359,17 @@
 			<attribute name="Rotation" value="1 0 0 0" />
 			<attribute name="Scale" value="1 1 1" />
 			<attribute name="Variables" />
-			<component type="RigidBody" id="16777310">
+			<component type="RigidBody" id="16777426">
 				<attribute name="Physics Position" value="7.77603 -11.1229 10.2385" />
 				<attribute name="Collision Mask" value="249" />
 				<attribute name="Use Gravity" value="false" />
 				<attribute name="Is Kinematic" value="true" />
 			</component>
-			<component type="CollisionShape" id="16777311">
+			<component type="CollisionShape" id="16777427">
 				<attribute name="Size" value="3 0.3 3" />
 				<attribute name="Offset Position" value="1.5 -0.15 1.5" />
 			</component>
-			<node id="16777288">
+			<node id="16777383">
 				<attribute name="Is Enabled" value="true" />
 				<attribute name="Name" value="Model" />
 				<attribute name="Tags" />
@@ -376,13 +377,13 @@
 				<attribute name="Rotation" value="1 0 0 0" />
 				<attribute name="Scale" value="0.003 0.003 0.003" />
 				<attribute name="Variables" />
-				<component type="StaticModel" id="16777312">
+				<component type="StaticModel" id="16777428">
 					<attribute name="Model" value="Model;Models/Floor.mdl" />
 					<attribute name="Material" value="Material;Materials/Floor.xml" />
 				</component>
 			</node>
 		</node>
-		<node id="16777289">
+		<node id="16777384">
 			<attribute name="Is Enabled" value="true" />
 			<attribute name="Name" value="Walls" />
 			<attribute name="Tags" />
@@ -390,7 +391,7 @@
 			<attribute name="Rotation" value="1 0 0 0" />
 			<attribute name="Scale" value="1 1 1" />
 			<attribute name="Variables" />
-			<node id="16777290">
+			<node id="16777385">
 				<attribute name="Is Enabled" value="true" />
 				<attribute name="Name" value="Wall" />
 				<attribute name="Tags" />
@@ -398,17 +399,17 @@
 				<attribute name="Rotation" value="1 0 0 0" />
 				<attribute name="Scale" value="1 1 1" />
 				<attribute name="Variables" />
-				<component type="RigidBody" id="16777313">
+				<component type="RigidBody" id="16777429">
 					<attribute name="Physics Position" value="7.77603 -11.1229 10.2385" />
 					<attribute name="Collision Mask" value="249" />
 					<attribute name="Use Gravity" value="false" />
 					<attribute name="Is Kinematic" value="true" />
 				</component>
-				<component type="CollisionShape" id="16777314">
+				<component type="CollisionShape" id="16777430">
 					<attribute name="Size" value="3 1.2 0.25" />
 					<attribute name="Offset Position" value="1.5 0.6 0" />
 				</component>
-				<node id="16777291">
+				<node id="16777386">
 					<attribute name="Is Enabled" value="true" />
 					<attribute name="Name" value="Model" />
 					<attribute name="Tags" />
@@ -416,13 +417,13 @@
 					<attribute name="Rotation" value="1 0 0 0" />
 					<attribute name="Scale" value="0.003 0.003 0.003" />
 					<attribute name="Variables" />
-					<component type="StaticModel" id="16777315">
+					<component type="StaticModel" id="16777431">
 						<attribute name="Model" value="Model;Models/Wall.mdl" />
 						<attribute name="Material" value="Material;Materials/Wall.xml" />
 					</component>
 				</node>
 			</node>
-			<node id="16777296">
+			<node id="16777387">
 				<attribute name="Is Enabled" value="true" />
 				<attribute name="Name" value="Wall" />
 				<attribute name="Tags" />
@@ -430,17 +431,17 @@
 				<attribute name="Rotation" value="1 0 0 0" />
 				<attribute name="Scale" value="1 1 1" />
 				<attribute name="Variables" />
-				<component type="RigidBody" id="16777320">
+				<component type="RigidBody" id="16777432">
 					<attribute name="Physics Position" value="7.77603 -11.1229 13.2385" />
 					<attribute name="Collision Mask" value="249" />
 					<attribute name="Use Gravity" value="false" />
 					<attribute name="Is Kinematic" value="true" />
 				</component>
-				<component type="CollisionShape" id="16777321">
+				<component type="CollisionShape" id="16777433">
 					<attribute name="Size" value="3 1.2 0.25" />
 					<attribute name="Offset Position" value="1.5 0.6 0" />
 				</component>
-				<node id="16777297">
+				<node id="16777388">
 					<attribute name="Is Enabled" value="true" />
 					<attribute name="Name" value="Model" />
 					<attribute name="Tags" />
@@ -448,13 +449,13 @@
 					<attribute name="Rotation" value="1 0 0 0" />
 					<attribute name="Scale" value="0.003 0.003 0.003" />
 					<attribute name="Variables" />
-					<component type="StaticModel" id="16777322">
+					<component type="StaticModel" id="16777434">
 						<attribute name="Model" value="Model;Models/Wall.mdl" />
 						<attribute name="Material" value="Material;Materials/Wall.xml" />
 					</component>
 				</node>
 			</node>
-			<node id="16777304">
+			<node id="16777389">
 				<attribute name="Is Enabled" value="true" />
 				<attribute name="Name" value="WallPost" />
 				<attribute name="Tags" />
@@ -462,7 +463,7 @@
 				<attribute name="Rotation" value="0.707107 0 -0.707107 0" />
 				<attribute name="Scale" value="1 1 1" />
 				<attribute name="Variables" />
-				<node id="16777305">
+				<node id="16777390">
 					<attribute name="Is Enabled" value="true" />
 					<attribute name="Name" value="Model" />
 					<attribute name="Tags" />
@@ -470,12 +471,12 @@
 					<attribute name="Rotation" value="1 0 0 0" />
 					<attribute name="Scale" value="0.003 0.003 0.003" />
 					<attribute name="Variables" />
-					<component type="StaticModel" id="16777332">
+					<component type="StaticModel" id="16777435">
 						<attribute name="Model" value="Model;Models/WallPost.mdl" />
 						<attribute name="Material" value="Material;Materials/WallPost.xml" />
 					</component>
 				</node>
-				<node id="16777306">
+				<node id="16777391">
 					<attribute name="Is Enabled" value="true" />
 					<attribute name="Name" value="Left" />
 					<attribute name="Tags" />
@@ -483,11 +484,11 @@
 					<attribute name="Rotation" value="1 0 0 0" />
 					<attribute name="Scale" value="1 1 1" />
 					<attribute name="Variables" />
-					<component type="CollisionShape" id="16777333">
+					<component type="CollisionShape" id="16777436">
 						<attribute name="Size" value="1 1.2 0.25" />
 						<attribute name="Offset Position" value="0.5 0.6 0" />
 					</component>
-					<component type="RigidBody" id="16777334">
+					<component type="RigidBody" id="16777437">
 						<attribute name="Physics Rotation" value="0.707107 0 -0.707107 0" />
 						<attribute name="Physics Position" value="10.776 -11.1229 10.2385" />
 						<attribute name="Collision Mask" value="249" />
@@ -495,7 +496,7 @@
 						<attribute name="Is Kinematic" value="true" />
 					</component>
 				</node>
-				<node id="16777307">
+				<node id="16777392">
 					<attribute name="Is Enabled" value="true" />
 					<attribute name="Name" value="Right" />
 					<attribute name="Tags" />
@@ -503,11 +504,11 @@
 					<attribute name="Rotation" value="1 0 0 0" />
 					<attribute name="Scale" value="1 1 1" />
 					<attribute name="Variables" />
-					<component type="CollisionShape" id="16777335">
+					<component type="CollisionShape" id="16777438">
 						<attribute name="Size" value="1 1.2 0.25" />
 						<attribute name="Offset Position" value="2.5 0.6 0" />
 					</component>
-					<component type="RigidBody" id="16777336">
+					<component type="RigidBody" id="16777439">
 						<attribute name="Physics Rotation" value="0.707107 0 -0.707107 0" />
 						<attribute name="Physics Position" value="10.776 -11.1229 10.2385" />
 						<attribute name="Collision Mask" value="249" />
@@ -518,7 +519,7 @@
 			</node>
 		</node>
 	</node>
-	<node id="16777298">
+	<node id="16777393">
 		<attribute name="Is Enabled" value="true" />
 		<attribute name="Name" value="Bound" />
 		<attribute name="Tags" />
@@ -527,7 +528,7 @@
 		<attribute name="Scale" value="1 1 1" />
 		<attribute name="Variables" />
 	</node>
-	<node id="16777299">
+	<node id="16777394">
 		<attribute name="Is Enabled" value="true" />
 		<attribute name="Name" value="Detector" />
 		<attribute name="Tags" />
@@ -535,7 +536,7 @@
 		<attribute name="Rotation" value="1 0 0 0" />
 		<attribute name="Scale" value="1 1 1" />
 		<attribute name="Variables" />
-		<component type="RigidBody" id="16777323">
+		<component type="RigidBody" id="16777440">
 			<attribute name="Physics Position" value="1.77603 -11.1229 10.2385" />
 			<attribute name="Mass" value="1" />
 			<attribute name="Collision Layer" value="2" />
@@ -543,7 +544,7 @@
 			<attribute name="Use Gravity" value="false" />
 			<attribute name="Is Trigger" value="true" />
 		</component>
-		<component type="CollisionShape" id="16777324">
+		<component type="CollisionShape" id="16777441">
 			<attribute name="Size" value="8.75 1.2 2.75" />
 			<attribute name="Offset Position" value="4.5 0.6 1.5" />
 		</component>
