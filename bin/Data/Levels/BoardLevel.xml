@@ -8,7 +8,7 @@
 	<attribute name="Next Replicated Node ID" value="112" />
 	<attribute name="Next Replicated Component ID" value="144" />
 	<attribute name="Next Local Node ID" value="16777849" />
-	<attribute name="Next Local Component ID" value="16778098" />
+	<attribute name="Next Local Component ID" value="16778099" />
 	<attribute name="Variables" />
 	<attribute name="Variable Names" value="" />
 	<component type="Octree" id="1" />
@@ -2737,6 +2737,10 @@
 		<attribute name="Variables" />
 		<component type="Camera" id="16777325">
 			<attribute name="Aspect Ratio" value="1.77778" />
+		</component>
+		<component type="LuaScriptInstance" id="16778098">
+			<attribute name="Script File" value="LuaFile;LuaScripts/Camera.lua" />
+			<attribute name="Script Object Type" value="Camera" />
 		</component>
 	</node>
 	<node id="107">

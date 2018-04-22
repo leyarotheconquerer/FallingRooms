@@ -141,9 +141,9 @@ function TetrisRoom:HandleNodeCollisionStart(type, data)
 			detectorBody:SetMass(0.0)
 			rigidBody:SetLinearVelocity(Vector3.ZERO)
 			rigidBody:SetPosition(Vector3(
-				Ceil(rigidBody.position.x / 3) * 3,
+				Round(rigidBody.position.x / 3) * 3,
 				0,
-				Ceil(rigidBody.position.z / 3) * 3
+				Round(rigidBody.position.z / 3) * 3
 			))
 			self:Disable()
 			local terminator = self.node.scene:GetChild("Terminator", true)
