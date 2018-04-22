@@ -49,5 +49,8 @@ function Player:Stop()
 end
 
 function Player:HandlePostRenderUpdate(type, data)
-	self.node.scene:GetComponent("PhysicsWorld"):DrawDebugGeometry(true)
+	physicsWorld = self.node.scene:GetComponent("PhysicsWorld")
+	if (physicsWorld ~= nil) then
+		physicsWorld:DrawDebugGeometry(true)
+	end
 end

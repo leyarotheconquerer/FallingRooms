@@ -1,5 +1,9 @@
 TetrisBoard = ScriptObject()
 
+TetrisBoard.Left = 0
+TetrisBoard.Right = 36
+TetrisBoard.Top = 36
+
 function TetrisBoard:Start()
 	log:Write(LOG_DEBUG, "Starting board level")
 end
