@@ -14,7 +14,7 @@ function ExitRoom:HandleNodeCollisionStart(type, data)
 		local window = ui.root:CreateChild("Window")
 		local style = cache:GetResource("XMLFile", "UI/UIStyle.xml")
 		if (style ~= nil and window ~= nil) then
-			window:SetDefaultStyle(style)
+			window:SetStyle(style)
 			window:LoadXML(cache:GetResourceFileName("UI/VictoryWindow.xml"))
 			SendEvent("TerminateLevel")
 		end

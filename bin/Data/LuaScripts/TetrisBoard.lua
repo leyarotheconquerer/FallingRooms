@@ -46,11 +46,12 @@ function TetrisBoard:HandleKeyDown(type, data)
 			window:RemoveAllChildren()
 			window:LoadXML(cache:GetResourceFileName("UI/SecondWindow.xml"))
 			TetrisBoard.State = "Second"
-		elseif (window ~= nil) then
+		elseif (window ~= nil and TetrisBoard.State == "Second") then
 			log:Write(LOG_DEBUG, "Spawning new room")
 			TetrisConf.SpawnNewRoom(self.node.scene)
 			window:Remove()
-		else
+			TetrisBoard.State = "Play"
+		elseif (window == nil) then
 			log:Write(LOG_DEBUG, "Window is nil")
 		end
 	end

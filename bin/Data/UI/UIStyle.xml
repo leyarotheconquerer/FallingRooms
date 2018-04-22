@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <elements>
 	<element type="FallingRoomsStyle">
-		<attribute name="Texture" value="Texture2D;Textures/UI.png" />
+		<attribute name="Texture" value="Texture2D;Textures/UITexture.png" />
 		<attribute name="Blend Mode" value="alpha" />
 	</element>
 	<element type="Button" style="FallingRoomsStyle">
