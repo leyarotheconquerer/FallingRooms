@@ -1,0 +1,95 @@
+<?xml version="1.0"?>
+<element type="Window">
+	<attribute name="Name" value="WelcomeWindow" />
+	<attribute name="Size" value="400 300" />
+	<attribute name="Min Anchor" value="0.5 0.5" />
+	<attribute name="Max Anchor" value="0.5 0.5" />
+	<attribute name="Pivot" value="0.5 0.5" />
+	<element type="Text">
+		<attribute name="Name" value="TitleText" />
+		<attribute name="Position" value="0 30" />
+		<attribute name="Min Anchor" value="0.5 0" />
+		<attribute name="Max Anchor" value="0.5 0" />
+		<attribute name="Pivot" value="0.5 0" />
+		<attribute name="Top Left Color" value="0.85 0.85 0.85 1" />
+		<attribute name="Top Right Color" value="0.85 0.85 0.85 1" />
+		<attribute name="Bottom Left Color" value="0.85 0.85 0.85 1" />
+		<attribute name="Bottom Right Color" value="0.85 0.85 0.85 1" />
+		<attribute name="Font" value="Font;Fonts/Megrim.ttf" />
+		<attribute name="Font Size" value="32" />
+		<attribute name="Text" value="Falling Rooms" />
+	</element>
+	<element type="Text">
+		<attribute name="Name" value="RoomText" />
+		<attribute name="Position" value="0 100" />
+		<attribute name="Min Anchor" value="0.5 0" />
+		<attribute name="Max Anchor" value="0.5 0" />
+		<attribute name="Pivot" value="0.5 0" />
+		<attribute name="Top Left Color" value="0.85 0.85 0.85 1" />
+		<attribute name="Top Right Color" value="0.85 0.85 0.85 1" />
+		<attribute name="Bottom Left Color" value="0.85 0.85 0.85 1" />
+		<attribute name="Bottom Right Color" value="0.85 0.85 0.85 1" />
+		<attribute name="Font" value="Font;Fonts/Megrim.ttf" />
+		<attribute name="Font Size" value="24" />
+		<attribute name="Text" value="Rooms - WASD" />
+		<attribute name="Text Alignment" value="Center" />
+	</element>
+	<element type="Text">
+		<attribute name="Name" value="PlayerText" />
+		<attribute name="Position" value="0 150" />
+		<attribute name="Min Anchor" value="0.5 0" />
+		<attribute name="Max Anchor" value="0.5 0" />
+		<attribute name="Pivot" value="0.5 0" />
+		<attribute name="Top Left Color" value="0.85 0.85 0.85 1" />
+		<attribute name="Top Right Color" value="0.85 0.85 0.85 1" />
+		<attribute name="Bottom Left Color" value="0.85 0.85 0.85 1" />
+		<attribute name="Bottom Right Color" value="0.85 0.85 0.85 1" />
+		<attribute name="Font" value="Font;Fonts/Megrim.ttf" />
+		<attribute name="Font Size" value="24" />
+		<attribute name="Text" value="Player - Arrow Keys" />
+		<attribute name="Text Alignment" value="Center" />
+	</element>
+	<element type="Text">
+		<attribute name="Name" value="WelcomeText" />
+		<attribute name="Position" value="0 10" />
+		<attribute name="Min Anchor" value="0.5 0" />
+		<attribute name="Max Anchor" value="0.5 0" />
+		<attribute name="Pivot" value="0.5 0" />
+		<attribute name="Top Left Color" value="0.85 0.85 0.85 1" />
+		<attribute name="Top Right Color" value="0.85 0.85 0.85 1" />
+		<attribute name="Bottom Left Color" value="0.85 0.85 0.85 1" />
+		<attribute name="Bottom Right Color" value="0.85 0.85 0.85 1" />
+		<attribute name="Font" value="Font;Fonts/Megrim.ttf" />
+		<attribute name="Font Size" value="16" />
+		<attribute name="Text" value="Welcome to" />
+		<attribute name="Text Alignment" value="Center" />
+	</element>
+	<element type="Text">
+		<attribute name="Name" value="ContinueText" />
+		<attribute name="Position" value="0 280" />
+		<attribute name="Min Anchor" value="0.5 0" />
+		<attribute name="Max Anchor" value="0.5 0" />
+		<attribute name="Pivot" value="0.5 0" />
+		<attribute name="Top Left Color" value="0.85 0.85 0.85 1" />
+		<attribute name="Top Right Color" value="0.85 0.85 0.85 1" />
+		<attribute name="Bottom Left Color" value="0.85 0.85 0.85 1" />
+		<attribute name="Bottom Right Color" value="0.85 0.85 0.85 1" />
+		<attribute name="Font" value="Font;Fonts/Megrim.ttf" />
+		<attribute name="Font Size" value="12" />
+		<attribute name="Text" value="press ENTER to continue" />
+	</element>
+	<element type="Text">
+		<attribute name="Name" value="ViewText" />
+		<attribute name="Position" value="0 200" />
+		<attribute name="Min Anchor" value="0.5 0" />
+		<attribute name="Max Anchor" value="0.5 0" />
+		<attribute name="Pivot" value="0.5 0" />
+		<attribute name="Top Left Color" value="0.85 0.85 0.85 1" />
+		<attribute name="Top Right Color" value="0.85 0.85 0.85 1" />
+		<attribute name="Bottom Left Color" value="0.85 0.85 0.85 1" />
+		<attribute name="Bottom Right Color" value="0.85 0.85 0.85 1" />
+		<attribute name="Font" value="Font;Fonts/Megrim.ttf" />
+		<attribute name="Font Size" value="24" />
+		<attribute name="Text" value="View switch - Space" />
+	</element>
+</element>

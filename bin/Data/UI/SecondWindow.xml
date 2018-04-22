@@ -1,0 +1,109 @@
+<?xml version="1.0"?>
+<element type="Window">
+	<attribute name="Name" value="SecondWindow" />
+	<attribute name="Size" value="400 300" />
+	<attribute name="Min Anchor" value="0.5 0.5" />
+	<attribute name="Max Anchor" value="0.5 0.5" />
+	<attribute name="Pivot" value="0.5 0.5" />
+	<element type="Text">
+		<attribute name="Name" value="GoalText" />
+		<attribute name="Position" value="0 10" />
+		<attribute name="Min Anchor" value="0.5 0" />
+		<attribute name="Max Anchor" value="0.5 0" />
+		<attribute name="Pivot" value="0.5 0" />
+		<attribute name="Top Left Color" value="0.85 0.85 0.85 1" />
+		<attribute name="Top Right Color" value="0.85 0.85 0.85 1" />
+		<attribute name="Bottom Left Color" value="0.85 0.85 0.85 1" />
+		<attribute name="Bottom Right Color" value="0.85 0.85 0.85 1" />
+		<attribute name="Font" value="Font;Fonts/Megrim.ttf" />
+		<attribute name="Font Size" value="24" />
+		<attribute name="Text" value="Goal" />
+	</element>
+	<element type="Text">
+		<attribute name="Name" value="AvoidText" />
+		<attribute name="Position" value="0 100" />
+		<attribute name="Min Anchor" value="0.5 0" />
+		<attribute name="Max Anchor" value="0.5 0" />
+		<attribute name="Pivot" value="0.5 0" />
+		<attribute name="Top Left Color" value="0.85 0.85 0.85 1" />
+		<attribute name="Top Right Color" value="0.85 0.85 0.85 1" />
+		<attribute name="Bottom Left Color" value="0.85 0.85 0.85 1" />
+		<attribute name="Bottom Right Color" value="0.85 0.85 0.85 1" />
+		<attribute name="Font" value="Font;Fonts/Megrim.ttf" />
+		<attribute name="Font Size" value="24" />
+		<attribute name="Text" value="Avoid" />
+		<attribute name="Text Alignment" value="Center" />
+	</element>
+	<element type="Text">
+		<attribute name="Name" value="ContinueText" />
+		<attribute name="Position" value="0 280" />
+		<attribute name="Min Anchor" value="0.5 0" />
+		<attribute name="Max Anchor" value="0.5 0" />
+		<attribute name="Pivot" value="0.5 0" />
+		<attribute name="Top Left Color" value="0.85 0.85 0.85 1" />
+		<attribute name="Top Right Color" value="0.85 0.85 0.85 1" />
+		<attribute name="Bottom Left Color" value="0.85 0.85 0.85 1" />
+		<attribute name="Bottom Right Color" value="0.85 0.85 0.85 1" />
+		<attribute name="Font" value="Font;Fonts/Megrim.ttf" />
+		<attribute name="Font Size" value="12" />
+		<attribute name="Text" value="press ENTER to continue" />
+	</element>
+	<element type="Text">
+		<attribute name="Name" value="GoalInstructionText" />
+		<attribute name="Position" value="0 50" />
+		<attribute name="Min Anchor" value="0.5 0" />
+		<attribute name="Max Anchor" value="0.5 0" />
+		<attribute name="Pivot" value="0.5 0" />
+		<attribute name="Top Left Color" value="0.85 0.85 0.85 1" />
+		<attribute name="Top Right Color" value="0.85 0.85 0.85 1" />
+		<attribute name="Bottom Left Color" value="0.85 0.85 0.85 1" />
+		<attribute name="Bottom Right Color" value="0.85 0.85 0.85 1" />
+		<attribute name="Font" value="Font;Fonts/Megrim.ttf" />
+		<attribute name="Font Size" value="16" />
+		<attribute name="Text" value="Reach Exit room on Left" />
+		<attribute name="Text Alignment" value="Center" />
+	</element>
+	<element type="Text">
+		<attribute name="Name" value="AvoidInstructionText" />
+		<attribute name="Position" value="0 140" />
+		<attribute name="Min Anchor" value="0.5 0" />
+		<attribute name="Max Anchor" value="0.5 0" />
+		<attribute name="Pivot" value="0.5 0" />
+		<attribute name="Top Left Color" value="0.85 0.85 0.85 1" />
+		<attribute name="Top Right Color" value="0.85 0.85 0.85 1" />
+		<attribute name="Bottom Left Color" value="0.85 0.85 0.85 1" />
+		<attribute name="Bottom Right Color" value="0.85 0.85 0.85 1" />
+		<attribute name="Font" value="Font;Fonts/Megrim.ttf" />
+		<attribute name="Font Size" value="16" />
+		<attribute name="Text" value="Blocks reaching the top" />
+		<attribute name="Text Alignment" value="Center" />
+	</element>
+	<element type="Text">
+		<attribute name="Name" value="RestartText" />
+		<attribute name="Position" value="0 190" />
+		<attribute name="Min Anchor" value="0.5 0" />
+		<attribute name="Max Anchor" value="0.5 0" />
+		<attribute name="Pivot" value="0.5 0" />
+		<attribute name="Top Left Color" value="0.85 0.85 0.85 1" />
+		<attribute name="Top Right Color" value="0.85 0.85 0.85 1" />
+		<attribute name="Bottom Left Color" value="0.85 0.85 0.85 1" />
+		<attribute name="Bottom Right Color" value="0.85 0.85 0.85 1" />
+		<attribute name="Font" value="Font;Fonts/Megrim.ttf" />
+		<attribute name="Font Size" value="24" />
+		<attribute name="Text" value="To Restart" />
+	</element>
+	<element type="Text">
+		<attribute name="Name" value="RestartInstructionText" />
+		<attribute name="Position" value="0 230" />
+		<attribute name="Min Anchor" value="0.5 0" />
+		<attribute name="Max Anchor" value="0.5 0" />
+		<attribute name="Pivot" value="0.5 0" />
+		<attribute name="Top Left Color" value="0.85 0.85 0.85 1" />
+		<attribute name="Top Right Color" value="0.85 0.85 0.85 1" />
+		<attribute name="Bottom Left Color" value="0.85 0.85 0.85 1" />
+		<attribute name="Bottom Right Color" value="0.85 0.85 0.85 1" />
+		<attribute name="Font" value="Font;Fonts/Megrim.ttf" />
+		<attribute name="Font Size" value="16" />
+		<attribute name="Text" value="press R" />
+	</element>
+</element>

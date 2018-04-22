@@ -4,11 +4,13 @@ TetrisRoom = ScriptObject()
 
 function TetrisRoom:Start()
 	self.direction = 0
+	self.spawnCount = -1
 end
 
 function TetrisRoom:DelayedStart()
 	self:GenerateStart()
-	local rigidBody = self.node:GetComponent("RigidBody")
+	local physicalNode = self.node:GetChild("Physical")
+	local rigidBody = self:GetRigidBody()
 	if (rigidBody ~= nil) then
 		rigidBody:SetLinearVelocity(TetrisConf.Direction * TetrisConf.MovementRate)
 	else
@@ -24,6 +26,32 @@ function TetrisRoom:DelayedStart()
 	self:SubscribeToEvent("PostRenderUpdate", "TetrisRoom:HandlePostRenderUpdate")
 end
 
+function TetrisRoom:FixedUpdate()
+	local detector = self.node:GetChild("Detector")
+	if (detector ~= nil) then
+		local rigidBody = detector:GetComponent("RigidBody")
+		if (rigidBody ~= nil) then
+			rigidBody:SetPosition(self.node.position)
+			rigidBody:SetRotation(self.node.rotation)
+			rigidBody:Activate()
+		end
+	end
+	if (self.spawnCount > 0) then
+		self.spawnCount = self.spawnCount - 1
+	elseif (self.spawnCount == 0) then
+		self.spawnCount = -1
+		local terminator = self.node.scene:GetChild("Terminator", true)
+		if (terminator ~= nil) then
+			local terminatorBody = terminator:GetComponent("RigidBody")
+			if (terminatorBody ~= nil) then
+				terminatorBody:SetPosition(Vector3(TetrisConf.Left, 0.0, TetrisConf.Top + 1))
+				log:Write(LOG_DEBUG, "Moved the terminator... spawning a new room")
+				TetrisConf.SpawnNewRoom(self.node.scene)
+			end
+		end
+	end
+end
+
 function TetrisRoom:Stop()
 end
 
@@ -35,11 +63,11 @@ function TetrisRoom:HandleKeyDown(type, data)
 	if (boundNode ~= nil) then
 		bound = boundNode.worldPosition
 	end
-	local rigidBody = self.node:GetComponent("RigidBody")
+	local physicalNode = self.node:GetChild("Physical")
+	local rigidBody = self:GetRigidBody()
 	if (keyCode == KEY_W and rigidBody ~= nil) then
 		self:Rotate((self.direction + 1) % 4)
 	elseif (keyCode == KEY_A and rigidBody ~= nil) then
-		log:Write(LOG_DEBUG, string.format("X from %d to %d", rigidBody.position.x, bound.x))
 		if (
 			rigidBody.position.x >= TetrisConf.Left + TetrisConf.Interval
 			and bound.x >= TetrisConf.Left + TetrisConf.Interval
@@ -62,7 +90,16 @@ function TetrisRoom:HandleKeyDown(type, data)
 			))
 		end
 	elseif (keyCode == KEY_S) then
-		log:Write(LOG_DEBUG, "Implement the down movement, eh?")
+		if (
+			rigidBody.position.z >= TetrisConf.Interval
+			and bound.z >= TetrisConf.Interval
+		) then
+			rigidBody:SetPosition(Vector3(
+				rigidBody.position.x,
+				rigidBody.position.y,
+				rigidBody.position.z - TetrisConf.Interval
+			))
+		end
 	end
 end
 
@@ -76,39 +113,133 @@ function TetrisRoom:HandlePostRenderUpdate(type, data)
 	end
 end
 
-function TetrisRoom:HandleNodeCollisionStart(type, data)
-	local otherNode = data.OtherNode:Get("Node")
-	log:Write(LOG_DEBUG, string.format("Detector collision with %s", otherNode.name))
-	if (otherNode.name == "Detector") then
-		log:Write(LOG_DEBUG, "Detector collision")
+function TetrisRoom:HandlePhysicsCollisionStart(type, data)
+	local firstNode = data.NodeA:Get("Node")
+	local secondNode = data.NodeB:Get("Node")
+	log:Write(LOG_DEBUG, "Physics collision starting")
+	if (firstNode ~= nil and secondNode ~= nil) then
+		log:Write(LOG_DEBUG, string.format(
+			"Collision between %s (%d) and %s (%d)",
+			firstNode:GetName(),
+			firstNode:GetID(),
+			secondNode:GetName(),
+			secondNode:GetID()
+		))
+	else
+		log:Write(LOG_DEBUG, "Someone was null")
 	end
 end
 
+function TetrisRoom:HandleNodeCollisionStart(type, data)
+	local otherNode = data.OtherNode:Get("Node")
+	local detector = self.node:GetChild("Detector")
+	local rigidBody = self:GetRigidBody()
+	if (otherNode.name == "Detector" and rigidBody ~= nil and detector ~= nil) then
+		local detectorBody = detector:GetComponent("RigidBody")
+		if (detectorBody ~= nil) then
+			detectorBody:SetMass(0.0)
+			rigidBody:SetLinearVelocity(Vector3.ZERO)
+			rigidBody:SetPosition(Vector3(
+				Ceil(rigidBody.position.x / 3) * 3,
+				0,
+				Ceil(rigidBody.position.z / 3) * 3
+			))
+			self:Disable()
+			log:Write(LOG_DEBUG, "Getting terminator")
+			local terminator = self.node.scene:GetChild("Terminator", true)
+			if (terminator ~= nil) then
+				log:Write(LOG_DEBUG, "Getting terminator body")
+				local terminatorBody = terminator:GetComponent("RigidBody")
+				if (terminatorBody ~= nil) then
+					log:Write(LOG_DEBUG, string.format("Setting position to %d", TetrisConf.Top))
+					terminatorBody:SetPosition(Vector3(TetrisConf.Left, 0.0, TetrisConf.Top))
+					terminatorBody:SetMass(1)
+					log:Write(LOG_DEBUG, "Setting spawn count")
+					self:SubscribeToEvent(terminator, "NodeCollision", "TetrisRoom:HandleTerminatorCollision")
+					self.spawnCount = 100
+					log:Write(LOG_DEBUG, "Complete")
+				end
+			end
+		end
+	elseif (otherNode.name == "Terminator") then
+		log:Write(LOG_DEBUG, "Loss condition met")
+		local window = ui.root:CreateChild("Window")
+		log:Write(LOG_DEBUG, "Created window")
+		if (window ~= nil) then
+			log:Write(LOG_DEBUG, "Loading window")
+			window:LoadXML(cache:GetResourceFileName("UI/LossWindow.xml"))
+			log:Write(LOG_DEBUG, "Loaded window")
+			self:Disable()
+			self:SubscribeToEvent("LoadLevel", "TetrisRoom:HandleLoadLevel")
+		end
+	end
+end
+
+function TetrisRoom:HandleTerminatorCollision(type, data)
+	log:Write(LOG_DEBUG, "Loss condition met")
+	local window = ui.root:CreateChild("Window")
+	local style = cache:GetResource("XMLFile", "UI/UIStyle.xml")
+	if (window ~= nil) then
+		window:SetDefaultStyle(style)
+		window:LoadXML(cache:GetResourceFileName("UI/LossWindow.xml"))
+		self:Disable()
+		self:SubscribeToEvent("LoadLevel", "TetrisRoom:HandleLoadLevel")
+		self.spawnCount = -1
+	end
+end
+
+function TetrisRoom:HandleLoadLevel(type, data)
+	local window = ui.root:GetChild("LossWindow")
+	if (window ~= nil) then
+		window:Remove()
+	end
+	self:UnsubscribeFromAllEvents()
+end
+
+function TetrisRoom:GetRigidBody()
+	rigidBody = self.node:GetComponent("RigidBody")
+	if (rigidBody ~= nil) then
+		return rigidBody
+	end
+	return nil
+end
+
 function TetrisRoom:GenerateStart()
-	local rigidBody = self.node:GetComponent("RigidBody")
+	local physicalNode = self.node:GetChild("Physical")
+	local rigidBody = self:GetRigidBody("RigidBody")
 	local boundNode = self.node:GetChild("Bound", true)
 
 	if (rigidBody ~= nil and boundNode ~= nil) then
-		local buffer = TetrisConf.Buffer
-		if (boundNode ~= nil) then
-			buffer = boundNode.position.x / TetrisConf.Interval
+		local height = AbsInt(boundNode.position.z) / TetrisConf.Interval
+		local width = AbsInt(boundNode.position.x) / TetrisConf.Interval
+		local maxDim = height
+		if (maxDim < width) then
+			maxDim = width
 		end
 		local x = RandomInt(
-			TetrisConf.Left + buffer,
-			(TetrisConf.Right) / TetrisConf.Interval - buffer
+			TetrisConf.Left,
+			(TetrisConf.Right) / TetrisConf.Interval - maxDim
 		) * TetrisConf.Interval
-		local y = TetrisConf.Top - buffer * TetrisConf.Interval
+		local y = TetrisConf.Top - (maxDim) * TetrisConf.Interval
+
+		log:Write(LOG_DEBUG, string.format("Generating between %d and %d by %d, chose %d, %d",
+			TetrisConf.Left * TetrisConf.Interval,
+			TetrisConf.Right - maxDim * TetrisConf.Interval,
+			TetrisConf.Top - (maxDim + 1) * TetrisConf.Interval,
+			x,
+			y
+		))
 
 		local direction = RandomInt(0, 3)
-		self:Rotate(direction)
 		rigidBody:SetPosition(Vector3(x, 0, y))
+		self:Rotate(direction)
 	end
 end
 
 function TetrisRoom:Rotate(direction)
-	local rigidBody = self.node:GetComponent("RigidBody")
+	local physicalNode = self.node:GetChild("Physical")
+	local rigidBody = self:GetRigidBody()
 	local boundNode = self.node:GetChild("Bound", true)
-	log:Write(LOG_DEBUG, string.format("Rotating from %d to %d", self.direction, direction))
 
 	if (rigidBody ~= nil and boundNode ~= nil) then
 		local maxDim = AbsInt(boundNode.position.x)
@@ -118,6 +249,13 @@ function TetrisRoom:Rotate(direction)
 
 		local rotation = Quaternion()
 		local position = rigidBody.position
+		log:Write(LOG_DEBUG, string.format("Rotating from %d to %d, starting at pos %d, %d with a maxDim of %d",
+			self.direction,
+			direction,
+			position.x,
+			position.z,
+			maxDim
+		))
 
 		if (direction == 0) then
 			rotation:FromLookRotation(Vector3.FORWARD, Vector3.UP)
@@ -135,5 +273,17 @@ function TetrisRoom:Rotate(direction)
 		rigidBody:SetRotation(rotation)
 		rigidBody:SetPosition(position)
 		self.direction = direction
+		log:Write(LOG_DEBUG, string.format("Moved to pos %d, %d",
+			position.x,
+			position.z
+		))
+	end
+end
+
+function TetrisRoom:Disable()
+	self:UnsubscribeFromAllEvents()
+	local rigidBody = self:GetRigidBody()
+	if (rigidBody ~= nil) then
+		rigidBody:SetTrigger(true)
 	end
 end

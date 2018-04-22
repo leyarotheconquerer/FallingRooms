@@ -9,6 +9,8 @@ function Start()
 	log:Write(LOG_DEBUG, "Create initial scene")
 
 	log:Write(LOG_DEBUG, "Begin loading the first level")
+	local style = cache:GetResource("XMLFile", "UI/UIStyle.xml")
+	ui.root:SetDefaultStyle(style)
 	LoadLevel("Levels/BoardLevel.xml")
 end
 
