@@ -10,6 +10,11 @@ namespace FallingRooms
 	{
 		URHO3D_PARAM(P_LEVEL, Level); // Urho3D::String
 	}
+
+	/// Stops the current level
+	URHO3D_EVENT(E_TERMINATELEVEL, TerminateLevel)
+	{
+	}
 }
 
 #endif //FallingRooms_Events_H

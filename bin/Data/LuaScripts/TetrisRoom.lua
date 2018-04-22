@@ -19,11 +19,13 @@ function TetrisRoom:DelayedStart()
 
 	local detectorNode = self.node:GetChild("Detector")
 	if (detectorNode ~= nil) then
+		log:Write("Registering for node collision starts")
 		self:SubscribeToEvent(detectorNode, "NodeCollisionStart", "TetrisRoom:HandleNodeCollisionStart")
 	end
 
 	self:SubscribeToEvent("KeyDown", "TetrisRoom:HandleKeyDown")
 	self:SubscribeToEvent("PostRenderUpdate", "TetrisRoom:HandlePostRenderUpdate")
+	self:SubscribeToEvent("TerminateLevel", "TetrisRoom:HandleTerminateLevel")
 end
 
 function TetrisRoom:FixedUpdate()
@@ -45,7 +47,6 @@ function TetrisRoom:FixedUpdate()
 			local terminatorBody = terminator:GetComponent("RigidBody")
 			if (terminatorBody ~= nil) then
 				terminatorBody:SetPosition(Vector3(TetrisConf.Left, 0.0, TetrisConf.Top + 1))
-				log:Write(LOG_DEBUG, "Moved the terminator... spawning a new room")
 				TetrisConf.SpawnNewRoom(self.node.scene)
 			end
 		end
@@ -145,32 +146,17 @@ function TetrisRoom:HandleNodeCollisionStart(type, data)
 				Ceil(rigidBody.position.z / 3) * 3
 			))
 			self:Disable()
-			log:Write(LOG_DEBUG, "Getting terminator")
 			local terminator = self.node.scene:GetChild("Terminator", true)
 			if (terminator ~= nil) then
-				log:Write(LOG_DEBUG, "Getting terminator body")
 				local terminatorBody = terminator:GetComponent("RigidBody")
 				if (terminatorBody ~= nil) then
 					log:Write(LOG_DEBUG, string.format("Setting position to %d", TetrisConf.Top))
 					terminatorBody:SetPosition(Vector3(TetrisConf.Left, 0.0, TetrisConf.Top))
 					terminatorBody:SetMass(1)
-					log:Write(LOG_DEBUG, "Setting spawn count")
 					self:SubscribeToEvent(terminator, "NodeCollision", "TetrisRoom:HandleTerminatorCollision")
-					self.spawnCount = 100
-					log:Write(LOG_DEBUG, "Complete")
+					self.spawnCount = TetrisConf.SpawnDelay
 				end
 			end
-		end
-	elseif (otherNode.name == "Terminator") then
-		log:Write(LOG_DEBUG, "Loss condition met")
-		local window = ui.root:CreateChild("Window")
-		log:Write(LOG_DEBUG, "Created window")
-		if (window ~= nil) then
-			log:Write(LOG_DEBUG, "Loading window")
-			window:LoadXML(cache:GetResourceFileName("UI/LossWindow.xml"))
-			log:Write(LOG_DEBUG, "Loaded window")
-			self:Disable()
-			self:SubscribeToEvent("LoadLevel", "TetrisRoom:HandleLoadLevel")
 		end
 	end
 end
@@ -186,6 +172,11 @@ function TetrisRoom:HandleTerminatorCollision(type, data)
 		self:SubscribeToEvent("LoadLevel", "TetrisRoom:HandleLoadLevel")
 		self.spawnCount = -1
 	end
+end
+
+function TetrisRoom:HandleTerminateLevel(type, data)
+	self.spawnCount = -1
+	self:Disable()
 end
 
 function TetrisRoom:HandleLoadLevel(type, data)
@@ -284,6 +275,7 @@ function TetrisRoom:Disable()
 	self:UnsubscribeFromAllEvents()
 	local rigidBody = self:GetRigidBody()
 	if (rigidBody ~= nil) then
+		rigidBody:SetLinearVelocity(Vector3.ZERO)
 		rigidBody:SetTrigger(true)
 	end
 end

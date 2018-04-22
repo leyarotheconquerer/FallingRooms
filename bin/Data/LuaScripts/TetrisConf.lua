@@ -6,6 +6,7 @@ TetrisConf = {
 	Buffer = 3,
 	Direction = Vector3(0, 0, -1),
 	MovementRate = 4,
+	SpawnDelay = 20,
 	Blocks = {
 		"Objects/CornerRoomBlock.xml",
 		"Objects/LineRoomBlock.xml"
