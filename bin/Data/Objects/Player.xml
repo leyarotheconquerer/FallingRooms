@@ -10,6 +10,7 @@
 	<component type="RigidBody" id="16777228">
 		<attribute name="Physics Position" value="0 -3.93984 7.87228" />
 		<attribute name="Mass" value="1" />
+		<attribute name="Friction" value="1" />
 		<attribute name="Angular Factor" value="0 0 0" />
 		<attribute name="Collision Mask" value="249" />
 	</component>
@@ -21,9 +22,8 @@
 	<component type="LuaScriptInstance" id="16777230">
 		<attribute name="Script File" value="LuaFile;LuaScripts/Player.lua" />
 		<attribute name="Script Object Type" value="Player" />
-		<attribute name="State" value="" />
-		<attribute name="RunSpeed" value="3" />
 		<attribute name="WalkSpeed" value="1" />
+		<attribute name="RunSpeed" value="3" />
 	</component>
 	<component type="AnimationController" id="16777231">
 		<attribute name="Node Animation States">

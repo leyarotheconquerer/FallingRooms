@@ -35,10 +35,12 @@ function Player:FixedUpdate(timestep)
 	end
 
 	if (force:LengthSquared() > 0) then
+		rigidBody:SetFriction(0.5)
 		rotation = Quaternion()
 		rotation:FromRotationTo(Vector3.FORWARD, force)
 		rigidBody.rotation = rigidBody.rotation:Slerp(rotation, self.TurnRate)
-
+	else
+		rigidBody:SetFriction(1.0)
 	end
 
 	if (
