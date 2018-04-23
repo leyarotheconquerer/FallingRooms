@@ -24,7 +24,6 @@ function TetrisRoom:DelayedStart()
 	end
 
 	self:SubscribeToEvent("KeyDown", "TetrisRoom:HandleKeyDown")
-	self:SubscribeToEvent("PostRenderUpdate", "TetrisRoom:HandlePostRenderUpdate")
 	self:SubscribeToEvent("TerminateLevel", "TetrisRoom:HandleTerminateLevel")
 end
 
@@ -110,15 +109,6 @@ function TetrisRoom:HandleKeyDown(type, data)
 	end
 end
 
-function TetrisRoom:HandlePostRenderUpdate(type, data)
-	if (input:GetKeyDown(KEY_P)) then
-		local physicsWorld = self.node.scene:GetComponent("PhysicsWorld")
-		if (physicsWorld ~= nil) then
-			physicsWorld:DrawDebugGeometry(true)
-		end
-	end
-end
-
 function TetrisRoom:HandlePhysicsCollisionStart(type, data)
 	local firstNode = data.NodeA:Get("Node")
 	local secondNode = data.NodeB:Get("Node")
@@ -176,7 +166,7 @@ function TetrisRoom:HandleTerminatorCollision(type, data)
 		local window = ui.root:CreateChild("Window")
 		local style = cache:GetResource("XMLFile", "UI/UIStyle.xml")
 		if (window ~= nil and style ~= nil) then
-			window:SetDefaultStyle(style)
+			window:SetStyle(style)
 			window:LoadXML(cache:GetResourceFileName("UI/LossWindow.xml"))
 			self:Disable()
 			self:SubscribeToEvent("LoadLevel", "TetrisRoom:HandleLoadLevel")

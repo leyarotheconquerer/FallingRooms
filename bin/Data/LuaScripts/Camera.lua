@@ -2,7 +2,7 @@ Camera = ScriptObject()
 
 function Camera:Start()
 	self.TargetPosition = Vector3(18, 50, -8)
-	self.Offset = Vector3(0, 8, -3)
+	self.Offset = Vector3(0, 8, -5)
 	self.FollowRate = 0.01
 	self.Mode = "Player"
 
