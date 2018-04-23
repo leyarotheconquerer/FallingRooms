@@ -6,7 +6,7 @@ This is a game attempt for the Ludum Dare 41.
 Downloads
 ---------
 
-You can find a Windows build of this game in the `Releases` tab.
+You can find a Windows build of this game in the [Releases](https://github.com/leyarotheconquerer/FallingRooms/releases) tab.
 
 Building
 --------
